@@ -3,8 +3,8 @@ slug: "/tin-tuc/nhung-dieu-can-luu-y-khi-thiet-ke-hop-giay"
 date: "2021-03-25"
 title: "NHỮNG ĐIỀU CẦN LƯU Ý KHI THIẾT KẾ HỘP GIẤY"
 author: "Minh Ty"
-tags: [paper packaging,DN Pack facility,DN Pack company profile]
-urls: [paper,facility, about]
+tags: [Giới thiệu,Sản phẩm]
+urls: [gioi-thieu,san-pham]
 featuredImage: ../images/duynhat/products/Paper/DSC_9450.jpg
 summary: Bạn đang có ý tưởng - Bạn muốn lên thiết kế cho hộp giấy đựng sản phẩm của mình đẹp hơn, bắt mắt hơn nhưng chưa biết phải bắt đầu từ đâu. Vậy hãy đọc qua bài viết này.
 ---
@@ -51,4 +51,4 @@ Những bạn không quen với công việc này thì tốt nhất nên tìm t�
 
 ![Hop tra](../images/duynhat/products/Paper/DSC_9426.jpg "Bao bì hộp giấy trà xanh") 
 
-**Bạn muốn tìm hiểu thêm về bao bì giấy hay có nhu cầu thiết kế và sản xuất bao bì giấy – Hãy liên hệ với chúng tôi qua SDT +84 2993 612 772! hoặc **[liên hệ chúng tôi](https://www.baobiduynhat.com.vn/lien-he)** để giải quyết thắc mắc và nhận sự hỗ trợ tận tình./**
+**Bạn muốn tìm hiểu thêm về bao bì giấy hay có nhu cầu thiết kế và sản xuất bao bì giấy – Hãy liên hệ với chúng tôi qua số điện thoại +84 2993 612 772! hoặc **[liên hệ chúng tôi](https://www.baobiduynhat.com.vn/lien-he)** để giải quyết thắc mắc và nhận sự hỗ trợ tận tình.**
