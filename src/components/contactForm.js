@@ -44,7 +44,7 @@ class ContactForm extends Component {
     }
     fetch(scriptUrl, {
     method: 'POST', 
-    body: item,
+    body: new FormData(item),
 
     }).then(res => {
           console.log(res)
