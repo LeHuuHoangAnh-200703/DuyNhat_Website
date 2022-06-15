@@ -3,6 +3,7 @@ import firebase from '../utils/firebase.js'
 import axios from 'axios'
 
 class ContactForm extends Component {
+
   state = {
     submit: false,
     name: "",
@@ -44,7 +45,7 @@ class ContactForm extends Component {
     }
     fetch(scriptUrl, {
     method: 'POST', 
-    body: new FormData(item),
+    body: new FormData(event.target.value),
 
     }).then(res => {
           console.log(res)
@@ -74,7 +75,7 @@ class ContactForm extends Component {
           <p>Your message has been sent! Thank you for contacting us!</p>
         }
 
-        <form onSubmit={this.handleSubmit} class="dzForm">
+        <form  onSubmit={this.handleSubmit} class="dzForm">
         <div class="row">
         <div class="col-lg-12">
         <div class="form-group">
