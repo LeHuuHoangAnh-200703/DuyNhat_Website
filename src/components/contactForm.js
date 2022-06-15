@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import firebase from '../utils/firebase.js'
-
+import axios from 'axios'
 
 class ContactForm extends Component {
   state = {
@@ -22,19 +22,46 @@ class ContactForm extends Component {
   }
   handleSubmit = event => {
     event.preventDefault();
-    const itemsRef = firebase.database().ref('contacts');
-    const item = {
+    // const itemsRef = firebase.database().ref('contacts');
+    // const item = {
+    //   name: this.state.name,
+    //   email: this.state.email,
+    //   message: this.state.message
+    // }
+    // itemsRef.push(item);
+    // this.setState({
+    //   name: '',
+    //   email: '',
+    //   message: '',
+    //   submit:true
+    // });
+    const scriptUrl = "https://script.google.com/macros/s/AKfycbwCqWtnagFc_8hJJCWSVRRmD1SHYYRBRyD9DXId-uE0HUQ7exwGlOebd3ZAIzTmiTzenw/exec"
+
+  const item = {
       name: this.state.name,
       email: this.state.email,
       message: this.state.message
     }
-    itemsRef.push(item);
+    fetch(scriptUrl, {
+    method: 'POST', 
+    body: item,
+
+    }).then(res => {
+          console.log(res)
+          console.log("SUCCESSFULLY SUBMITTED")
+          // setLoading(false)
+    })
+      .catch(err => console.log(err))
+    // axios.post(scriptUrl, this.state)
+    // .then(response => {
+    //   console.log(response);
+    // })
     this.setState({
-      name: '',
-      email: '',
-      message: '',
-      submit:true
-    });
+        name: '',
+        email: '',
+        message: '',
+        submit:true
+      });
   }
 
 
