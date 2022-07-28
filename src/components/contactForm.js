@@ -59,10 +59,26 @@ class ContactForm extends Component {
     //   console.log(response);
     // })
 
-    axios.post(scriptUrl, item)
-    .then((response) => {
-      console.log("ok");
+    // axios.post(scriptUrl, item)
+    // .then((response) => {
+    //   console.log("ok");
+    // })
+    let url = 'https://script.google.com/macros/s/AKfycbzbaNNTK7ToDWE6HaPoW4UFngy8Obb2WiB4WM8EWS_7Bi6hlSAIFKVEocRGyellsbj4lQ/exec';
+
+    let bodySend = {
+      "sheet2": item
+    }
+
+    fetch(url, {
+      method: 'POST',
+      body: item,
     })
+    .then((response) => response.json())
+    .then(json => {
+      // Do something with object
+      console.log(json);
+    });
+
     this.setState({
         name: '',
         email: '',
