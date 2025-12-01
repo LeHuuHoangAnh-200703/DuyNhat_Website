@@ -5,11 +5,11 @@
   "version": "0.1.0",
   "license": "0BSD",
   "scripts": {
-    "build": "gatsby build",
-    "develop": "gatsby develop -p 90",
+    "build": "set NODE_OPTIONS=--openssl-legacy-provider && gatsby build",
+    "develop": "set NODE_OPTIONS=--openssl-legacy-provider && gatsby develop -p 90",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
     "start": "npm run develop",
-    "serve": "gatsby serve",
+    "serve": "set NODE_OPTIONS=--openssl-legacy-provider && gatsby serve",
     "clean": "gatsby clean",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
@@ -42,7 +42,6 @@
     "gatsby-source-filesystem": "^2.11.1",
     "gatsby-transformer-remark": "^2.16.1",
     "gatsby-transformer-sharp": "^2.12.0",
-    "node-sass": "^5.0.0",
     "nouislider-react": "^3.3.9",
     "preact": "^10.5.12",
     "preact-render-to-string": "^5.1.12",
@@ -68,7 +67,8 @@
     "tawkto-react": "^2.0.3"
   },
   "devDependencies": {
-    "prettier": "2.2.1"
+    "prettier": "2.2.1",
+    "sass": "^1.94.2"
   },
   "repository": {
     "type": "git",
