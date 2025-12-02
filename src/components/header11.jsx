@@ -170,6 +170,7 @@ class Header11 extends Component {
                                                         <li><VNText to={'/bao-bi-nhua'}>Bao Bì Nhựa</VNText></li>
 														<li><VNText to={'/bao-bi-giay'}>Bao Bì Giấy</VNText></li>
 														<li><VNText to={'/tem-nhan'}>Tem và Nhãn</VNText></li>
+                                                        <li><VNText to={'/thung-carton'}>Thùng Carton</VNText></li>
 													</ul>
 												</li>
 											</ul>

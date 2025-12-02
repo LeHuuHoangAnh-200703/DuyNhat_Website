@@ -103,7 +103,26 @@ class Index4 extends Component {
                                         </div>
                                     </div>
                                 </div>
-                                
+                                <div class="col-lg-4 wow fadeIn">
+                                    <div class="dlab-post-media"> 
+                                         <Img fluid={this.props.data.carton1.childImageSharp.fluid} alt="" className="img-cover"/>
+                                        {/* <img src={require("../images/duynhat/factory/DSC_3879.jpg")} alt="" class="img-cover"/> */}
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 bg-primary text-white" >
+                                    <div class="service-box style2">
+                                        <div>
+                                            <h2 class="title text-black">Thùng Carton</h2>
+                                            <VText>Công ty Duy Nhật chuyên sản xuất thùng carton chất lượng cao với đa dạng kích thước từ 3 lớp đến 7 lớp, đáp ứng mọi nhu cầu đóng gói và vận chuyển hàng hóa an toàn, bền chắc với giá cả cạnh tranh.</VText>
+                                            <Link to="/thung-carton" class="site-button outline white outline-2 btnhover11">Tìm Hiểu Thêm</Link>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4" >
+                                    <div class="dlab-post-media"> 
+                                        <Img fluid={this.props.data.carton2.childImageSharp.fluid} alt="" className="img-cover"/>
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
@@ -271,6 +290,20 @@ query MyQuery {
     label:file(relativePath: { eq: "duynhat/factory/DSC_9222.jpg" }){
         childImageSharp {
           fluid(quality: 100,maxWidth:550){
+              ...GatsbyImageSharpFluid_withWebp_tracedSVG
+          }
+        }
+    }
+    carton1:file(relativePath: { eq: "duynhat/DSC_7898.jpg" }){
+        childImageSharp {
+          fluid(quality: 100, maxWidth:550){
+              ...GatsbyImageSharpFluid_withWebp_tracedSVG
+          }
+        }
+    }
+    carton2:file(relativePath: { eq: "duynhat/factory/DSC_9237.jpg" }){
+        childImageSharp {
+          fluid(quality: 100, maxWidth:550){
               ...GatsbyImageSharpFluid_withWebp_tracedSVG
           }
         }

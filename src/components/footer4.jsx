@@ -33,6 +33,7 @@ class Footer4 extends Component {
                                         <li><VNText to="/bao-bi-nhua">Bao Bì Nhựa</VNText></li>
                                         <li><VNText to="/bao-bi-giay">Bao Bì Giấy</VNText></li>
                                         <li><VNText to="/tem-nhan">Tem và Nhãn</VNText></li>
+                                        <li><VNText to="/thung-carton">Thùng Carton</VNText></li>
                                         <li><VNText to="/lien-he">Liên Hệ</VNText></li>
                                         {/* <li><Link to="/portfolio-details">Portfolio</Link></li> */}
                                         {/* <li><Link to="/team-1">Team</Link></li> */}
