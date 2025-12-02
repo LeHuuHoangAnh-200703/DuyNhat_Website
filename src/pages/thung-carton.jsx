@@ -9,8 +9,6 @@ import { graphql, StaticQuery } from 'gatsby'
 import BackgroundImage from 'gatsby-background-image'
 
 class Flexible extends Component {
-
-
     render() {
         return (
             <>

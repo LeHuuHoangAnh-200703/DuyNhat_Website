@@ -41,7 +41,7 @@ const images = [
 //       id: 31+index,
 //       name: "Thùng Carton",
 //       plastic: true,
-//       title:"Hộp hải sản đông lạnh",
+//       title:"Sản phẩm thùng carton"
 //       subTitle:"Thùng Carton",
 //       imgUrl: image,
 //       shortName: _images2.fileName[index].split('.')[1]

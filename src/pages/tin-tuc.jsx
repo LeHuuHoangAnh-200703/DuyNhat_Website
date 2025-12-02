@@ -9,7 +9,6 @@ import {VText} from '../components/VNText';
 
 const pageLimit = 4
 
-
 const Blog = ()=>{
 // export default function Blog() {
 // 		// console.log(data)
@@ -187,14 +186,10 @@ const Blog = ()=>{
 		)
 		const [curPage,setPage] = useState(1);
 		const numPages = parseInt((data.page.edges.length+pageLimit-1)/pageLimit)
-
-
         return (
             <>
                 <Header/>
-
                 <div class="page-content bg-white">
-                    
 					<BackgroundImage
                         // className="dlab-bnr-inr "
 						fluid={data.desktop.childImageSharp.fluid}
@@ -215,7 +210,6 @@ const Blog = ()=>{
                         </div>
 						</div>
 						</BackgroundImage>
-                   
                     <div class="content-area">
 						<div class="container">
 							{data.page.edges.map((page,idx) =>{
@@ -225,7 +219,6 @@ const Blog = ()=>{
 												<div class="dlab-post-media"> 
 													<a href={page.node.frontmatter.slug}>
 													<Img fluid={page.node.frontmatter.featuredImage.childImageSharp.fluid} alt={page.node.frontmatter.title} className="img-cover"/>
-
 													</a> 
 												</div>
 												<div class="dlab-post-info">
@@ -248,7 +241,6 @@ const Blog = ()=>{
 													</div>
 												</div>
 											</div>
-
 										);
 									}
 								}
@@ -270,7 +262,6 @@ const Blog = ()=>{
 													setPage(i+1)
 												}}>{i+1}</a></li>
 										}
-										
 									}
 									)}
 									<li class="next"><a href="#" onClick={() => {
@@ -284,7 +275,6 @@ const Blog = ()=>{
 							</div>
 						</div>
 					</div>
-                    
 				</div>   
 				    )           
                 <Footer/>                
