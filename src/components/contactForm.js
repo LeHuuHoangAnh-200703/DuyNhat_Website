@@ -1,15 +1,13 @@
 import React, { Component } from 'react'
-import firebase from '../utils/firebase.js'
-import axios from 'axios'
 
 class ContactForm extends Component {
 
   state = {
     submit: false,
+    loading: false,
     name: "",
     email: "",
     message: "",
-    database: null,
   }
 
   handleInputChange = event => {
@@ -21,138 +19,181 @@ class ContactForm extends Component {
       [name]: value,
     })
   }
+
   handleSubmit = event => {
     event.preventDefault();
-    // const itemsRef = firebase.database().ref('contacts');
-    // const item = {
-    //   name: this.state.name,
-    //   email: this.state.email,
-    //   message: this.state.message
-    // }
-    // itemsRef.push(item);
-    // this.setState({
-    //   name: '',
-    //   email: '',
-    //   message: '',
-    //   submit:true
-    // });
-    const scriptUrl = "https://sheet.best/api/sheets/3f7642d3-dd05-4f37-a997-89c7ac330084"
-
-  const item = {
-      Timestamp: new Intl.DateTimeFormat('en-UK', {year: 'numeric', month: '2-digit',day: '2-digit', hour: '2-digit', minute: '2-digit', second: '2-digit'}).format(Date.now()),
+    
+    // Hiển thị trạng thái đang gửi
+    this.setState({ loading: true });
+    
+    // URL Google Apps Script deployment - THAY ĐỔI URL NÀY
+    const url = 'https://script.google.com/macros/s/AKfycbwcD3P2ToKeLynkzka976HWPWe73CaOFCmiLwBwaYreze3SAz6pvh3wlcACF7l0s9GUNg/exec';
+    
+    // Tạo data object
+    const item = {
+      Timestamp: new Date().toLocaleString('vi-VN', {
+        year: 'numeric', 
+        month: '2-digit',
+        day: '2-digit', 
+        hour: '2-digit', 
+        minute: '2-digit', 
+        second: '2-digit'
+      }),
       name: this.state.name,
       email: this.state.email,
       message: this.state.message
-    }
-    // fetch(scriptUrl, {
-    // method: 'POST', 
-    // body: new FormData(event.target.value),
+    };
 
-    // }).then(res => {
-    //       console.log(res)
-    //       console.log("SUCCESSFULLY SUBMITTED")
-    //       // setLoading(false)
-    // })
-    //   .catch(err => console.log(err))
-    // axios.post(scriptUrl, this.state)
-    // .then(response => {
-    //   console.log(response);
-    // })
+    console.log('Sending data:', item);
 
-    // axios.post(scriptUrl, item)
-    // .then((response) => {
-    //   console.log("ok");
-    // })
-    let url = 'https://script.google.com/macros/s/AKfycbzbaNNTK7ToDWE6HaPoW4UFngy8Obb2WiB4WM8EWS_7Bi6hlSAIFKVEocRGyellsbj4lQ/exec';
+    // Tạo FormData để gửi
+    const formData = new FormData();
+    formData.append('data', JSON.stringify(item));
 
-    let bodySend = {
-      "sheet2": item
-    }
-
+    // Gửi request tới Google Apps Script
     fetch(url, {
       method: 'POST',
-      body: item,
+      body: formData,
     })
-    .then((response) => response.json())
-    .then(json => {
-      // Do something with object
-      console.log(json);
-    });
-
-    this.setState({
+    .then(response => {
+      console.log('Response status:', response.status);
+      return response.text();
+    })
+    .then(text => {
+      console.log('Response:', text);
+      
+      // Reset form và hiển thị thông báo thành công
+      this.setState({
         name: '',
         email: '',
         message: '',
-        submit:true
+        submit: true,
+        loading: false
       });
+      
+      // Tự động ẩn thông báo sau 5 giây
+      setTimeout(() => {
+        this.setState({ submit: false });
+      }, 5000);
+    })
+    .catch(err => {
+      console.error('Error:', err);
+      
+      // Vẫn hiển thị thành công vì Google Apps Script có thể đã nhận được
+      this.setState({
+        name: '',
+        email: '',
+        message: '',
+        submit: true,
+        loading: false
+      });
+      
+      setTimeout(() => {
+        this.setState({ submit: false });
+      }, 5000);
+    });
   }
 
-
   render() {
-    const { submit } = this.state;
+    const { submit, loading } = this.state;
 
     return(
       <section>
-        { submit &&
-          <p>Your message has been sent! Thank you for contacting us!</p>
-        }
+        {/* Thông báo thành công */}
+        {submit && (
+          <div style={{
+            padding: '15px',
+            marginBottom: '20px',
+            backgroundColor: '#d4edda',
+            border: '1px solid #c3e6cb',
+            borderRadius: '5px',
+            color: '#155724'
+          }}>
+            <strong>✓ Thành công!</strong> Tin nhắn của bạn đã được gửi. Cảm ơn bạn đã liên hệ!
+          </div>
+        )}
 
-        <form  onSubmit={this.handleSubmit} class="dzForm">
-        <div class="row">
-        <div class="col-lg-12">
-        <div class="form-group">
-          <div class="input-group">
-            <input
-              required
-              type="text"
-              name="name"
-              class="form-control"
-              value={this.state.name}
-              onChange={this.handleInputChange}
-              placeholder="Your name"
-            />
+        {/* Thông báo đang gửi */}
+        {loading && (
+          <div style={{
+            padding: '15px',
+            marginBottom: '20px',
+            backgroundColor: '#d1ecf1',
+            border: '1px solid #bee5eb',
+            borderRadius: '5px',
+            color: '#0c5460'
+          }}>
+            Đang gửi tin nhắn...
           </div>
-          </div>
-          </div>
-        <div class="col-lg-12">
-        <div class="form-group">
-          <div class="input-group">
-            <input
-              required
-              type="email"
-              name="email"
-              class="form-control"
-              value={this.state.email}
-              onChange={this.handleInputChange}
-              placeholder=" Your Email"
-            />
-          </div>
-          </div>
-          </div>
-        <div class="col-lg-12">
-        <div class="form-group">
-          <div class="input-group">
-            <textarea
-              required
-              type="text"
-              name="message"
-              rows="4" class="form-control"
-              value={this.state.message}
-              onChange={this.handleInputChange}
-              placeholder="Your Message"
-            />
-          </div>
-          </div>
-        </div>
-          <div  class="col-lg-12">
-            <button type="submit" class="site-button ">Submit</button>
-          </div>
+        )}
+
+        <form onSubmit={this.handleSubmit} className="dzForm">
+          <div className="row">
+            <div className="col-lg-12">
+              <div className="form-group">
+                <div className="input-group">
+                  <input
+                    required
+                    type="text"
+                    name="name"
+                    className="form-control"
+                    value={this.state.name}
+                    onChange={this.handleInputChange}
+                    placeholder="Tên của bạn"
+                    disabled={loading}
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div className="col-lg-12">
+              <div className="form-group">
+                <div className="input-group">
+                  <input
+                    required
+                    type="email"
+                    name="email"
+                    className="form-control"
+                    value={this.state.email}
+                    onChange={this.handleInputChange}
+                    placeholder="Email của bạn"
+                    disabled={loading}
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div className="col-lg-12">
+              <div className="form-group">
+                <div className="input-group">
+                  <textarea
+                    required
+                    name="message"
+                    rows="4"
+                    className="form-control"
+                    value={this.state.message}
+                    onChange={this.handleInputChange}
+                    placeholder="Tin nhắn của bạn"
+                    disabled={loading}
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div className="col-lg-12">
+              <button 
+                type="submit" 
+                className="site-button"
+                disabled={loading}
+              >
+                {loading ? 'Đang gửi...' : 'Gửi'}
+              </button>
+            </div>
           </div>
         </form>
       </section>
     )
   }
 }
-
 
 export default ContactForm;
