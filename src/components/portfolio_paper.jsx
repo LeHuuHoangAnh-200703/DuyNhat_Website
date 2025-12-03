@@ -1,84 +1,90 @@
 import React, { useState } from "react";
-import {Link} from 'gatsby'
+import { Link } from 'gatsby'
 import { graphql, StaticQuery } from 'gatsby'
 import Img from "gatsby-image";
+import SEO from '../components/SEO';
 
 const images = [
-    {
-      id: 1,
-      name: "Bao Bì Giấy",
-      paper: true,
-      title:"Hộp hải sản đông lạnh",
-      subTitle:"Bao Bì Giấy",
-      imgUrl: require("../images/duynhat/products/DSC_9317.jpg")
-    },
-    {
-      id: 2,
-      name: "Bao Bì Giấy",
-      paper: true,
-      title:"Hộp hải sản đông lạnh",
-      subTitle:"Bao Bì Giấy",
-      imgUrl: require("../images/duynhat/products/Paper/DSC_9439.jpg")
-    },
-    {
-      id: 3,
-      name: "Bao Bì Giấy",
-      paper: true,
-      title:"Hộp kẹo",
-      subTitle:"Bao Bì Giấy",
-      imgUrl: require("../images/duynhat/products/DSC_9410.jpg")
-    },
-    {
-      id: 4,
-      name: "Bao Bì Giấy",
-      paper: true,
-      title:"Hộp Trà Giấy",
-      subTitle:"Bao Bì Giấy",
-      imgUrl: require("../images/duynhat/products/DSC_9426.jpg")
-    }
-  
-  ];
-  images.map(
-    (image, index) => {
-      // console.log(image.imgUrl.split('.')[0].split('/')[2].split('-')[0])
-      image.shortName = image.imgUrl.split('.')[0].split('/')[2].split('-')[0];
-    }
-  );
+  {
+    id: 1,
+    name: "Bao Bì Giấy",
+    paper: true,
+    title: "Hộp giấy",
+    subTitle: "Bao Bì Giấy",
+    imgUrl: require("../images/duynhat/products/Paper/HG1.jpg")
+  },
+  {
+    id: 2,
+    name: "Bao Bì Giấy",
+    paper: true,
+    title: "Hộp giấy",
+    subTitle: "Bao Bì Giấy",
+    imgUrl: require("../images/duynhat/products/Paper/HG2.jpg")
+  },
+  {
+    id: 3,
+    name: "Bao Bì Giấy",
+    paper: true,
+    title: "Hộp giấy",
+    subTitle: "Bao Bì Giấy",
+    imgUrl: require("../images/duynhat/products/Paper/HG3.jpg")
+  },
+  {
+    id: 4,
+    name: "Bao Bì Giấy",
+    paper: true,
+    title: "Hộp giấy",
+    subTitle: "Bao Bì Giấy",
+    imgUrl: require("../images/duynhat/products/Paper/HG4.jpg")
+  },
+  {
+    id: 5,
+    name: "Bao Bì Giấy",
+    paper: true,
+    title: "Hộp giấy",
+    subTitle: "Bao Bì Giấy",
+    imgUrl: require("../images/duynhat/products/Paper/HG5.jpg")
+  },
+  {
+    id: 6,
+    name: "Bao Bì Giấy",
+    paper: true,
+    title: "Hộp giấy",
+    subTitle: "Bao Bì Giấy",
+    imgUrl: require("../images/duynhat/products/Paper/HG6.jpg")
+  },
+  {
+    id: 7,
+    name: "Bao Bì Giấy",
+    paper: true,
+    title: "Hộp giấy",
+    subTitle: "Bao Bì Giấy",
+    imgUrl: require("../images/duynhat/products/Paper/HG7.jpg")
+  }
+];
 
-function importAll(r) {
-  const dic ={fileName : r.keys(),staticFile : r.keys().map(r)}
-  return dic;
-}
-const _images2 = importAll(require.context("../images/duynhat/products/Paper", false, /\.(png|jpe?g|svg)$/))
-const images2 = _images2.staticFile;
-
-images2.map(
+images.map(
   (image, index) => {
-    images.push({
-      id: 31+index,
-      name: "Bao Bì Giấy",
-      plastic: true,
-      title:"Hộp hải sản đông lạnh",
-      subTitle:"Bao Bì Giấy",
-      imgUrl: image,
-      shortName: _images2.fileName[index].split('.')[1]
-    })
-
+    image.shortName = image.imgUrl.split('.')[0].split('/')[2].split('-')[0];
   }
 );
 
+function importAll(r) {
+  const dic = { fileName: r.keys(), staticFile: r.keys().map(r) }
+  return dic;
+}
 
-const getFilterSections = (images)=>{
+const getFilterSections = (images) => {
   const filters = ['all']
-  images.map(image=>{
-    if(filters.indexOf(image.name) === -1){
+  images.map(image => {
+    if (filters.indexOf(image.name) === -1) {
       filters.push(image.name)
     }
   })
   return filters
 }
 
-const filterImages = (filterKey,images)=>{
+const filterImages = (filterKey, images) => {
   const list = images.filter(image =>
     filterKey === 'all' ? image : image.name === filterKey
   );
@@ -93,79 +99,87 @@ const PortfolioPaper = props => {
   });
 
   const { list, filterKey } = state;
-  
-  const filteredList  = filterImages(filterKey,list)
-  const filters       = getFilterSections(images)
-  const collumnCls = props.col ? props.col :"col-md-3";
+
+  const filteredList = filterImages(filterKey, list)
+  const filters = getFilterSections(images)
+  const collumnCls = props.col ? props.col : "col-md-3";
 
   return (
-    <StaticQuery
-    query={graphql`
-    {
-      allFile(filter: {extension: {regex: "/(jpg)|(jpeg)|(png)/"}, dir: {regex: "duynhat/products/"}}) {
-        edges {
-          node {
-            id
-            childImageSharp {
-              fluid(quality: 100, fit: INSIDE) {
-                originalName
-                ...GatsbyImageSharpFluid_withWebp_tracedSVG
+    <>
+      <SEO 
+        title="Bao Bì Giấy Chất Lượng Cao"
+        description="Chuyên sản xuất bao bì giấy, hộp giấy, thùng giấy, túi giấy kraft. Thân thiện môi trường, thiết kế đẹp mắt, in ấn sắc nét, giá cạnh tranh."
+        keywords="bao bì giấy, hộp giấy, túi giấy kraft, thùng giấy, bao bì thân thiện môi trường, hộp giấy đựng quà, hộp giấy cao cấp"
+      />
+
+      <StaticQuery
+        query={graphql`
+          {
+            allFile(filter: {extension: {regex: "/(jpg)|(jpeg)|(png)/"}, dir: {regex: "duynhat/products/"}}) {
+              edges {
+                node {
+                  id
+                  childImageSharp {
+                    fluid(quality: 100, fit: INSIDE) {
+                      originalName
+                      ...GatsbyImageSharpFluid_withWebp_tracedSVG
+                    }
+                  }
+                }
               }
             }
           }
-            }
-          }
-        }
-    `} 
-    render={(data) => {
-      for (let i = 0; i < filteredList.length; i++) {
-        Object.keys(data.allFile.edges).map(edge=>{
-          if(filteredList[i].shortName){
-            // console.log(data.allFile.edges[edge].node.childImageSharp.fluid.originalName.split('.')[0],filteredList[i].shortName.replace("/",""))
-            if(data.allFile.edges[edge].node.childImageSharp.fluid.originalName.split('.')[0] === filteredList[i].shortName.replace("/","")){
-              
-              filteredList[i].imgUrl = data.allFile.edges[edge].node.childImageSharp.fluid;
-            }
+        `}
+        render={(data) => {
+          for (let i = 0; i < filteredList.length; i++) {
+            Object.keys(data.allFile.edges).map(edge => {
+              if (filteredList[i].shortName) {
+                if (data.allFile.edges[edge].node.childImageSharp.fluid.originalName.split('.')[0] === filteredList[i].shortName.replace("/", "")) {
+                  filteredList[i].imgUrl = data.allFile.edges[edge].node.childImageSharp.fluid;
+                }
+              }
+            })
           }
           
-        })
-      }
-    return(
-    <div class="content-block">
-      <div class="section-full content-inner-2 portfolio text-uppercase bg-gray" id="portfolio">
-        <div class="container"> 
+          return (
+            <div className="content-block">
+              <div className="section-full content-inner-2 portfolio text-uppercase bg-gray" id="portfolio">
+                <div className="container">
 
-           
-            {/* FILTERED PORTFOLIO LIST */}
-            <div className="portfolio_area">
-              <div className="row portfolio-grid">
-                  {filteredList.map(image => (
-                    <div className={collumnCls}>
-                      <div class="dlab-box dlab-gallery-box">
-                        <div class="dlab-media  dlab-img-effect zoom">
-                            <Link to="/paper">
-                            <Img fluid={image.imgUrl}  alt="" className="dlab-media radius-sm dlab-img-overlay2"/>
-                            </Link>
-                            <div class="overlay-bx">
+                  {/* FILTERED PORTFOLIO LIST */}
+                  <div className="portfolio_area">
+                    <div className="row portfolio-grid">
+                      {filteredList.map(image => (
+                        <div key={image.id} className={collumnCls}>
+                          <div className="dlab-box dlab-gallery-box">
+                            <div className="dlab-media dlab-img-effect zoom">
+                              <Link to="/paper">
+                                <Img 
+                                  fluid={image.imgUrl} 
+                                  alt={`${image.title} - Bao bì giấy chất lượng cao Duy Nhất`}
+                                  className="dlab-media radius-sm dlab-img-overlay2" 
+                                />
+                              </Link>
+                              <div className="overlay-bx"></div>
                             </div>
+                            <div className="dez-info p-a30 bg-white">
+                              <p className="dez-title m-t0">
+                                <Link to="#">{image.title}</Link>
+                              </p>
+                              <p><small>{image.subTitle}</small></p>
+                            </div>
+                          </div>
                         </div>
-                        <div class="dez-info p-a30 bg-white">
-                            <p class="dez-title m-t0">
-                            <Link to="#">{image.title}
-                            </Link></p>
-                            <p><small>{image.subTitle}</small></p>
-                        </div>
-                      </div>
+                      ))}
                     </div>
-                  ))}
+                  </div>
+                </div>
               </div>
-          </div>
-        </div>
-      </div>
-    </div>         
-  )}}
-  />
-
+            </div>
+          )
+        }}
+      />
+    </>
   );
 };
 

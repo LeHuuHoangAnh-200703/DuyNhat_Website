@@ -43,7 +43,7 @@ class ProjectSlider1 extends Component {
             <StaticQuery
                 query={graphql`
                 query {
-                    flexRice:file(relativePath: { eq: "duynhat/products/GAO_ST.jpg" }){
+                    flexRice:file(relativePath: { eq: "duynhat/products/flexible/TG.JPG.jpg" }){
                         childImageSharp {
                           fluid(quality:100,fit:INSIDE){
                             originalName
@@ -52,7 +52,7 @@ class ProjectSlider1 extends Component {
                         }
                         id
                       }
-                    flexFlat:file(relativePath: { eq: "duynhat/products/DSC_9507.jpg" }){
+                    flexFlat:file(relativePath: { eq: "duynhat/products/flexible/TC1.JPG.jpg" }){
                         childImageSharp {
                             fluid(quality:100,fit:INSIDE){
                                 originalName
@@ -61,7 +61,7 @@ class ProjectSlider1 extends Component {
                         }
                         id
                     }
-                    flexRound:file(relativePath: { eq: "duynhat/products/DSC_9520.jpg" }){
+                    flexRound:file(relativePath: { eq: "duynhat/products/flexible/DT.JPG.jpg" }){
                         childImageSharp {
                             fluid(quality:100,fit:INSIDE){
                                 originalName
@@ -70,7 +70,7 @@ class ProjectSlider1 extends Component {
                         }
                         id
                     }
-                    paperBox:file(relativePath: { eq: "duynhat/products/Paper/DSC_9343.jpg" }){
+                    paperBox:file(relativePath: { eq: "duynhat/products/Paper/HG4.jpg" }){
                         childImageSharp {
                             fluid(quality:100,fit:INSIDE){
                                 originalName
@@ -123,7 +123,7 @@ class ProjectSlider1 extends Component {
                                     {/* </Link> */}
                                 </div>
                                 <div class="dlab-info">
-                                <h3 class="dlab-title"><Link to="/products" tabindex="-1">Túi Hải Sản Đông Lạnh</Link></h3>
+                                <h3 class="dlab-title"><Link to="/products" tabindex="-1">Túi có khả năng tái chế</Link></h3>
                                 </div>
                             </div>
                         </div>
@@ -135,7 +135,7 @@ class ProjectSlider1 extends Component {
                                     {/* </Link> */}
                                 </div>
                                 <div class="dlab-info">
-                               <h3 class="dlab-title"><Link to="/products" tabindex="-1">Túi Hải Sản Đông Lạnh Đáy Tròn</Link></h3>
+                               <h3 class="dlab-title"><Link to="/products" tabindex="-1">Túi đứng Đáy Tròn</Link></h3>
                                 </div>
                             </div>
                         </div>
@@ -147,7 +147,7 @@ class ProjectSlider1 extends Component {
                                     {/* </Link> */}
                                 </div>
                                 <div class="dlab-info">
-                                <h3 class="dlab-title"><Link to="/products" tabindex="-1">Hộp Giấy Hải Sản</Link></h3>
+                                <h3 class="dlab-title"><Link to="/products" tabindex="-1">Hộp Giấy</Link></h3>
                                 </div>
                             </div>
                         </div>

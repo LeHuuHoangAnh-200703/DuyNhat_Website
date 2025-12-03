@@ -73,19 +73,16 @@ class About2 extends Component {
                                         </div>
                                     </div>
                                     <div class="row justify-content-center" style={{ background: "linear-gradient(360deg, #FFFFFF 70%,#880006 70%, #880006 30%)" }}>
-
                                         <ReactPlayer url="https://www.youtube.com/watch?v=eclyagw9Ui0"
                                             volume={0.4}
                                             controls={true}
                                         />
-
                                     </div>
                                 </div>
                                 <div class="container">
                                     <div class="row justify-items-center">
                                         {/* <div class="col-lg-6 col-md-12 m-b30">
                                                 <div class="video-bx">
-                                            
                                                 </div>
                                             </div> */}
                                         <p></p>

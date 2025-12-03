@@ -3,108 +3,219 @@ import { Link } from 'gatsby'
 import { graphql, StaticQuery } from 'gatsby'
 import Img from "gatsby-image";
 import { VNText, VText } from '../components/VNText';
-
-
+import SEO from '../components/SEO';
 
 const images = [
   {
     id: 1,
     name: "Bao Bì Nhựa",
     plastic: true,
-    title: "Túi hải sản đông lạnh",
+    title: "Túi có khả năng tái chế",
     subTitle: "Bao Bì Nhựa",
-    imgUrl: require("../images/duynhat/products/Ocean_Chef_Salmon_Flat_Bottom.jpg")
+    imgUrl: require("../images/duynhat/products/flexible/TC1.JPG.jpg")
   },
   {
     id: 2,
     name: "Bao Bì Nhựa",
     plastic: true,
-    title: "Túi gạo",
+    title: "Túi 8 Biên",
     subTitle: "Bao Bì Nhựa",
-    imgUrl: require("../images/duynhat/products/GAO_ST.jpg")
+    imgUrl: require("../images/duynhat/products/flexible/8B.JPG.jpg")
   },
   {
     id: 3,
-    name: "Bao Bì Giấy",
-    paper: true,
-    title: "Hộp hải sản đông lạnh",
-    subTitle: "Bao Bì Giấy",
-    imgUrl: require("../images/duynhat/products/DSC_9317.jpg")
+    name: "Bao Bì Nhựa",
+    plastic: true,
+    title: "Túi đứng đáy tròn",
+    subTitle: "Bao Bì Nhựa",
+    imgUrl: require("../images/duynhat/products/flexible/DT.JPG.jpg")
   },
   {
     id: 4,
-    name: "Bao Bì Giấy",
-    paper: true,
-    title: "Hộp hải sản đông lạnh",
-    subTitle: "Bao Bì Giấy",
-    imgUrl: require("../images/duynhat/products/Paper/DSC_9439.jpg")
+    name: "Bao Bì Nhựa",
+    plastic: true,
+    title: "Túi Gắn Vòi Spout",
+    subTitle: "Bao Bì Nhựa",
+    imgUrl: require("../images/duynhat/products/flexible/GV.jpg")
   },
   {
     id: 5,
-    name: "Bao Bì Giấy",
-    paper: true,
-    title: "Hộp kẹo",
-    subTitle: "Bao Bì Giấy",
-    imgUrl: require("../images/duynhat/products/DSC_9410.jpg")
+    name: "Bao Bì Nhựa",
+    plastic: true,
+    title: "Túi Gạo",
+    subTitle: "Bao Bì Nhựa",
+    imgUrl: require("../images/duynhat/products/flexible/TG.JPG.jpg")
   },
   {
     id: 6,
-    name: "Bao Bì Giấy",
-    paper: true,
-    title: "Hộp trà",
-    subTitle: "Bao Bì Giấy",
-    imgUrl: require("../images/duynhat/products/DSC_9426.jpg")
+    name: "Bao Bì Nhựa",
+    plastic: true,
+    title: "Túi 3 Biên",
+    subTitle: "Bao Bì Nhựa",
+    imgUrl: require("../images/duynhat/products/flexible/3B.jpg")
   },
   {
     id: 7,
-    name: "Tem, nhãn, và decal",
-    label: true,
-    title: "Cuộn nhãn",
-    subTitle: "Tem, nhãn, và decal",
-    imgUrl: require("../images/duynhat/products/IMG_0085.jpg")
+    name: "Bao Bì Nhựa",
+    plastic: true,
+    title: "Túi nhựa đựng bánh",
+    subTitle: "Bao Bì Nhựa",
+    imgUrl: require("../images/duynhat/products/flexible/1_1.jpg")
   },
   {
     id: 8,
+    name: "Bao Bì Giấy",
+    paper: true,
+    title: "Hộp giấy",
+    subTitle: "Bao Bì Giấy",
+    imgUrl: require("../images/duynhat/products/Paper/HG1.jpg")
+  },
+  {
+    id: 9,
+    name: "Bao Bì Giấy",
+    paper: true,
+    title: "Hộp giấy",
+    subTitle: "Bao Bì Giấy",
+    imgUrl: require("../images/duynhat/products/Paper/HG2.jpg")
+  },
+  {
+    id: 10,
+    name: "Bao Bì Giấy",
+    paper: true,
+    title: "Hộp giấy",
+    subTitle: "Bao Bì Giấy",
+    imgUrl: require("../images/duynhat/products/Paper/HG3.jpg")
+  },
+  {
+    id: 11,
+    name: "Bao Bì Giấy",
+    paper: true,
+    title: "Hộp giấy",
+    subTitle: "Bao Bì Giấy",
+    imgUrl: require("../images/duynhat/products/Paper/HG4.jpg")
+  },
+  {
+    id: 12,
+    name: "Bao Bì Giấy",
+    paper: true,
+    title: "Hộp giấy",
+    subTitle: "Bao Bì Giấy",
+    imgUrl: require("../images/duynhat/products/Paper/HG5.jpg")
+  },
+  {
+    id: 13,
+    name: "Bao Bì Giấy",
+    paper: true,
+    title: "Hộp giấy",
+    subTitle: "Bao Bì Giấy",
+    imgUrl: require("../images/duynhat/products/Paper/HG6.jpg")
+  },
+  {
+    id: 14,
+    name: "Bao Bì Giấy",
+    paper: true,
+    title: "Hộp giấy",
+    subTitle: "Bao Bì Giấy",
+    imgUrl: require("../images/duynhat/products/Paper/HG7.jpg")
+  },
+  {
+    id: 15,
+    name: "Tem, nhãn, và decal",
+    label: true,
+    title: "Tem & nhãn",
+    subTitle: "Tem, nhãn, và decal",
+    imgUrl: require("../images/duynhat/products/Label/IMG_0052.jpg")
+  },
+  {
+    id: 16,
+    name: "Tem, nhãn, và decal",
+    label: true,
+    title: "Nhãn",
+    subTitle: "Tem, nhãn, và decal",
+    imgUrl: require("../images/duynhat/products/Label/IMG_0059.jpg")
+  },
+  {
+    id: 17,
+    name: "Tem, nhãn, và decal",
+    label: true,
+    title: "Nhãn",
+    subTitle: "Tem, nhãn, và decal",
+    imgUrl: require("../images/duynhat/products/Label/IMG_0066.jpg")
+  },
+  {
+    id: 18,
     name: "Tem, nhãn, và decal",
     label: true,
     title: "Nhãn dán",
     subTitle: "Tem, nhãn, và decal",
-    imgUrl: require("../images/duynhat/products/IMG_0070.jpg")
+    imgUrl: require("../images/duynhat/products/Label/IMG_0070.jpg")
   },
   {
-    id: 9,
+    id: 19,
     name: "Tem, nhãn, và decal",
     label: true,
-    title: "Nhãn",
+    title: "Tem & nhãn",
     subTitle: "Tem, nhãn, và decal",
-    imgUrl: require("../images/duynhat/products/IMG_0059.jpg")
+    imgUrl: require("../images/duynhat/products/Label/IMG_0084.jpg")
   },
   {
-    id: 10,
+    id: 20,
     name: "Tem, nhãn, và decal",
     label: true,
-    title: "Nhãn",
+    title: "Cuộn nhãn",
     subTitle: "Tem, nhãn, và decal",
-    imgUrl: require("../images/duynhat/products/IMG_0066.jpg")
+    imgUrl: require("../images/duynhat/products/Label/IMG_0085-scaled.jpg")
   },
   {
-    id: 11,
-    name: "Thùng Carton",
+    id: 21,
+    name: "Tem, nhãn, và decal",
     label: true,
+    title: "Cuộn nhãn",
+    subTitle: "Tem, nhãn, và decal",
+    imgUrl: require("../images/duynhat/products/Label/IMG_0089.jpg")
+  },
+  {
+    id: 22,
+    name: "Tem, nhãn, và decal",
+    label: true,
+    title: "Tem & nhãn",
+    subTitle: "Tem, nhãn, và decal",
+    imgUrl: require("../images/duynhat/products/Label/IMG_0094.jpg")
+  },
+  {
+    id: 23,
+    name: "Thùng Carton",
+    carton: true,
     title: "Sản phẩm thùng carton",
     subTitle: "Thùng Carton",
-    imgUrl: require("../images/duynhat/products/Carton/DSC_9351.jpg")
+    imgUrl: require("../images/duynhat/products/Carton/CT1.jpg")
   },
   {
-    id: 12,
+    id: 24,
     name: "Thùng Carton",
-    label: true,
+    carton: true,
     title: "Sản phẩm thùng carton",
     subTitle: "Thùng Carton",
-    imgUrl: require("../images/duynhat/products/Carton/DSC_9355.jpg")
+    imgUrl: require("../images/duynhat/products/Carton/CT2.jpg")
   },
   {
-    id: 12,
+    id: 25,
+    name: "Thùng Carton",
+    carton: true,
+    title: "Sản phẩm thùng carton",
+    subTitle: "Thùng Carton",
+    imgUrl: require("../images/duynhat/products/Carton/CT3.jpg")
+  },
+  {
+    id: 26,
+    name: "Thùng Carton",
+    carton: true,
+    title: "Sản phẩm thùng carton",
+    subTitle: "Thùng Carton",
+    imgUrl: require("../images/duynhat/products/Carton/CT4.jpg")
+  },
+  {
+    id: 27,
     name: "Sản phẩm khác",
     other: true,
     title: "Nhãn quấn",
@@ -112,68 +223,17 @@ const images = [
     imgUrl: require("../images/duynhat/products/nhan_quan_21.jpg")
   },
   {
-    id: 13,
+    id: 28,
     name: "Sản phẩm khác",
     other: true,
     title: "Nhãn quấn",
     subTitle: "Sản phẩm khác",
-    imgUrl: require("../images/duynhat/products/nhan_quan_11.jpg")
+    imgUrl: require("../images/duynhat/products/nhan_quan_31.jpg")
   },
-  {
-    id: 17,
-    name: "Bao Bì Nhựa",
-    plastic: true,
-    title: "Túi nhựa đựng bánh",
-    subTitle: "Bao Bì Nhựa",
-    imgUrl: require("../images/duynhat/products/1_1.jpg")
-  },
-  {
-    id: 18,
-    name: "Bao Bì Nhựa",
-    plastic: true,
-    title: "Túi nhựa có seal",
-    subTitle: "Bao Bì Nhựa",
-    imgUrl: require("../images/duynhat/products/8_bien_2.jpg")
-  },
-  {
-    id: 29,
-    name: "Bao Bì Nhựa",
-    plastic: true,
-    title: "Túi hải sản đông lạnh",
-    subTitle: "Bao Bì Nhựa",
-    imgUrl: require("../images/duynhat/products/DSC_9512.jpg")
-  }
-  ,
-  {
-    id: 30,
-    name: "Bao Bì Nhựa",
-    plastic: true,
-    title: "Túi hải sản đông lạnh",
-    subTitle: "Bao Bì Nhựa",
-    imgUrl: require("../images/duynhat/products/DSC_9516.jpg")
-  }
-  ,
-  {
-    id: 31,
-    name: "Bao Bì Nhựa",
-    plastic: true,
-    title: "Túi hải sản đông lạnh",
-    subTitle: "Bao Bì Nhựa",
-    imgUrl: require("../images/duynhat/products/DSC_9520.jpg")
-  },
-  {
-    id: 32,
-    name: "Bao Bì Nhựa",
-    plastic: true,
-    title: "Túi hải sản đông lạnh",
-    subTitle: "Bao Bì Nhựa",
-    imgUrl: require("../images/duynhat/products/DSC_9523.jpg")
-  }
-
 ];
+
 images.map(
   (image, index) => {
-    // console.log(image.imgUrl.split('.')[0].split('/')[2].split('-')[0])
     image.shortName = image.imgUrl.split('.')[0].split('/')[2].split('-')[0];
   }
 );
@@ -182,53 +242,7 @@ function importAll(r) {
   const dic = { fileName: r.keys(), staticFile: r.keys().map(r) }
   return dic;
 }
-const _images2 = importAll(require.context("../images/duynhat/products/Paper", false, /\.(png|jpe?g|svg)$/))
-const images2 = _images2.staticFile;
-images2.map(
-  (image, index) => {
-    // console.log(_images2.fileName[index].split('.'))
-    images.push({
-      id: 31 + index,
-      name: "Bao Bì Giấy",
-      plastic: true,
-      title: "Hộp thủy sản",
-      subTitle: "Bao Bì Giấy",
-      imgUrl: image,
-      shortName: _images2.fileName[index].split('.')[1]
-    })
 
-  }
-);
-
-
-const _images3 = importAll(require.context("../images/duynhat/products/Label", false, /\.(png|jpe?g|svg)$/));
-const images3 = _images3.staticFile;
-
-images3.map(
-  (image, index) => {
-
-    images.push({
-      id: images.length + index,
-      name: "Tem, nhãn, và decal",
-      label: true,
-      title: "Tem & Nhãn",
-      subTitle: "Tem, nhãn, và decal",
-      imgUrl: image,
-      shortName: _images3.fileName[index].split('.')[1]
-    })
-
-  }
-);
-
-images.push({
-  id: images.length,
-  name: "Sản phẩm khác",
-  other: true,
-  title: "Nhãn quấn",
-  subTitle: "Sản phẩm khác",
-  imgUrl: require("../images/duynhat/products/nhan_quan_31.jpg"),
-  shortName: 'nhan_quan_31'
-})
 const getFilterSections = (images) => {
   const filters = ['all']
   images.map(image => {
@@ -259,98 +273,123 @@ const Portfolio = props => {
   const filters = getFilterSections(images)
   const collumnCls = props.col ? props.col : "col-md-3";
 
+  const getSEOTitle = () => {
+    if (filterKey === 'all') return "Sản phẩm Bao Bì Chất Lượng Cao";
+    return `${filterKey} - Bao Bì Chất Lượng`;
+  };
+
+  const getSEODescription = () => {
+    if (filterKey === 'all') {
+      return "Chuyên sản xuất bao bì nhựa, bao bì giấy, tem nhãn decal, thùng carton. Đa dạng mẫu mã, chất lượng cao, giá cạnh tranh tại Việt Nam.";
+    }
+    return `Xem các sản phẩm ${filterKey} chất lượng cao từ Duy Nhất. Đa dạng mẫu mã, giá cạnh tranh.`;
+  };
+
   return (
-    <StaticQuery
-      query={graphql`
-    {
-      allFile(filter: {extension: {regex: "/(jpg)|(jpeg)|(png)/"}, dir: {regex: "duynhat/products/"}}) {
-        edges {
-          node {
-            id
-            childImageSharp {
-              fluid(quality: 100, fit: INSIDE) {
-                originalName
-                ...GatsbyImageSharpFluid_tracedSVG
+    <>
+      <SEO
+        title={getSEOTitle()}
+        description={getSEODescription()}
+        keywords="bao bì nhựa, bao bì giấy, tem nhãn, thùng carton, túi nilon, hộp giấy, túi đứng, túi 8 biên, nhãn dán, decal"
+      />
+
+      <StaticQuery
+        query={graphql`
+          {
+            allFile(filter: {extension: {regex: "/(jpg)|(jpeg)|(png)/"}, dir: {regex: "duynhat/products/"}}) {
+              edges {
+                node {
+                  id
+                  childImageSharp {
+                    fluid(quality: 100, fit: INSIDE) {
+                      originalName
+                      ...GatsbyImageSharpFluid_tracedSVG
+                    }
+                  }
+                }
               }
             }
           }
-            }
-          }
-        }
-    `}
-      render={(data) => {
-        for (let i = 0; i < filteredList.length; i++) {
-          Object.keys(data.allFile.edges).map(edge => {
-            if (filteredList[i].shortName) {
-              // console.log(data.allFile.edges[edge].node.childImageSharp.fluid.originalName.split('.')[0],filteredList[i].shortName.replace("/",""))
-              if (data.allFile.edges[edge].node.childImageSharp.fluid.originalName.split('.')[0] === filteredList[i].shortName.replace("/", "")) {
-
-                filteredList[i].imgUrl = data.allFile.edges[edge].node.childImageSharp.fluid;
+        `}
+        render={(data) => {
+          for (let i = 0; i < filteredList.length; i++) {
+            Object.keys(data.allFile.edges).map(edge => {
+              if (filteredList[i].shortName) {
+                if (data.allFile.edges[edge].node.childImageSharp.fluid.originalName.split('.')[0] === filteredList[i].shortName.replace("/", "")) {
+                  filteredList[i].imgUrl = data.allFile.edges[edge].node.childImageSharp.fluid;
+                }
               }
-            }
+            })
+          }
 
-          })
-        }
-        return (
-          <div class="content-block">
-            <div class="section-full content-inner-2 portfolio  bg-gray" id="portfolio">
-              <div class="container">
-                <div class="site-filters clearfix center  m-b40">
-                  {/* FILTERS */}
-                  <ul class="filters" data-toggle="buttons">
+          return (
+            <div className="content-block">
+              <div className="section-full content-inner-2 portfolio bg-gray" id="portfolio">
+                <div className="container">
+                  <div className="site-filters clearfix center m-b40">
+                    {/* FILTERS */}
+                    <ul className="filters" data-toggle="buttons">
+                      {filters.map(filter => (
+                        <li key={filter} className="btn" onClick={() => setState({ ...state, filterKey: filter })}>
+                          <div className="site-button-secondry button-sm radius-xl">
+                            <span>{filter}</span>
+                          </div>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
 
-                    {/* Object.keys(data.allFile.edges).map(edge=>{
-                const fileName = data.allFile.edges[edge].node.childImageSharp.fluid.originalName.split('.')[0];
-                console.log(data.allFile.edges[edge].node.childImageSharp.fluid)
-                for (let i = 0; i < filteredList.length; i++) {
-                //   // for (let j in filteredList[i]) {
-                      console.log(filteredList[i].shortName)
-                //   // }
-                } */}
-
-                    {filters.map(filter => (
-                      <li class="btn" onClick={() => setState({ ...state, filterKey: filter })}>
-                        <div className="site-button-secondry button-sm radius-xl">
-                          <span>{filter}</span>
-                        </div>
-                      </li >
-                    ))}
-                  </ul>
-                </div>
-
-                {/* FILTERED PORTFOLIO LIST */}
-                <div className="portfolio_area">
-                  <div className="row portfolio-grid">
-                    {filteredList.map(image => (
-                      <div className={collumnCls}>
-                        <div class="dlab-box dlab-gallery-box">
-                          <div class="dlab-media">
-                            <Link to="#">
-                              {/* <img src={image.imgUrl}  alt=""/>  */}
-                              <Img fluid={image.imgUrl} alt="" className="dlab-media radius-sm dlab-img-overlay2" />
-                            </Link>
-                            <div class="overlay-bx">
+                  {/* FILTERED PORTFOLIO LIST */}
+                  <div className="portfolio_area">
+                    <div className="row portfolio-grid">
+                      {filteredList.map(image => (
+                        <div key={image.id} className={collumnCls}>
+                          <div className="dlab-box dlab-gallery-box">
+                            <div className="dlab-media">
+                              <Link to="#">
+                                <Img
+                                  fluid={image.imgUrl}
+                                  alt={`${image.title} - ${image.subTitle} - Bao bì chất lượng cao Duy Nhất`}
+                                  className="dlab-media radius-sm dlab-img-overlay2"
+                                />
+                              </Link>
+                              <div className="overlay-bx"></div>
+                            </div>
+                            <div className="dez-info p-a30 bg-white">
+                              {image.name === "Bao Bì Nhựa" ? (
+                                <VText className="dez-title m-t0">
+                                  <VNText to="/bao-bi-nhua">{image.title}</VNText>
+                                </VText>
+                              ) : null}
+                              {image.name === "Bao Bì Giấy" ? (
+                                <VText className="dez-title m-t0">
+                                  <VNText to="/bao-bi-giay">{image.title}</VNText>
+                                </VText>
+                              ) : null}
+                              {image.name === "Tem, nhãn, và decal" ? (
+                                <VText className="dez-title m-t0">
+                                  <VNText to="/tem-nhan">{image.title}</VNText>
+                                </VText>
+                              ) : null}
+                              {(image.name === "Thùng Carton" || image.name === "Sản phẩm khác") ? (
+                                <VText className="dez-title m-t0">
+                                  <VNText to="/thung-carton">{image.title}</VNText>
+                                </VText>
+                              ) : null}
+                              <p><small>{image.subTitle}</small></p>
                             </div>
                           </div>
-                          <div class="dez-info p-a30 bg-white">
-                            {image.name === "Bao Bì Nhựa" ? <VText class="m-t0"><VNText to="/bao-bi-nhua">{image.title}</VNText></VText> : null}
-                            {image.name === "Bao Bì Giấy" ? <VText class="dez-title m-t0"><VNText to="/bao-bi-giay">{image.title}</VNText></VText> : null}
-                            {image.name === "Tem, nhãn, và decal" ? <VText class="dez-title m-t0"><VNText to="/tem-nhan">{image.title}</VNText></VText> : null}
-                            {(image.name === "Thùng Carton" || image.name === "Sản phẩm khác") ? <VText class="dez-title m-t0"><VNText to="/thung-carton">{image.title}</VNText></VText> : null}
-                            <p><small>{image.subTitle}</small></p>
-                          </div>
                         </div>
-                      </div>
-                    ))}
+                      ))}
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-        )
-      }}
-    />
-
+          )
+        }}
+      />
+    </>
   );
 };
 

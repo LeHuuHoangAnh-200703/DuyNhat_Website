@@ -1,109 +1,115 @@
 import React, { useState } from "react";
-import {Link} from 'gatsby'
-import {VNText,VText} from './VNText';
+import { Link } from 'gatsby'
+import { VNText, VText } from './VNText';
 import { graphql, StaticQuery } from 'gatsby'
 import Img from "gatsby-image";
+import SEO from '../components/SEO';
+
 const images = [
-    {
-      id: 1,
-      name: "Nhãn & Tem Dán",
-      label: true,
-      title:"Label Roll",
-      subTitle:"Nhãn & Tem Dán",
-      imgUrl: require("../images/duynhat/products/IMG_0085.jpg")
-    },
-    {
-      id: 2,
-      name: "Nhãn & Tem Dán",
-      label: true,
-      title:"Stickers",
-      subTitle:"Nhãn & Tem Dán",
-      imgUrl: require("../images/duynhat/products/IMG_0070.jpg")
-    },
-    {
-      id: 3,
-      name: "Nhãn & Tem Dán",
-      label: true,
-      title:"Labels",
-      subTitle:"Nhãn & Tem Dán",
-      imgUrl: require("../images/duynhat/products/IMG_0059.jpg")
-    },
-    {
-      id: 4,
-      name: "Nhãn & Tem Dán",
-      label: true,
-      title:"Labels",
-      subTitle:"Nhãn & Tem Dán",
-      imgUrl: require("../images/duynhat/products/IMG_0066.jpg")
-    },
-    {
-      id: 5,
-      name: "Other Packaging Products",
-      other: true,
-      title:"Nhãn Wrap",
-      subTitle: "Other Packaging Products",
-      imgUrl: require("../images/duynhat/products/nhan_quan_21.jpg")
-    },
-    {
-      id: 6,
-      name: "Other Packaging Products",
-      other: true,
-      title:"Nhãn Wrap",
-      subTitle: "Other Packaging Products",
-      imgUrl: require("../images/duynhat/products/nhan_quan_11.jpg")
-    }
-  
-  ];
+  {
+    id: 1,
+    name: "Tem, nhãn, và decal",
+    label: true,
+    title: "Tem & nhãn",
+    subTitle: "Tem, nhãn, và decal",
+    imgUrl: require("../images/duynhat/products/Label/IMG_0052.jpg")
+  },
+  {
+    id: 2,
+    name: "Tem, nhãn, và decal",
+    label: true,
+    title: "Nhãn",
+    subTitle: "Tem, nhãn, và decal",
+    imgUrl: require("../images/duynhat/products/Label/IMG_0059.jpg")
+  },
+  {
+    id: 3,
+    name: "Tem, nhãn, và decal",
+    label: true,
+    title: "Nhãn",
+    subTitle: "Tem, nhãn, và decal",
+    imgUrl: require("../images/duynhat/products/Label/IMG_0066.jpg")
+  },
+  {
+    id: 4,
+    name: "Tem, nhãn, và decal",
+    label: true,
+    title: "Nhãn dán",
+    subTitle: "Tem, nhãn, và decal",
+    imgUrl: require("../images/duynhat/products/Label/IMG_0070.jpg")
+  },
+  {
+    id: 5,
+    name: "Tem, nhãn, và decal",
+    label: true,
+    title: "Tem & nhãn",
+    subTitle: "Tem, nhãn, và decal",
+    imgUrl: require("../images/duynhat/products/Label/IMG_0084.jpg")
+  },
+  {
+    id: 6,
+    name: "Tem, nhãn, và decal",
+    label: true,
+    title: "Cuộn nhãn",
+    subTitle: "Tem, nhãn, và decal",
+    imgUrl: require("../images/duynhat/products/Label/IMG_0085-scaled.jpg")
+  },
+  {
+    id: 7,
+    name: "Tem, nhãn, và decal",
+    label: true,
+    title: "Cuộn nhãn",
+    subTitle: "Tem, nhãn, và decal",
+    imgUrl: require("../images/duynhat/products/Label/IMG_0089.jpg")
+  },
+  {
+    id: 8,
+    name: "Tem, nhãn, và decal",
+    label: true,
+    title: "Tem & nhãn",
+    subTitle: "Tem, nhãn, và decal",
+    imgUrl: require("../images/duynhat/products/Label/IMG_0094.jpg")
+  },
+  {
+    id: 9,
+    name: "Sản phẩm khác",
+    other: true,
+    title: "Nhãn quấn",
+    subTitle: "Sản phẩm khác",
+    imgUrl: require("../images/duynhat/products/nhan_quan_21.jpg")
+  },
+  {
+    id: 10,
+    name: "Sản phẩm khác",
+    other: true,
+    title: "Nhãn quấn",
+    subTitle: "Sản phẩm khác",
+    imgUrl: require("../images/duynhat/products/nhan_quan_31.jpg")
+  },
+];
 
 images.map(
   (image, index) => {
-    // console.log(image.imgUrl.split('.')[0].split('/')[2].split('-')[0])
     image.shortName = image.imgUrl.split('.')[0].split('/')[2].split('-')[0];
   }
 );
+
 function importAll(r) {
-  const dic ={fileName : r.keys(),staticFile : r.keys().map(r)}
+  const dic = { fileName: r.keys(), staticFile: r.keys().map(r) }
   return dic;
 }
-const _images3 = importAll(require.context("../images/duynhat/products/Label", false, /\.(png|jpe?g|svg)$/));
-const images3 = _images3.staticFile;
 
-
-// const images3 = importAll(require.context("../images/duynhat/products/Label", false, /\.(png|jpe?g|svg)$/));
-images3.map(
-  (image, index) => {
-    images.push({
-      id: images.length+index,
-      name: "Nhãn & Tem Dán",
-      label: true,
-      title: "Labels",
-      subTitle:"Nhãn & Tem Dán",
-      imgUrl: image,
-      shortName: _images3.fileName[index].split('.')[1]
-    })
-
-  }
-);
-images.push({
-  id: images.length,
-  name: "Other Packaging Products",
-  other: true,
-  title: "Nhãn Wrap",
-  subTitle:"Other Packaging Products",
-  imgUrl: require("../images/duynhat/products/nhan_quan_31.jpg"),
-  shortName: 'nhan_quan_31'
-})
-const getFilterSections = (images)=>{
+const getFilterSections = (images) => {
   const filters = ['all']
-  images.map(image=>{
-    if(filters.indexOf(image.name) === -1){
+  images.map(image => {
+    if (filters.indexOf(image.name) === -1) {
       filters.push(image.name)
     }
   })
   return filters
 }
 
-const filterImages = (filterKey,images)=>{
+const filterImages = (filterKey, images) => {
   const list = images.filter(image =>
     filterKey === 'all' ? image : image.name === filterKey
   );
@@ -118,77 +124,87 @@ const PortfolioTem = props => {
   });
 
   const { list, filterKey } = state;
-  
-  const filteredList  = filterImages(filterKey,list)
-  const filters       = getFilterSections(images)
-  const collumnCls = props.col ? props.col :"col-md-3";
+
+  const filteredList = filterImages(filterKey, list)
+  const filters = getFilterSections(images)
+  const collumnCls = props.col ? props.col : "col-md-3";
 
   return (
-    <StaticQuery
-    query={graphql`
-    {
-      allFile(filter: {extension: {regex: "/(jpg)|(jpeg)|(png)/"}, dir: {regex: "duynhat/products/"}}) {
-        edges {
-          node {
-            id
-            childImageSharp {
-              fluid(quality: 100, fit: INSIDE) {
-                originalName
-                ...GatsbyImageSharpFluid_withWebp_tracedSVG
+    <>
+      <SEO
+        title="Tem, Nhãn và Decal Chất Lượng Cao"
+        description="Chuyên sản xuất tem nhãn, nhãn dán, decal, nhãn quấn, cuộn nhãn chất lượng cao. In offset và in kỹ thuật số, đa dạng mẫu mã, giá cạnh tranh tại Việt Nam."
+        keywords="tem nhãn, nhãn dán, decal, nhãn quấn, cuộn nhãn, in tem nhãn, tem decal giá rẻ, nhãn sản phẩm, nhãn mác, sticker"
+      />
+
+      <StaticQuery
+        query={graphql`
+          {
+            allFile(filter: {extension: {regex: "/(jpg)|(jpeg)|(png)/"}, dir: {regex: "duynhat/products/"}}) {
+              edges {
+                node {
+                  id
+                  childImageSharp {
+                    fluid(quality: 100, fit: INSIDE) {
+                      originalName
+                      ...GatsbyImageSharpFluid_withWebp_tracedSVG
+                    }
+                  }
+                }
               }
             }
           }
-            }
+        `}
+        render={(data) => {
+          for (let i = 0; i < filteredList.length; i++) {
+            Object.keys(data.allFile.edges).map(edge => {
+              if (filteredList[i].shortName) {
+                if (data.allFile.edges[edge].node.childImageSharp.fluid.originalName.split('.')[0] === filteredList[i].shortName.replace("/", "")) {
+                  filteredList[i].imgUrl = data.allFile.edges[edge].node.childImageSharp.fluid;
+                }
+              }
+            })
           }
-        }
-    `} 
-    render={(data) => {
-      for (let i = 0; i < filteredList.length; i++) {
-        Object.keys(data.allFile.edges).map(edge=>{
-          if(filteredList[i].shortName){
-            // console.log(data.allFile.edges[edge].node.childImageSharp.fluid.originalName.split('.')[0],filteredList[i].shortName.replace("/",""))
-            if(data.allFile.edges[edge].node.childImageSharp.fluid.originalName.split('.')[0] === filteredList[i].shortName.replace("/","")){
-              
-              filteredList[i].imgUrl = data.allFile.edges[edge].node.childImageSharp.fluid;
-            }
-          }
-          
-        })
-      }
-    return(
-    <div class="content-block">
-      <div class="section-full content-inner-2 portfolio text-uppercase bg-gray" id="portfolio">
-        <div class="container"> 
-           
-            {/* FILTERED PORTFOLIO LIST */}
-            <div className="portfolio_area">
-              <div className="row portfolio-grid">
-                  {filteredList.map(image => (
-                    <div className={collumnCls}>
-                      <div class="dlab-box dlab-gallery-box">
-                        <div class="dlab-media">
-                            <VNText to="/labels">
-                            <Img fluid={image.imgUrl}  alt="" className="dlab-media radius-sm dlab-img-overlay2"/>
 
+          return (
+            <div className="content-block">
+              <div className="section-full content-inner-2 portfolio text-uppercase bg-gray" id="portfolio">
+                <div className="container">
+
+                  {/* FILTERED PORTFOLIO LIST */}
+                  <div className="portfolio_area">
+                    <div className="row portfolio-grid">
+                      {filteredList.map(image => (
+                        <div key={image.id} className={collumnCls}>
+                          <div className="dlab-box dlab-gallery-box">
+                            <div className="dlab-media">
+                              <VNText to="/labels">
+                                <Img
+                                  fluid={image.imgUrl}
+                                  alt={`${image.title} - ${image.subTitle} - Tem nhãn chất lượng cao Duy Nhất`}
+                                  className="dlab-media radius-sm dlab-img-overlay2"
+                                />
                               </VNText>
-                            <div class="overlay-bx">
+                              <div className="overlay-bx"></div>
                             </div>
+                            <div className="dez-info p-a30 bg-white">
+                              <VText className="dez-title m-t0">
+                                <VNText to="#">{image.title}</VNText>
+                              </VText>
+                              <VText><small>{image.subTitle}</small></VText>
+                            </div>
+                          </div>
                         </div>
-                        <div class="dez-info p-a30 bg-white">
-                            <VText class="dez-title m-t0"><VNText to="#">{image.title}</VNText></VText>
-                            <VText><small>{image.subTitle}</small></VText>
-                        </div>
-                      </div>
+                      ))}
                     </div>
-                  ))}
+                  </div>
+                </div>
               </div>
-          </div>
-        </div>
-      </div>
-    </div>         
-    )}}
-    />
-
+            </div>
+          )
+        }}
+      />
+    </>
   );
 };
 

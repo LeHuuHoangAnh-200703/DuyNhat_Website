@@ -7,10 +7,11 @@
 module.exports = {
   siteMetadata: {
     title: 'Bao Bì Duy Nhật | DN Pack',
-    description: 'Bao Bì Duy Nhật chuyên sản xuất in ấn và cung cấp các loại bao bì giấy, bao bì màng ghép phức hợp cao cấp cho nông – lâm nghiệp, thủy – hải sản, hàng tiêu dùng', 
+    description: 'Bao Bì Duy Nhật chuyên sản xuất in ấn và cung cấp các loại bao bì giấy, bao bì màng ghép phức hợp cao cấp cho nông – lâm nghiệp, thủy – hải sản, hàng tiêu dùng',
     baseUrl: '',
+    author: "Duy Nhất Packaging",
     siteUrl: 'https://www.baobiduynhat.com.vn/',
-    keywords: ['Bao Bì','Sản Xuất Bao Bì','Bao Bì Nhựa','Bao Bì Giấy','Tem','Nhãn Dán','Công Ty Bao Bì', 'Bao Bì Duy Nhật','Duy Nhật','DN Pack'],
+    keywords: ['Bao Bì', 'Sản Xuất Bao Bì', 'Bao Bì Nhựa', 'Bao Bì Giấy', 'Tem', 'Nhãn Dán', 'Công Ty Bao Bì', 'Bao Bì Duy Nhật', 'Duy Nhật', 'DN Pack'],
     image: "https://www.baobiduynhat.com.vn/topview.jpg",
   },
   plugins: [
@@ -20,7 +21,7 @@ module.exports = {
         trackingId: "UA-179045573-2"
       },
     },
-    
+
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -55,6 +56,7 @@ module.exports = {
         lang: 'en'
       }
     },
+    `gatsby-plugin-react-helmet`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `@wardpeet/gatsby-image-nextgen`,
@@ -75,7 +77,7 @@ module.exports = {
         background_color: `#dbdbdb`,
         theme_color: `#f7f0eb`,
         display: `standalone`,
-        icon: `src/images/duynhat/logo/DN_logo.png`,icon_options: {
+        icon: `src/images/duynhat/logo/DN_logo.png`, icon_options: {
           purpose: `any maskable`,
         },
         lang: `en`,
@@ -84,18 +86,29 @@ module.exports = {
       },
     },
     `gatsby-plugin-preact`,
-    `gatsby-plugin-sitemap`,
+    {
+      resolve: 'gatsby-plugin-sitemap',
+      options: {
+        exclude: ['/admin/**', '/private/**'],
+      }
+    },
+    {
+      resolve: 'gatsby-plugin-robots-txt',
+      options: {
+        policy: [{ userAgent: '*', allow: '/' }]
+      }
+    },
     {
       resolve: 'gatsby-plugin-preconnect',
       options: {
         domains: ['https://www.baobiduynhat.com.vn', 'https://baobiduynhat.com.vn'],
       },
     },
-    
+
     {
       resolve: 'gatsby-plugin-offline',
       options: {
-         precachePages: [`/`,`/gioi-thieu/`,`/nha-may/`,`/tin-tuc/`,`/san-pham/`,`/lien-he/`]
+        precachePages: [`/`, `/gioi-thieu/`, `/nha-may/`, `/tin-tuc/`, `/san-pham/`, `/lien-he/`]
       }
     },
     // {
