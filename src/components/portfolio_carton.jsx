@@ -36,7 +36,7 @@ const images = [
     title: "Sản phẩm thùng carton",
     subTitle: "Thùng Carton",
     imgUrl: require("../images/duynhat/products/Carton/CT4.jpg")
-  },
+  }
 ];
 
 images.map(
@@ -122,22 +122,32 @@ const PortfolioCarton = props => {
                       {filteredList.map(image => (
                         <div key={image.id} className={collumnCls}>
                           <div className="dlab-box dlab-gallery-box">
-                            <div className="dlab-media dlab-img-effect zoom">
-                              <Link to="/paper">
-                                <Img
-                                  fluid={image.imgUrl}
-                                  alt={`${image.title} - Thùng carton chất lượng cao Duy Nhất`}
-                                  className="dlab-media radius-sm dlab-img-overlay2"
-                                />
-                              </Link>
-                              <div className="overlay-bx"></div>
-                            </div>
-                            <div className="dez-info p-a30 bg-white">
-                              <p className="dez-title m-t0">
-                                <Link to="#">{image.title}</Link>
-                              </p>
-                              <p><small>{image.subTitle}</small></p>
-                            </div>
+                            <Link to={image.detailUrl || "#"} style={{ textDecoration: 'none' }}>
+                              <div className="dlab-media">
+                                <Link to={image.detailUrl || "#"}>
+                                  <Img
+                                    fluid={image.imgUrl}
+                                    alt={`${image.title} - Thùng carton chất lượng cao Duy Nhất`}
+                                    className="dlab-media radius-sm dlab-img-overlay2"
+                                  />
+                                </Link>
+                                <div className="overlay-bx"></div>
+                              </div>
+                              <div className="card-body" style={{
+                                backgroundColor: 'white'
+                              }}>
+                                <p className="text-uppercase mb-2" style={{
+                                  fontSize: '0.75rem',
+                                  color: '#999',
+                                  letterSpacing: '1px'
+                                }}>
+                                  {image.name}
+                                </p>
+                                <h6 className="font-weight-bold mb-0" style={{ color: '#333' }}>
+                                  {image.title}
+                                </h6>
+                              </div>
+                            </Link>
                           </div>
                         </div>
                       ))}

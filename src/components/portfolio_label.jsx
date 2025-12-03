@@ -177,22 +177,32 @@ const PortfolioTem = props => {
                       {filteredList.map(image => (
                         <div key={image.id} className={collumnCls}>
                           <div className="dlab-box dlab-gallery-box">
-                            <div className="dlab-media">
-                              <VNText to="/labels">
-                                <Img
-                                  fluid={image.imgUrl}
-                                  alt={`${image.title} - ${image.subTitle} - Tem nhãn chất lượng cao Duy Nhất`}
-                                  className="dlab-media radius-sm dlab-img-overlay2"
-                                />
-                              </VNText>
-                              <div className="overlay-bx"></div>
-                            </div>
-                            <div className="dez-info p-a30 bg-white">
-                              <VText className="dez-title m-t0">
-                                <VNText to="#">{image.title}</VNText>
-                              </VText>
-                              <VText><small>{image.subTitle}</small></VText>
-                            </div>
+                            <Link to={image.detailUrl || "#"} style={{ textDecoration: 'none' }}>
+                              <div className="dlab-media">
+                                <Link to={image.detailUrl || "#"}>
+                                  <Img
+                                    fluid={image.imgUrl}
+                                    alt={`${image.title} - ${image.subTitle} - Tem nhãn chất lượng cao Duy Nhất`}
+                                    className="dlab-media radius-sm dlab-img-overlay2"
+                                  />
+                                </Link>
+                                <div className="overlay-bx"></div>
+                              </div>
+                              <div className="card-body" style={{
+                                backgroundColor: 'white'
+                              }}>
+                                <p className="text-uppercase mb-2" style={{
+                                  fontSize: '0.75rem',
+                                  color: '#999',
+                                  letterSpacing: '1px'
+                                }}>
+                                  {image.name}
+                                </p>
+                                <h6 className="font-weight-bold mb-0" style={{ color: '#333' }}>
+                                  {image.title}
+                                </h6>
+                              </div>
+                            </Link>
                           </div>
                         </div>
                       ))}

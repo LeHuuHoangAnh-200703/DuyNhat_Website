@@ -106,7 +106,7 @@ const PortfolioPaper = props => {
 
   return (
     <>
-      <SEO 
+      <SEO
         title="Bao Bì Giấy Chất Lượng Cao"
         description="Chuyên sản xuất bao bì giấy, hộp giấy, thùng giấy, túi giấy kraft. Thân thiện môi trường, thiết kế đẹp mắt, in ấn sắc nét, giá cạnh tranh."
         keywords="bao bì giấy, hộp giấy, túi giấy kraft, thùng giấy, bao bì thân thiện môi trường, hộp giấy đựng quà, hộp giấy cao cấp"
@@ -140,34 +140,43 @@ const PortfolioPaper = props => {
               }
             })
           }
-          
+
           return (
             <div className="content-block">
               <div className="section-full content-inner-2 portfolio text-uppercase bg-gray" id="portfolio">
                 <div className="container">
-
                   {/* FILTERED PORTFOLIO LIST */}
                   <div className="portfolio_area">
                     <div className="row portfolio-grid">
                       {filteredList.map(image => (
                         <div key={image.id} className={collumnCls}>
                           <div className="dlab-box dlab-gallery-box">
-                            <div className="dlab-media dlab-img-effect zoom">
-                              <Link to="/paper">
-                                <Img 
-                                  fluid={image.imgUrl} 
-                                  alt={`${image.title} - Bao bì giấy chất lượng cao Duy Nhất`}
-                                  className="dlab-media radius-sm dlab-img-overlay2" 
-                                />
-                              </Link>
-                              <div className="overlay-bx"></div>
-                            </div>
-                            <div className="dez-info p-a30 bg-white">
-                              <p className="dez-title m-t0">
-                                <Link to="#">{image.title}</Link>
-                              </p>
-                              <p><small>{image.subTitle}</small></p>
-                            </div>
+                            <Link to={image.detailUrl || "#"} style={{ textDecoration: 'none' }}>
+                              <div className="dlab-media">
+                                <Link to={image.detailUrl || "#"}>
+                                  <Img
+                                    fluid={image.imgUrl}
+                                    alt={`${image.title} - Bao bì giấy chất lượng cao Duy Nhất`}
+                                    className="dlab-media radius-sm dlab-img-overlay2"
+                                  />
+                                </Link>
+                                <div className="overlay-bx"></div>
+                              </div>
+                              <div className="card-body" style={{
+                                backgroundColor: 'white'
+                              }}>
+                                <p className="text-uppercase mb-2" style={{
+                                  fontSize: '0.75rem',
+                                  color: '#999',
+                                  letterSpacing: '1px'
+                                }}>
+                                  {image.name}
+                                </p>
+                                <h6 className="font-weight-bold mb-0" style={{ color: '#333' }}>
+                                  {image.title}
+                                </h6>
+                              </div>
+                            </Link>
                           </div>
                         </div>
                       ))}

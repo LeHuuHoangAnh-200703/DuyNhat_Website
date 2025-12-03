@@ -11,7 +11,8 @@ const images = [
     plastic: true,
     title: "Túi có khả năng tái chế",
     subTitle: "Bao Bì Nhựa",
-    imgUrl: require("../images/duynhat/products/flexible/TC1.JPG.jpg")
+    imgUrl: require("../images/duynhat/products/flexible/TC1.JPG.jpg"),
+    detailUrl: "/details_Products/tui-nhua-tc"
   },
   {
     id: 2,
@@ -19,7 +20,8 @@ const images = [
     plastic: true,
     title: "Túi 8 Biên",
     subTitle: "Bao Bì Nhựa",
-    imgUrl: require("../images/duynhat/products/flexible/8B.JPG.jpg")
+    imgUrl: require("../images/duynhat/products/flexible/8B.JPG.jpg"),
+    detailUrl: "/details_Products/tui-nhua-8b"
   },
   {
     id: 3,
@@ -27,7 +29,8 @@ const images = [
     plastic: true,
     title: "Túi đứng đáy tròn",
     subTitle: "Bao Bì Nhựa",
-    imgUrl: require("../images/duynhat/products/flexible/DT.JPG.jpg")
+    imgUrl: require("../images/duynhat/products/flexible/DT.JPG.jpg"),
+    detailUrl: "/details_Products/tui-nhua-dt"
   },
   {
     id: 4,
@@ -35,7 +38,8 @@ const images = [
     plastic: true,
     title: "Túi Gắn Vòi Spout",
     subTitle: "Bao Bì Nhựa",
-    imgUrl: require("../images/duynhat/products/flexible/GV.jpg")
+    imgUrl: require("../images/duynhat/products/flexible/GV.jpg"),
+    detailUrl: "/details_Products/tui-nhua-gv"
   },
   {
     id: 5,
@@ -43,7 +47,8 @@ const images = [
     plastic: true,
     title: "Túi Gạo",
     subTitle: "Bao Bì Nhựa",
-    imgUrl: require("../images/duynhat/products/flexible/TG.JPG.jpg")
+    imgUrl: require("../images/duynhat/products/flexible/TG.JPG.jpg"),
+    detailUrl: "/details_Products/tui-nhua-tg"
   },
   {
     id: 6,
@@ -51,7 +56,8 @@ const images = [
     plastic: true,
     title: "Túi 3 Biên",
     subTitle: "Bao Bì Nhựa",
-    imgUrl: require("../images/duynhat/products/flexible/3B.jpg")
+    imgUrl: require("../images/duynhat/products/flexible/3B.jpg"),
+    detailUrl: "/details_Products/tui-nhua-3b"
   },
   {
     id: 7,
@@ -59,7 +65,8 @@ const images = [
     plastic: true,
     title: "Túi nhựa đựng bánh",
     subTitle: "Bao Bì Nhựa",
-    imgUrl: require("../images/duynhat/products/flexible/1_1.jpg")
+    imgUrl: require("../images/duynhat/products/flexible/1_1.jpg"),
+    detailUrl: "/details_Products/tui-nhua-db"
   }
 ];
 
@@ -101,7 +108,7 @@ const PortfolioFlexible = props => {
 
   return (
     <>
-      <SEO 
+      <SEO
         title="Bao Bì Nhựa Chất Lượng Cao"
         description="Chuyên sản xuất bao bì nhựa, túi nhựa, túi đứng, túi 8 biên, túi 3 biên, túi gạo, túi gắn vòi spout. An toàn thực phẩm, đạt chuẩn FDA, đa dạng mẫu mã, giá cạnh tranh."
         keywords="bao bì nhựa, túi nhựa, túi đứng, túi 8 biên, túi 3 biên, túi gạo, túi spout, bao bì thực phẩm, túi nilon, túi zip"
@@ -135,7 +142,7 @@ const PortfolioFlexible = props => {
               }
             })
           }
-          
+
           return (
             <div className="content-block">
               <div className="section-full content-inner-2 portfolio text-uppercase bg-gray" id="portfolio">
@@ -147,22 +154,32 @@ const PortfolioFlexible = props => {
                       {filteredList.map(image => (
                         <div key={image.id} className={collumnCls}>
                           <div className="dlab-box dlab-gallery-box">
-                            <div className="dlab-media">
-                              <Link to="/flexible">
-                                <Img 
-                                  fluid={image.imgUrl} 
-                                  alt={`${image.title} - Bao bì nhựa chất lượng cao Duy Nhất`}
-                                  className="dlab-media radius-sm dlab-img-overlay2"
-                                />
-                              </Link>
-                              <div className="overlay-bx"></div>
-                            </div>
-                            <div className="dez-info p-a30 bg-white">
-                              <p className="dez-title m-t0">
-                                <Link to="#">{image.title}</Link>
-                              </p>
-                              <p><small>{image.subTitle}</small></p>
-                            </div>
+                            <Link to={image.detailUrl || "#"} style={{ textDecoration: 'none' }}>
+                              <div className="dlab-media">
+                                <Link to={image.detailUrl || "#"}>
+                                  <Img
+                                    fluid={image.imgUrl}
+                                    alt={`${image.title} - Bao bì nhựa chất lượng cao Duy Nhất`}
+                                    className="dlab-media radius-sm dlab-img-overlay2"
+                                  />
+                                </Link>
+                                <div className="overlay-bx"></div>
+                              </div>
+                              <div className="card-body" style={{
+                                backgroundColor: 'white'
+                              }}>
+                                <p className="text-uppercase mb-2" style={{
+                                  fontSize: '0.75rem',
+                                  color: '#999',
+                                  letterSpacing: '1px'
+                                }}>
+                                  {image.name}
+                                </p>
+                                <h6 className="font-weight-bold mb-0" style={{ color: '#333' }}>
+                                  {image.title}
+                                </h6>
+                              </div>
+                            </Link>
                           </div>
                         </div>
                       ))}
@@ -174,7 +191,7 @@ const PortfolioFlexible = props => {
           )
         }}
       />
-    </> 
+    </>
   );
 };
 

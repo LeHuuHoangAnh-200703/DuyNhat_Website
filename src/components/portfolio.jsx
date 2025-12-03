@@ -12,7 +12,8 @@ const images = [
     plastic: true,
     title: "Túi có khả năng tái chế",
     subTitle: "Bao Bì Nhựa",
-    imgUrl: require("../images/duynhat/products/flexible/TC1.JPG.jpg")
+    imgUrl: require("../images/duynhat/products/flexible/TC1.JPG.jpg"),
+    detailUrl: "/details_Products/tui-nhua-tc"
   },
   {
     id: 2,
@@ -20,7 +21,8 @@ const images = [
     plastic: true,
     title: "Túi 8 Biên",
     subTitle: "Bao Bì Nhựa",
-    imgUrl: require("../images/duynhat/products/flexible/8B.JPG.jpg")
+    imgUrl: require("../images/duynhat/products/flexible/8B.JPG.jpg"),
+    detailUrl: "/details_Products/tui-nhua-8b"
   },
   {
     id: 3,
@@ -28,7 +30,8 @@ const images = [
     plastic: true,
     title: "Túi đứng đáy tròn",
     subTitle: "Bao Bì Nhựa",
-    imgUrl: require("../images/duynhat/products/flexible/DT.JPG.jpg")
+    imgUrl: require("../images/duynhat/products/flexible/DT.JPG.jpg"),
+    detailUrl: "/details_Products/tui-nhua-dt"
   },
   {
     id: 4,
@@ -36,7 +39,8 @@ const images = [
     plastic: true,
     title: "Túi Gắn Vòi Spout",
     subTitle: "Bao Bì Nhựa",
-    imgUrl: require("../images/duynhat/products/flexible/GV.jpg")
+    imgUrl: require("../images/duynhat/products/flexible/GV.jpg"),
+    detailUrl: "/details_Products/tui-nhua-gv"
   },
   {
     id: 5,
@@ -44,7 +48,8 @@ const images = [
     plastic: true,
     title: "Túi Gạo",
     subTitle: "Bao Bì Nhựa",
-    imgUrl: require("../images/duynhat/products/flexible/TG.JPG.jpg")
+    imgUrl: require("../images/duynhat/products/flexible/TG.JPG.jpg"),
+    detailUrl: "/details_Products/tui-nhua-tg"
   },
   {
     id: 6,
@@ -52,7 +57,8 @@ const images = [
     plastic: true,
     title: "Túi 3 Biên",
     subTitle: "Bao Bì Nhựa",
-    imgUrl: require("../images/duynhat/products/flexible/3B.jpg")
+    imgUrl: require("../images/duynhat/products/flexible/3B.jpg"),
+    detailUrl: "/details_Products/tui-nhua-3b"
   },
   {
     id: 7,
@@ -60,7 +66,8 @@ const images = [
     plastic: true,
     title: "Túi nhựa đựng bánh",
     subTitle: "Bao Bì Nhựa",
-    imgUrl: require("../images/duynhat/products/flexible/1_1.jpg")
+    imgUrl: require("../images/duynhat/products/flexible/1_1.jpg"),
+    detailUrl: "/details_Products/tui-nhua-db"
   },
   {
     id: 8,
@@ -345,39 +352,32 @@ const Portfolio = props => {
                       {filteredList.map(image => (
                         <div key={image.id} className={collumnCls}>
                           <div className="dlab-box dlab-gallery-box">
-                            <div className="dlab-media">
-                              <Link to="#">
-                                <Img
-                                  fluid={image.imgUrl}
-                                  alt={`${image.title} - ${image.subTitle} - Bao bì chất lượng cao Duy Nhất`}
-                                  className="dlab-media radius-sm dlab-img-overlay2"
-                                />
-                              </Link>
-                              <div className="overlay-bx"></div>
-                            </div>
-                            <div className="dez-info p-a30 bg-white">
-                              {image.name === "Bao Bì Nhựa" ? (
-                                <VText className="dez-title m-t0">
-                                  <VNText to="/bao-bi-nhua">{image.title}</VNText>
-                                </VText>
-                              ) : null}
-                              {image.name === "Bao Bì Giấy" ? (
-                                <VText className="dez-title m-t0">
-                                  <VNText to="/bao-bi-giay">{image.title}</VNText>
-                                </VText>
-                              ) : null}
-                              {image.name === "Tem, nhãn, và decal" ? (
-                                <VText className="dez-title m-t0">
-                                  <VNText to="/tem-nhan">{image.title}</VNText>
-                                </VText>
-                              ) : null}
-                              {(image.name === "Thùng Carton" || image.name === "Sản phẩm khác") ? (
-                                <VText className="dez-title m-t0">
-                                  <VNText to="/thung-carton">{image.title}</VNText>
-                                </VText>
-                              ) : null}
-                              <p><small>{image.subTitle}</small></p>
-                            </div>
+                            <Link to={image.detailUrl || "#"} style={{ textDecoration: 'none' }}>
+                              <div className="dlab-media">
+                                <Link to={image.detailUrl || "#"}>
+                                  <Img
+                                    fluid={image.imgUrl}
+                                    alt={`${image.title} - ${image.subTitle} - Bao bì chất lượng cao Duy Nhất`}
+                                    className="dlab-media radius-sm dlab-img-overlay2"
+                                  />
+                                </Link>
+                                <div className="overlay-bx"></div>
+                              </div>
+                              <div className="card-body" style={{
+                                backgroundColor: 'white'
+                              }}>
+                                <p className="text-uppercase mb-2" style={{
+                                  fontSize: '0.75rem',
+                                  color: '#999',
+                                  letterSpacing: '1px'
+                                }}>
+                                  {image.name}
+                                </p>
+                                <h6 className="font-weight-bold mb-0" style={{ color: '#333' }}>
+                                  {image.title}
+                                </h6>
+                              </div>
+                            </Link>
                           </div>
                         </div>
                       ))}
@@ -385,7 +385,7 @@ const Portfolio = props => {
                   </div>
                 </div>
               </div>
-            </div>
+            </div >
           )
         }}
       />
