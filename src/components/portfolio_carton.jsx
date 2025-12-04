@@ -11,7 +11,8 @@ const images = [
     carton: true,
     title: "Sản phẩm thùng carton",
     subTitle: "Thùng Carton",
-    imgUrl: require("../images/duynhat/products/Carton/CT1.jpg")
+    imgUrl: require("../images/duynhat/products/Carton/CT1.jpg"),
+    detailUrl: "/details_Products/thung-carton-1"
   },
   {
     id: 2,
@@ -19,7 +20,8 @@ const images = [
     carton: true,
     title: "Sản phẩm thùng carton",
     subTitle: "Thùng Carton",
-    imgUrl: require("../images/duynhat/products/Carton/CT2.jpg")
+    imgUrl: require("../images/duynhat/products/Carton/CT2.jpg"),
+    detailUrl: "/details_Products/thung-carton-2"
   },
   {
     id: 3,
@@ -27,7 +29,8 @@ const images = [
     carton: true,
     title: "Sản phẩm thùng carton",
     subTitle: "Thùng Carton",
-    imgUrl: require("../images/duynhat/products/Carton/CT3.jpg")
+    imgUrl: require("../images/duynhat/products/Carton/CT3.jpg"),
+    detailUrl: "/details_Products/thung-carton-3"
   },
   {
     id: 4,
@@ -35,7 +38,8 @@ const images = [
     carton: true,
     title: "Sản phẩm thùng carton",
     subTitle: "Thùng Carton",
-    imgUrl: require("../images/duynhat/products/Carton/CT4.jpg")
+    imgUrl: require("../images/duynhat/products/Carton/CT4.jpg"),
+    detailUrl: "/details_Products/thung-carton-4"
   }
 ];
 

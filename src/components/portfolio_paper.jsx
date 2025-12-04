@@ -11,7 +11,8 @@ const images = [
     paper: true,
     title: "Hộp giấy",
     subTitle: "Bao Bì Giấy",
-    imgUrl: require("../images/duynhat/products/Paper/HG1.jpg")
+    imgUrl: require("../images/duynhat/products/Paper/HG1.jpg"),
+    detailUrl: "/details_Products/hop-giay-1"
   },
   {
     id: 2,
@@ -19,7 +20,8 @@ const images = [
     paper: true,
     title: "Hộp giấy",
     subTitle: "Bao Bì Giấy",
-    imgUrl: require("../images/duynhat/products/Paper/HG2.jpg")
+    imgUrl: require("../images/duynhat/products/Paper/HG2.jpg"),
+    detailUrl: "/details_Products/hop-giay-2"
   },
   {
     id: 3,
@@ -27,7 +29,8 @@ const images = [
     paper: true,
     title: "Hộp giấy",
     subTitle: "Bao Bì Giấy",
-    imgUrl: require("../images/duynhat/products/Paper/HG3.jpg")
+    imgUrl: require("../images/duynhat/products/Paper/HG3.jpg"),
+    detailUrl: "/details_Products/hop-giay-3"
   },
   {
     id: 4,
@@ -35,7 +38,8 @@ const images = [
     paper: true,
     title: "Hộp giấy",
     subTitle: "Bao Bì Giấy",
-    imgUrl: require("../images/duynhat/products/Paper/HG4.jpg")
+    imgUrl: require("../images/duynhat/products/Paper/HG4.jpg"),
+    detailUrl: "/details_Products/hop-giay-4"
   },
   {
     id: 5,
@@ -43,7 +47,8 @@ const images = [
     paper: true,
     title: "Hộp giấy",
     subTitle: "Bao Bì Giấy",
-    imgUrl: require("../images/duynhat/products/Paper/HG5.jpg")
+    imgUrl: require("../images/duynhat/products/Paper/HG5.jpg"),
+    detailUrl: "/details_Products/hop-giay-5"
   },
   {
     id: 6,
@@ -51,7 +56,8 @@ const images = [
     paper: true,
     title: "Hộp giấy",
     subTitle: "Bao Bì Giấy",
-    imgUrl: require("../images/duynhat/products/Paper/HG6.jpg")
+    imgUrl: require("../images/duynhat/products/Paper/HG6.jpg"),
+    detailUrl: "/details_Products/hop-giay-6"
   },
   {
     id: 7,
@@ -59,8 +65,9 @@ const images = [
     paper: true,
     title: "Hộp giấy",
     subTitle: "Bao Bì Giấy",
-    imgUrl: require("../images/duynhat/products/Paper/HG7.jpg")
-  }
+    imgUrl: require("../images/duynhat/products/Paper/HG7.jpg"),
+    detailUrl: "/details_Products/hop-giay-7"
+  },
 ];
 
 images.map(

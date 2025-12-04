@@ -75,7 +75,8 @@ const images = [
     paper: true,
     title: "Hộp giấy",
     subTitle: "Bao Bì Giấy",
-    imgUrl: require("../images/duynhat/products/Paper/HG1.jpg")
+    imgUrl: require("../images/duynhat/products/Paper/HG1.jpg"),
+    detailUrl: "/details_Products/hop-giay-1"
   },
   {
     id: 9,
@@ -83,7 +84,8 @@ const images = [
     paper: true,
     title: "Hộp giấy",
     subTitle: "Bao Bì Giấy",
-    imgUrl: require("../images/duynhat/products/Paper/HG2.jpg")
+    imgUrl: require("../images/duynhat/products/Paper/HG2.jpg"),
+    detailUrl: "/details_Products/hop-giay-2"
   },
   {
     id: 10,
@@ -91,7 +93,8 @@ const images = [
     paper: true,
     title: "Hộp giấy",
     subTitle: "Bao Bì Giấy",
-    imgUrl: require("../images/duynhat/products/Paper/HG3.jpg")
+    imgUrl: require("../images/duynhat/products/Paper/HG3.jpg"),
+    detailUrl: "/details_Products/hop-giay-3"
   },
   {
     id: 11,
@@ -99,7 +102,8 @@ const images = [
     paper: true,
     title: "Hộp giấy",
     subTitle: "Bao Bì Giấy",
-    imgUrl: require("../images/duynhat/products/Paper/HG4.jpg")
+    imgUrl: require("../images/duynhat/products/Paper/HG4.jpg"),
+    detailUrl: "/details_Products/hop-giay-4"
   },
   {
     id: 12,
@@ -107,7 +111,8 @@ const images = [
     paper: true,
     title: "Hộp giấy",
     subTitle: "Bao Bì Giấy",
-    imgUrl: require("../images/duynhat/products/Paper/HG5.jpg")
+    imgUrl: require("../images/duynhat/products/Paper/HG5.jpg"),
+    detailUrl: "/details_Products/hop-giay-5"
   },
   {
     id: 13,
@@ -115,7 +120,8 @@ const images = [
     paper: true,
     title: "Hộp giấy",
     subTitle: "Bao Bì Giấy",
-    imgUrl: require("../images/duynhat/products/Paper/HG6.jpg")
+    imgUrl: require("../images/duynhat/products/Paper/HG6.jpg"),
+    detailUrl: "/details_Products/hop-giay-6"
   },
   {
     id: 14,
@@ -123,7 +129,8 @@ const images = [
     paper: true,
     title: "Hộp giấy",
     subTitle: "Bao Bì Giấy",
-    imgUrl: require("../images/duynhat/products/Paper/HG7.jpg")
+    imgUrl: require("../images/duynhat/products/Paper/HG7.jpg"),
+    detailUrl: "/details_Products/hop-giay-7"
   },
   {
     id: 15,
@@ -131,7 +138,8 @@ const images = [
     label: true,
     title: "Tem & nhãn",
     subTitle: "Tem, nhãn, và decal",
-    imgUrl: require("../images/duynhat/products/Label/IMG_0052.jpg")
+    imgUrl: require("../images/duynhat/products/Label/IMG_0052.jpg"),
+    detailUrl: "/details_Products/tem-nhan-1"
   },
   {
     id: 16,
@@ -139,7 +147,8 @@ const images = [
     label: true,
     title: "Nhãn",
     subTitle: "Tem, nhãn, và decal",
-    imgUrl: require("../images/duynhat/products/Label/IMG_0059.jpg")
+    imgUrl: require("../images/duynhat/products/Label/IMG_0059.jpg"),
+    detailUrl: "/details_Products/tem-nhan-2"
   },
   {
     id: 17,
@@ -147,7 +156,8 @@ const images = [
     label: true,
     title: "Nhãn",
     subTitle: "Tem, nhãn, và decal",
-    imgUrl: require("../images/duynhat/products/Label/IMG_0066.jpg")
+    imgUrl: require("../images/duynhat/products/Label/IMG_0066.jpg"),
+    detailUrl: "/details_Products/tem-nhan-3"
   },
   {
     id: 18,
@@ -155,7 +165,8 @@ const images = [
     label: true,
     title: "Nhãn dán",
     subTitle: "Tem, nhãn, và decal",
-    imgUrl: require("../images/duynhat/products/Label/IMG_0070.jpg")
+    imgUrl: require("../images/duynhat/products/Label/IMG_0070.jpg"),
+    detailUrl: "/details_Products/tem-nhan-4"
   },
   {
     id: 19,
@@ -163,7 +174,8 @@ const images = [
     label: true,
     title: "Tem & nhãn",
     subTitle: "Tem, nhãn, và decal",
-    imgUrl: require("../images/duynhat/products/Label/IMG_0084.jpg")
+    imgUrl: require("../images/duynhat/products/Label/IMG_0084.jpg"),
+    detailUrl: "/details_Products/tem-nhan-5"
   },
   {
     id: 20,
@@ -171,7 +183,8 @@ const images = [
     label: true,
     title: "Cuộn nhãn",
     subTitle: "Tem, nhãn, và decal",
-    imgUrl: require("../images/duynhat/products/Label/IMG_0085-scaled.jpg")
+    imgUrl: require("../images/duynhat/products/Label/IMG_0085-scaled.jpg"),
+    detailUrl: "/details_Products/tem-nhan-6"
   },
   {
     id: 21,
@@ -179,7 +192,8 @@ const images = [
     label: true,
     title: "Cuộn nhãn",
     subTitle: "Tem, nhãn, và decal",
-    imgUrl: require("../images/duynhat/products/Label/IMG_0089.jpg")
+    imgUrl: require("../images/duynhat/products/Label/IMG_0089.jpg"),
+    detailUrl: "/details_Products/tem-nhan-7"
   },
   {
     id: 22,
@@ -187,7 +201,8 @@ const images = [
     label: true,
     title: "Tem & nhãn",
     subTitle: "Tem, nhãn, và decal",
-    imgUrl: require("../images/duynhat/products/Label/IMG_0094.jpg")
+    imgUrl: require("../images/duynhat/products/Label/IMG_0094.jpg"),
+    detailUrl: "/details_Products/tem-nhan-8"
   },
   {
     id: 23,
@@ -195,7 +210,8 @@ const images = [
     carton: true,
     title: "Sản phẩm thùng carton",
     subTitle: "Thùng Carton",
-    imgUrl: require("../images/duynhat/products/Carton/CT1.jpg")
+    imgUrl: require("../images/duynhat/products/Carton/CT1.jpg"),
+    detailUrl: "/details_Products/thung-carton-1"
   },
   {
     id: 24,
@@ -203,7 +219,8 @@ const images = [
     carton: true,
     title: "Sản phẩm thùng carton",
     subTitle: "Thùng Carton",
-    imgUrl: require("../images/duynhat/products/Carton/CT2.jpg")
+    imgUrl: require("../images/duynhat/products/Carton/CT2.jpg"),
+    detailUrl: "/details_Products/thung-carton-2"
   },
   {
     id: 25,
@@ -211,7 +228,8 @@ const images = [
     carton: true,
     title: "Sản phẩm thùng carton",
     subTitle: "Thùng Carton",
-    imgUrl: require("../images/duynhat/products/Carton/CT3.jpg")
+    imgUrl: require("../images/duynhat/products/Carton/CT3.jpg"),
+    detailUrl: "/details_Products/thung-carton-3"
   },
   {
     id: 26,
@@ -219,7 +237,8 @@ const images = [
     carton: true,
     title: "Sản phẩm thùng carton",
     subTitle: "Thùng Carton",
-    imgUrl: require("../images/duynhat/products/Carton/CT4.jpg")
+    imgUrl: require("../images/duynhat/products/Carton/CT4.jpg"),
+    detailUrl: "/details_Products/thung-carton-4"
   },
   {
     id: 27,
@@ -227,7 +246,8 @@ const images = [
     other: true,
     title: "Nhãn quấn",
     subTitle: "Sản phẩm khác",
-    imgUrl: require("../images/duynhat/products/nhan_quan_21.jpg")
+    imgUrl: require("../images/duynhat/products/nhan_quan_21.jpg"),
+    detailUrl: "/details_Products/sp-khac-2"
   },
   {
     id: 28,
@@ -235,7 +255,8 @@ const images = [
     other: true,
     title: "Nhãn quấn",
     subTitle: "Sản phẩm khác",
-    imgUrl: require("../images/duynhat/products/nhan_quan_31.jpg")
+    imgUrl: require("../images/duynhat/products/nhan_quan_31.jpg"),
+    detailUrl: "/details_Products/sp-khac-3"
   },
 ];
 

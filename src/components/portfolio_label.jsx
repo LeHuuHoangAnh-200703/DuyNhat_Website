@@ -12,7 +12,8 @@ const images = [
     label: true,
     title: "Tem & nhãn",
     subTitle: "Tem, nhãn, và decal",
-    imgUrl: require("../images/duynhat/products/Label/IMG_0052.jpg")
+    imgUrl: require("../images/duynhat/products/Label/IMG_0052.jpg"),
+    detailUrl: "/details_Products/tem-nhan-1"
   },
   {
     id: 2,
@@ -20,7 +21,8 @@ const images = [
     label: true,
     title: "Nhãn",
     subTitle: "Tem, nhãn, và decal",
-    imgUrl: require("../images/duynhat/products/Label/IMG_0059.jpg")
+    imgUrl: require("../images/duynhat/products/Label/IMG_0059.jpg"),
+    detailUrl: "/details_Products/tem-nhan-2"
   },
   {
     id: 3,
@@ -28,7 +30,8 @@ const images = [
     label: true,
     title: "Nhãn",
     subTitle: "Tem, nhãn, và decal",
-    imgUrl: require("../images/duynhat/products/Label/IMG_0066.jpg")
+    imgUrl: require("../images/duynhat/products/Label/IMG_0066.jpg"),
+    detailUrl: "/details_Products/tem-nhan-3"
   },
   {
     id: 4,
@@ -36,7 +39,8 @@ const images = [
     label: true,
     title: "Nhãn dán",
     subTitle: "Tem, nhãn, và decal",
-    imgUrl: require("../images/duynhat/products/Label/IMG_0070.jpg")
+    imgUrl: require("../images/duynhat/products/Label/IMG_0070.jpg"),
+    detailUrl: "/details_Products/tem-nhan-4"
   },
   {
     id: 5,
@@ -44,7 +48,8 @@ const images = [
     label: true,
     title: "Tem & nhãn",
     subTitle: "Tem, nhãn, và decal",
-    imgUrl: require("../images/duynhat/products/Label/IMG_0084.jpg")
+    imgUrl: require("../images/duynhat/products/Label/IMG_0084.jpg"),
+    detailUrl: "/details_Products/tem-nhan-5"
   },
   {
     id: 6,
@@ -52,7 +57,8 @@ const images = [
     label: true,
     title: "Cuộn nhãn",
     subTitle: "Tem, nhãn, và decal",
-    imgUrl: require("../images/duynhat/products/Label/IMG_0085-scaled.jpg")
+    imgUrl: require("../images/duynhat/products/Label/IMG_0085-scaled.jpg"),
+    detailUrl: "/details_Products/tem-nhan-6"
   },
   {
     id: 7,
@@ -60,7 +66,8 @@ const images = [
     label: true,
     title: "Cuộn nhãn",
     subTitle: "Tem, nhãn, và decal",
-    imgUrl: require("../images/duynhat/products/Label/IMG_0089.jpg")
+    imgUrl: require("../images/duynhat/products/Label/IMG_0089.jpg"),
+    detailUrl: "/details_Products/tem-nhan-7"
   },
   {
     id: 8,
@@ -68,15 +75,17 @@ const images = [
     label: true,
     title: "Tem & nhãn",
     subTitle: "Tem, nhãn, và decal",
-    imgUrl: require("../images/duynhat/products/Label/IMG_0094.jpg")
-  },
+    imgUrl: require("../images/duynhat/products/Label/IMG_0094.jpg"),
+    detailUrl: "/details_Products/tem-nhan-8"
+  },,
   {
     id: 9,
     name: "Sản phẩm khác",
     other: true,
     title: "Nhãn quấn",
     subTitle: "Sản phẩm khác",
-    imgUrl: require("../images/duynhat/products/nhan_quan_21.jpg")
+    imgUrl: require("../images/duynhat/products/nhan_quan_21.jpg"),
+    detailUrl: "/details_Products/sp-khac-2"
   },
   {
     id: 10,
@@ -84,7 +93,17 @@ const images = [
     other: true,
     title: "Nhãn quấn",
     subTitle: "Sản phẩm khác",
-    imgUrl: require("../images/duynhat/products/nhan_quan_31.jpg")
+    imgUrl: require("../images/duynhat/products/nhan_quan_31.jpg"),
+    detailUrl: "/details_Products/sp-khac-3"
+  },
+  {
+    id: 11,
+    name: "Sản phẩm khác",
+    other: true,
+    title: "Nhãn quấn",
+    subTitle: "Sản phẩm khác",
+    imgUrl: require("../images/duynhat/products/nhan_quan_11.jpg"),
+    detailUrl: "/details_Products/sp-khac-1"
   },
 ];
 
