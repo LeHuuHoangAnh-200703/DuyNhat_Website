@@ -6,6 +6,7 @@ import { graphql, StaticQuery } from 'gatsby'
 import BackgroundImage from 'gatsby-background-image'
 import Img from "gatsby-image";
 import { VText } from '../../components/VNText'
+import SEO from '../../components/SEO'; 
 
 class PortfolioDetails extends Component {
     constructor(props) {
@@ -20,6 +21,12 @@ class PortfolioDetails extends Component {
 
         return (
             <>
+                <SEO 
+                    title="Nhãn - Chi tiết sản phẩm"
+                    description="Nhãn dán, nhãn mác chất lượng cao, in offset và in kỹ thuật số. Đa dạng chất liệu, kích thước, giá cạnh tranh từ Duy Nhật."
+                    keywords="nhãn, nhãn dán, nhãn mác, sticker, in nhãn, nhãn sản phẩm, nhãn decal"
+                />
+                
                 <Header />
                 <StaticQuery
                     query={graphql`
@@ -134,7 +141,7 @@ class PortfolioDetails extends Component {
                                                     <div className="rounded overflow-hidden shadow mb-3" style={{ backgroundColor: '#e8e8e8' }}>
                                                         <Img
                                                             fluid={productImages[selectedImage]}
-                                                            alt="Nhãn"
+                                                            alt="Nhãn dán chất lượng cao - Duy Nhật"
                                                             className="img-cover"
                                                             style={{ minHeight: '500px' }}
                                                         />
@@ -152,12 +159,12 @@ class PortfolioDetails extends Component {
                                                         }}>
                                                             THÔNG TIN CHI TIẾT
                                                         </p>
-                                                        <p className="font-weight-bold mb-3" style={{
+                                                        <h2 className="font-weight-bold mb-3" style={{
                                                             color: '#F22D4E',
                                                             fontSize: '2rem'
                                                         }}>
                                                             Nhãn
-                                                        </p>
+                                                        </h2>
                                                         <p className="mb-3" style={{ color: '#666' }}>
                                                             Chưa có nội dung
                                                         </p>
@@ -215,6 +222,7 @@ class PortfolioDetails extends Component {
                                         </div>
                                     </div>
                                 </div>
+                                
                                 <div className="section-full content-inner bg-gray py-5">
                                     <div className="container">
                                         <div className="text-center mb-5">
@@ -236,7 +244,7 @@ class PortfolioDetails extends Component {
                                                             <div style={{ backgroundColor: '#e8e8e8', height: '250px' }}>
                                                                 <Img
                                                                     fluid={product.imageFluid}
-                                                                    alt={product.name}
+                                                                    alt={`${product.name} - ${product.category} - Duy Nhật`}
                                                                     className="img-cover"
                                                                     style={{ height: '100%' }}
                                                                 />

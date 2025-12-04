@@ -37,7 +37,7 @@ const images = [
     id: 4,
     name: "Bao Bì Nhựa",
     plastic: true,
-    title: "Túi Gắn Vòi Spout",
+    title: "Túi Gắn Vòi",
     subTitle: "Bao Bì Nhựa",
     imgUrl: require("../images/duynhat/products/flexible/GV.jpg"),
     detailUrl: "/details_Products/tui-nhua-gv"
