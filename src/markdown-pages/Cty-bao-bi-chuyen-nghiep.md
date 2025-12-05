@@ -1,33 +1,97 @@
 ---
 slug: "/blog/Cong-Ty-Thiet-Ke-Bao-Bi-Chuyen-Nghiep-Bao-Bi-Duy-Nhat"
 date: "2022-06-14"
-title: "Công Ty Thiết Kế Bao Bì Chuyên Nghiệp Bao Bì Duy Nhật"
+title: "Công Ty Thiết Kế Bao Bì Chuyên Nghiệp - Bao Bì Duy Nhật"
 author: "Khang Truong"
-tags: [Sản phẩm,Nhà máy,Bao bì giấy,Bao bì nhựa, Liên hệ]
-urls: [san-pham,nha-may,bao-bi-giay,bao-bi-nhua,lien-he]
+tags: [Sản phẩm, Nhà máy, Bao bì giấy, Bao bì nhựa, Tem và nhãn, Thùng carton, Liên hệ]
+urls: [san-pham, nha-may, bao-bi-giay, bao-bi-nhua, tem-nhan, thung-carton, lien-he]
 featuredImage: ./images/bao-bi-chuyen-nghiep/DN1.jpg
-summary: Với đội ngũ chuyên gia nhiều kinh nghiệm, Bao Bì Duy Nhật vẫn luôn tập trung vào những phát triển hơn nữa trong việc nâng cao năng lực của công ty. Kể từ khi thành lập vào năm 2004, doanh nghiệp đã không ngừng phát triển và hiện sử dụng hơn 600 nhân viên, tất cả đều chuyên tâm vào việc tạo ra sản phẩm theo tiêu chuẩn cao nhất. Với hơn 18 năm xuất khẩu ra thị trường quốc tế, Bao Bì Duy Nhật cung cấp bao bì chất lượng bắt mắt cho khách hàng tại nhiều quốc gia. Ngoài ra công ty có thể sản xuất các loại bao bì linh hoạt theo yêu cầu của khách hàng. Phạm vi kinh doanh luôn được mở rộng và liên tục đầu tư vào công nghệ hiện đại.
+summary: Với 18+ năm kinh nghiệm và hơn 600 nhân viên, Bao Bì Duy Nhật là đối tác tin cậy trong sản xuất bao bì chất lượng quốc tế. Nhà máy hiện đại, công nghệ tiên tiến và quy trình kiểm soát chất lượng nghiêm ngặt theo chuẩn ISO 22000:2018 và BRC.
 ---
-Với đội ngũ chuyên gia nhiều kinh nghiệm, Bao Bì Duy Nhật vẫn luôn tập trung vào những phát triển hơn nữa trong việc nâng cao năng lực của công ty. Kể từ khi thành lập vào năm 2004, doanh nghiệp đã không ngừng phát triển và hiện sử dụng hơn 600 nhân viên, tất cả đều chuyên tâm vào việc tạo ra sản phẩm theo tiêu chuẩn cao nhất. Với hơn 18 năm xuất khẩu ra thị trường quốc tế, Bao Bì Duy Nhật cung cấp bao bì chất lượng bắt mắt cho khách hàng tại nhiều quốc gia. Ngoài ra công ty có thể sản xuất các loại bao bì linh hoạt theo yêu cầu của khách hàng. Phạm vi kinh doanh luôn được mở rộng và liên tục đầu tư vào công nghệ hiện đại.
+
+Kể từ khi thành lập năm **2004**, Bao Bì Duy Nhật đã không ngừng phát triển với **hơn 600 nhân viên** chuyên tâm vào việc tạo ra sản phẩm theo tiêu chuẩn cao nhất. Với **18+ năm kinh nghiệm xuất khẩu** ra thị trường quốc tế, chúng tôi cung cấp bao bì chất lượng cao cho khách hàng tại nhiều quốc gia, đồng thời liên tục đầu tư vào công nghệ hiện đại để mở rộng phạm vi kinh doanh.
 
 ![Nhà máy hiện đại của DN® Pack](./images/bao-bi-chuyen-nghiep/DN2.jpg "Nhà máy hiện đại của DN® Pack")
 
-**Làm những điều tốt nhất cho thương hiệu của bạn**
+### Quy trình sản xuất chuyên nghiệp
 
-Đội ngũ Bao Bì Duy Nhật luôn cố gắng hoàn thiện trong quá trình sản xuất để đảm bảo khách hàng có được giải pháp đóng gói hoàn hảo mà thương hiệu của họ xứng đáng có được. Cơ sở sản xuất với các quy trình đầy đủ bao gồm bộ phận tiền in ấn, nơi các nhóm đảm bảo chất lượng sẽ tiến hành kiểm tra và điều chỉnh nếu cần thiết. Các bản in ấn đều được chuẩn bị bởi đội ngũ thiết kế có tay nghề cao của Bao Bì Duy Nhật sử dụng công nghệ phần mềm hiện đại.
+**Tiền in ấn - Kiểm soát chất lượng nghiêm ngặt**
 
-Các tấm in từ các nhà sản xuất hàng đầu thế giới được sử dụng để cung cấp ứng dụng tác phẩm nghệ thuật cao cấp vào bao bì trong quá trình in. In gam màu mở rộng được sử dụng cùng với độ phân giải 175 lpi cải thiện độ tương phản và dải âm, tiết kiệm mực tiêu thụ và cung cấp giải pháp hiệu quả về chi phí, trong khi vẫn tạo ra bao bì sống động mang lại ấn tượng đầu tiên tuyệt vời trong cửa hàng. In Flexography dễ tiếp cận hơn, linh hoạt và dễ thích ứng hơn để cung cấp các thiết kế in ở tiêu chuẩn chất lượng cao nhất. Trong quá trình in, máy ảnh kiểm soát chất lượng, kiểm soát độ nhớt tự động và công thức mực tự động được sử dụng. Đội ngũ máy ép in sản xuất với số lượng khác nhau để các lần in lặp lại được tiêu chuẩn hóa từ nhỏ nhất đến lớn nhất đều có sẵn với chất lượng không thể chê vào đâu được.
+Đội ngũ thiết kế tay nghề cao sử dụng phần mềm hiện đại để chuẩn bị bản in ấn. Trước khi in, các nhóm đảm bảo chất lượng tiến hành kiểm tra và điều chỉnh kỹ lưỡng để đảm bảo sản phẩm hoàn hảo.
 
-Công Ty Bao Bì Duy Nhật cung cấp cho khách hàng giải pháp màng phức hợp từ nhiều vật liệu màng khác nhau như OPP, PET, PE, PA, EVOH, .... Trên cùng của sự kết hợp lớp phim này, chúng góp phần mang lại các tính năng cải thiện độ trong, độ bóng, mờ, chống thẩm thấu oxy, hơi nước,… đó là các đặc tính cơ học và hóa học mà khách hàng có thể lựa chọn, nhằm đảm bảo chức năng và khả năng bảo vệ của sản phẩm cũng như nâng cao vẻ ngoài, làm cho nổi bật sản phẩm.
+**Công nghệ in ấn tiên tiến**
 
-Bao Bì Duy Nhật có nhiều loại thiết bị chuyển đổi từ các nhà sản xuất hàng đầu thế giới, cung cấp nhiều lựa chọn về hình dạng túi với các tùy chọn bổ sung cho con dấu, tay cầm, hình dạng cơ sở và các chi tiết cụ thể của sản phẩm như vết rách, dụng cụ mở zip, tay cầm, khe euro, micro và thủng vĩ mô và dập nổi.
+Tấm in chất lượng cao: Sử dụng tấm in từ các nhà sản xuất hàng đầu thế giới để tạo ra tác phẩm nghệ thuật cao cấp trên bao bì.
+
+In Flexography hiện đại: 
+- Gam màu mở rộng với độ phân giải 175 lpi
+- Cải thiện độ tương phản và dải âm
+- Tiết kiệm mực tiêu thụ, hiệu quả về chi phí
+- Tạo ra bao bì sống động, ấn tượng
+
+Hệ thống kiểm soát tự động:
+- Máy ảnh kiểm soát chất lượng trong quá trình in
+- Kiểm soát độ nhớt tự động
+- Công thức mực tự động đảm bảo màu sắc đồng nhất
+
+Đội ngũ máy ép in đa dạng cho phép sản xuất từ đơn hàng nhỏ đến lớn với chất lượng nhất quán, đạt tiêu chuẩn cao nhất.
+
+**Màng phức hợp đa năng**
+
+Chúng tôi cung cấp giải pháp màng phức hợp từ nhiều vật liệu: **OPP, PET, PE, PA, EVOH**. Sự kết hợp các lớp màng mang lại:
+
+- Độ trong suốt và độ bóng cao
+- Chống thấm oxy và hơi nước
+- Các tính năng cơ học và hóa học tùy chỉnh
+- Bảo vệ sản phẩm tối ưu
+- Vẻ ngoài bắt mắt, nổi bật
+
+**Thiết bị chuyển đổi đa dạng**
+
+Với thiết bị từ các nhà sản xuất hàng đầu thế giới, chúng tôi cung cấp nhiều lựa chọn:
+
+- **Hình dạng túi**: Đa dạng kiểu dáng theo yêu cầu
+- **Tùy chọn bổ sung**: Con dấu, tay cầm, hình dạng đáy
+- **Chi tiết sản phẩm**: Vết rách, khóa zip, khe euro, lỗ thủng vĩ mô/vi mô, dập nổi
 
 ![Cơ sở sản xuất đạt chuẩn quốc tế của DN® Pack](./images/bao-bi-chuyen-nghiep/DN3.JPG "Cơ sở sản xuất đạt chuẩn quốc tế của DN® Pack")
 
-**Đảm bảo chất lượng**
+### Cam kết chất lượng quốc tế
 
-Thông qua kinh nghiệm và sử dụng các kỹ thuật và công nghệ tốt nhất, Bao Bì Duy Nhật đảm bảo mang lại giá trị lớn nhất cho khách hàng. Sự quan tâm đến chi tiết và tiêu chuẩn chất lượng là chìa khóa để làm hài lòng khách hàng, tuân thủ các tiêu chuẩn ISO 22000:2018. Bao Bì Duy Nhật cũng nắm giữ chứng nhận an toàn thực phẩm BRC, một tiêu chuẩn được quốc tế công nhận về chất lượng và an toàn thực phẩm.
+**Chứng nhận uy tín**
 
-Sản phẩm được giao đến tay khách hàng là bao bì được hoàn thiện chắc chắn, điều này sẽ duy trì độ tươi của sản phẩm và kéo dài thời hạn sử dụng, đồng thời tạo nên sự bắt mắt và bảo vệ tính toàn vẹn của sản phẩm. Những điều trên, kết hợp với giá cả cạnh tranh cao, tạo nên giá trị tuyệt vời cung cấp đến khách hàng. 
+Bao Bì Duy Nhật tự hào đạt các chứng nhận:
 
-Nếu bạn quan tâm đến việc có được giá tốt nhất cho sản phẩm bao bì của mình, vui lòng liên hệ với Bao Bì Duy Nhật qua **+84 2993 612 772** hoặc **sales@baobiduynhat.com.vn** để được tư vấn miễn phí, chúng tôi sẽ luôn tăng thêm giá trị cho nhiều sản phẩm của bạn. Ngoài ra, để biết thêm thông tin chung, vui lòng truy cập: https://www.baobiduynhat.com.vn
+- **ISO 22000:2018**: Tiêu chuẩn quản lý an toàn thực phẩm
+- **BRC**: Chứng nhận an toàn thực phẩm được quốc tế công nhận
+
+**Giá trị mang lại**
+
+Thông qua kinh nghiệm và công nghệ tốt nhất, chúng tôi đảm bảo:
+
+- **Bao bì hoàn thiện chắc chắn**: Duy trì độ tươi và kéo dài thời hạn sử dụng sản phẩm
+- **Bảo vệ tính toàn vẹn**: Giữ nguyên chất lượng sản phẩm bên trong
+- **Thẩm mỹ bắt mắt**: Thu hút khách hàng ngay từ cái nhìn đầu tiên
+- **Giá cả cạnh tranh**: Tạo nên giá trị tuyệt vời cho khách hàng
+
+### Tại sao chọn Bao Bì Duy Nhật?
+
+- **18+ năm kinh nghiệm** xuất khẩu quốc tế
+- **Hơn 600 nhân viên** chuyên nghiệp, tận tâm
+- **Nhà máy hiện đại** với công nghệ tiên tiến
+- **Quy trình kiểm soát** chất lượng nghiêm ngặt
+- **Chứng nhận quốc tế** ISO 22000:2018 và BRC
+- **Sản xuất linh hoạt** theo yêu cầu khách hàng
+- **Tư vấn chuyên sâu** từ thiết kế đến thành phẩm
+
+Chúng tôi không chỉ sản xuất bao bì - chúng tôi tạo ra giải pháp đóng gói hoàn hảo mà thương hiệu của bạn xứng đáng có được.
+
+### Liên hệ tư vấn
+
+Để nhận báo giá tốt nhất và tư vấn miễn phí về giải pháp bao bì, vui lòng liên hệ:
+
+- **Hotline**: +84 2993 612 772
+- **Email**: sales@baobiduynhat.com.vn
+- **Website**: https://www.baobiduynhat.com.vn
+
+Duy Nhật - Tăng thêm giá trị cho sản phẩm của bạn.

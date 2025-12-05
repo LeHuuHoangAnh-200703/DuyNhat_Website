@@ -28,7 +28,7 @@ class Footer4 extends Component {
                             </div>
                             <div class="col-md-3 col-7 col-xl-2 col-lg-3 col-sm-6 footer-col-4">
                                 <div class="widget widget_services border-0">
-                                    <h3 class="footer-title text-white" style={{fontSize:28}}>Links Tiện Ích</h3>
+                                    <h3 class="footer-title text-white" style={{fontSize:28}}>Tiện Ích</h3>
                                     <ul>
                                         <li><VNText to="/bao-bi-nhua">Bao Bì Nhựa</VNText></li>
                                         <li><VNText to="/bao-bi-giay">Bao Bì Giấy</VNText></li>
