@@ -52,8 +52,6 @@ Túi Zipper có chất liệu phổ biến nhất là **PA/PE** hoặc **PET/PE*
 - **PET/MPET/PE**: Kết hợp thẩm mỹ và khả năng bảo quản
 - **PET/AL/PE**: Cao cấp nhất, bảo quản tối ưu
 
-![Túi zipper đa dạng](../images/duynhat/products/flexible/DSC_9490.jpg "Túi zipper với nhiều kích thước")
-
 ### 3. Vì sao nên chọn túi Zipper?
 
 So với các túi truyền thống, túi Zipper được xem là giải pháp bảo quản sản phẩm/thực phẩm an toàn, tiện lợi và sang trọng hơn nhiều lần, đáp ứng nhu cầu ngày càng cao về hình thức bao bì, tăng giá trị cạnh tranh cho doanh nghiệp.
