@@ -24,6 +24,28 @@ class PortfolioDetails extends Component {
         };
     }
 
+    shuffleArray = (array) => {
+        const shuffled = [...array];
+        for (let i = shuffled.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+        }
+        return shuffled;
+    };
+
+    componentDidMount() {
+        const pathSegments = window.location.pathname.split('/');
+        const slug = pathSegments[pathSegments.length - 1] || 'tui-nhua-gv';
+
+        if (slug !== this.state.productSlug) {
+            this.setState({
+                productSlug: slug,
+                product: plasticBagData[slug] || plasticBagData['tui-nhua-gv'],
+                selectedImage: 0
+            });
+        }
+    }
+
     generateProductSchema = (product, imageUrls) => {
         return {
             "@context": "https://schema.org/",
@@ -97,7 +119,7 @@ class PortfolioDetails extends Component {
                                 }
                             }
                         }
-                        product: file(relativePath: { eq: "duynhat/products/flexible/GV.jpg" }) {
+                        product: file(relativePath: { eq: "duynhat/products/flexible/1_1.jpg" }) {
                             childImageSharp {
                                 fluid(quality: 100) {
                                     ...GatsbyImageSharpFluid_withWebp
@@ -118,28 +140,28 @@ class PortfolioDetails extends Component {
                                 }
                             }
                         }
-                        product3: file(relativePath: { eq: "duynhat/products/flexible/1_1.jpg" }) {
+                        product3: file(relativePath: { eq: "duynhat/products/flexible/DT.JPG.jpg" }) {
                             childImageSharp {
                                 fluid(quality: 100) {
                                     ...GatsbyImageSharpFluid_withWebp
                                 }
                             }
                         }
-                        product4: file(relativePath: { eq: "duynhat/products/flexible/TC1.JPG.jpg" }) {
+                        product4: file(relativePath: { eq: "duynhat/products/flexible/GV.jpg" }) {
                             childImageSharp {
                                 fluid(quality: 100) {
                                     ...GatsbyImageSharpFluid_withWebp
                                 }
                             }
                         }
-                        productGV: file(relativePath: { eq: "duynhat/products/flexible/GV.jpg" }) {
+                        product5: file(relativePath: { eq: "duynhat/products/flexible/TC1.JPG.jpg" }) {
                             childImageSharp {
                                 fluid(quality: 100) {
                                     ...GatsbyImageSharpFluid_withWebp
                                 }
                             }
                         }
-                        product1_1: file(relativePath: { eq: "duynhat/products/flexible/1_1.jpg" }) {
+                        product6: file(relativePath: { eq: "duynhat/products/flexible/TG.JPG.jpg" }) {
                             childImageSharp {
                                 fluid(quality: 100) {
                                     ...GatsbyImageSharpFluid_withWebp
@@ -150,20 +172,24 @@ class PortfolioDetails extends Component {
                     `}
                     render={data => {
                         const allImages = {
-                            'TG.JPG.jpg': data.product.childImageSharp.fluid,
+                            '1_1.jpg': data.product.childImageSharp.fluid,
                             '3B.jpg': data.product1.childImageSharp.fluid,
                             '8B.JPG.jpg': data.product2.childImageSharp.fluid,
                             'DT.JPG.jpg': data.product3.childImageSharp.fluid,
-                            'TC1.JPG.jpg': data.product4.childImageSharp.fluid,
-                            'GV.jpg': data.productGV.childImageSharp.fluid,
-                            '1_1.jpg': data.product1_1.childImageSharp.fluid 
+                            'GV.jpg': data.product4.childImageSharp.fluid,
+                            'TC1.JPG.jpg': data.product5.childImageSharp.fluid,
+                            'TG.JPG.jpg': data.product6.childImageSharp.fluid
                         };
 
                         const productImages = product.images.map(imgName => allImages[imgName]);
                         const imageUrls = productImages.map(img => img.src);
 
-                        const relatedProducts = Object.keys(plasticBagData)
-                            .filter(slug => slug !== productSlug)
+                        const allProductSlugs = Object.keys(plasticBagData)
+                            .filter(slug => slug !== productSlug);
+
+                        const shuffledSlugs = this.shuffleArray(allProductSlugs);
+
+                        const relatedProducts = shuffledSlugs
                             .slice(0, 4)
                             .map(slug => ({
                                 name: plasticBagData[slug].name,
@@ -221,7 +247,6 @@ class PortfolioDetails extends Component {
                                         <div className="container">
                                             <div className="row">
                                                 <div className="col-lg-6 m-b30">
-                                                    {/* Main Image */}
                                                     <div className="rounded overflow-hidden shadow mb-3" style={{ backgroundColor: '#e8e8e8' }}>
                                                         <Img
                                                             fluid={productImages[selectedImage]}

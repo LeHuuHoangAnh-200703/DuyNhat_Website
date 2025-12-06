@@ -23,6 +23,15 @@ class PortfolioDetails extends Component {
         };
     }
 
+    shuffleArray = (array) => {
+        const shuffled = [...array];
+        for (let i = shuffled.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+        }
+        return shuffled;
+    };
+
     componentDidMount() {
         const pathSegments = window.location.pathname.split('/');
         const slug = pathSegments[pathSegments.length - 1] || 'thung-carton-1';
@@ -150,12 +159,16 @@ class PortfolioDetails extends Component {
                         const productImages = product.images.map(imgName => allImages[imgName]);
                         const imageUrls = productImages.map(img => img.src);
 
-                        const relatedProducts = Object.keys(cartonBoxData)
-                            .filter(slug => slug !== productSlug)
+                        const allProductSlugs = Object.keys(cartonBoxData)
+                            .filter(slug => slug !== productSlug);
+
+                        const shuffledSlugs = this.shuffleArray(allProductSlugs);
+
+                        const relatedProducts = shuffledSlugs
                             .slice(0, 4)
                             .map(slug => ({
                                 name: cartonBoxData[slug].name,
-                                category: "Thùng Carton Hải Sản",
+                                category: "Thùng Carton",
                                 link: `/details_Products/${slug}`,
                                 imageFluid: allImages[cartonBoxData[slug].images[0]]
                             }));

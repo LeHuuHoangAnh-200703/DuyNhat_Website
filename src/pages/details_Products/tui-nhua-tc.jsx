@@ -13,23 +13,30 @@ import { Helmet } from 'react-helmet';
 class PortfolioDetails extends Component {
     constructor(props) {
         super(props);
-        
-        const pathSegments = typeof window !== 'undefined' 
-            ? window.location.pathname.split('/') 
-            : [];
-        const slug = pathSegments[pathSegments.length - 1] || 'tui-nhua-tc';
-        
+
+        const productSlug = 'tui-nhua-tc';
+        const product = plasticBagData[productSlug];
+
         this.state = {
             selectedImage: 0,
-            productSlug: slug,
-            product: plasticBagData[slug] || plasticBagData['tui-nhua-tc']
+            productSlug: productSlug,
+            product: product
         };
     }
+
+    shuffleArray = (array) => {
+        const shuffled = [...array];
+        for (let i = shuffled.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+        }
+        return shuffled;
+    };
 
     componentDidMount() {
         const pathSegments = window.location.pathname.split('/');
         const slug = pathSegments[pathSegments.length - 1] || 'tui-nhua-tc';
-        
+
         if (slug !== this.state.productSlug) {
             this.setState({
                 productSlug: slug,
@@ -95,12 +102,12 @@ class PortfolioDetails extends Component {
 
         return (
             <>
-                <SEO 
+                <SEO
                     title={product.seo.title}
                     description={product.seo.description}
                     keywords={product.seo.keywords}
                 />
-                
+
                 <Header />
                 <StaticQuery
                     query={graphql`
@@ -112,35 +119,49 @@ class PortfolioDetails extends Component {
                                 }
                             }
                         }
-                        product: file(relativePath: { eq: "duynhat/products/flexible/TC1.JPG.jpg" }) {
+                        product: file(relativePath: { eq: "duynhat/products/flexible/1_1.jpg" }) {
                             childImageSharp {
                                 fluid(quality: 100) {
                                     ...GatsbyImageSharpFluid_withWebp
                                 }
                             }
                         }
-                        product1: file(relativePath: { eq: "duynhat/products/flexible/8B.JPG.jpg" }) {
+                        product1: file(relativePath: { eq: "duynhat/products/flexible/3B.jpg" }) {
                             childImageSharp {
                                 fluid(quality: 100) {
                                     ...GatsbyImageSharpFluid_withWebp
                                 }
                             }
                         }
-                        product2: file(relativePath: { eq: "duynhat/products/flexible/DT.JPG.jpg" }) {
+                        product2: file(relativePath: { eq: "duynhat/products/flexible/8B.JPG.jpg" }) {
                             childImageSharp {
                                 fluid(quality: 100) {
                                     ...GatsbyImageSharpFluid_withWebp
                                 }
                             }
                         }
-                        product3: file(relativePath: { eq: "duynhat/products/flexible/3B.jpg" }) {
+                        product3: file(relativePath: { eq: "duynhat/products/flexible/DT.JPG.jpg" }) {
                             childImageSharp {
                                 fluid(quality: 100) {
                                     ...GatsbyImageSharpFluid_withWebp
                                 }
                             }
                         }
-                        product4: file(relativePath: { eq: "duynhat/products/flexible/TG.JPG.jpg" }) {
+                        product4: file(relativePath: { eq: "duynhat/products/flexible/GV.jpg" }) {
+                            childImageSharp {
+                                fluid(quality: 100) {
+                                    ...GatsbyImageSharpFluid_withWebp
+                                }
+                            }
+                        }
+                        product5: file(relativePath: { eq: "duynhat/products/flexible/TC1.JPG.jpg" }) {
+                            childImageSharp {
+                                fluid(quality: 100) {
+                                    ...GatsbyImageSharpFluid_withWebp
+                                }
+                            }
+                        }
+                        product6: file(relativePath: { eq: "duynhat/products/flexible/TG.JPG.jpg" }) {
                             childImageSharp {
                                 fluid(quality: 100) {
                                     ...GatsbyImageSharpFluid_withWebp
@@ -151,18 +172,24 @@ class PortfolioDetails extends Component {
                     `}
                     render={data => {
                         const allImages = {
-                            'TC1.JPG.jpg': data.product.childImageSharp.fluid,
-                            '8B.JPG.jpg': data.product1.childImageSharp.fluid,
-                            'DT.JPG.jpg': data.product2.childImageSharp.fluid,
-                            '3B.jpg': data.product3.childImageSharp.fluid,
-                            'TG.JPG.jpg': data.product4.childImageSharp.fluid
+                            '1_1.jpg': data.product.childImageSharp.fluid,
+                            '3B.jpg': data.product1.childImageSharp.fluid,
+                            '8B.JPG.jpg': data.product2.childImageSharp.fluid,
+                            'DT.JPG.jpg': data.product3.childImageSharp.fluid,
+                            'GV.jpg': data.product4.childImageSharp.fluid,
+                            'TC1.JPG.jpg': data.product5.childImageSharp.fluid,
+                            'TG.JPG.jpg': data.product6.childImageSharp.fluid
                         };
 
                         const productImages = product.images.map(imgName => allImages[imgName]);
                         const imageUrls = productImages.map(img => img.src);
 
-                        const relatedProducts = Object.keys(plasticBagData)
-                            .filter(slug => slug !== productSlug)
+                        const allProductSlugs = Object.keys(plasticBagData)
+                            .filter(slug => slug !== productSlug);
+
+                        const shuffledSlugs = this.shuffleArray(allProductSlugs);
+
+                        const relatedProducts = shuffledSlugs
                             .slice(0, 4)
                             .map(slug => ({
                                 name: plasticBagData[slug].name,
@@ -180,18 +207,18 @@ class PortfolioDetails extends Component {
                                     <script type="application/ld+json">
                                         {JSON.stringify(this.generateBreadcrumbSchema(product))}
                                     </script>
-                                    
+
                                     <meta property="og:type" content="product" />
                                     <meta property="og:title" content={product.seo.title} />
                                     <meta property="og:description" content={product.seo.description} />
                                     <meta property="og:image" content={imageUrls[0]} />
                                     <meta property="og:url" content={typeof window !== 'undefined' ? window.location.href : ''} />
-                                    
+
                                     <meta name="twitter:card" content="summary_large_image" />
                                     <meta name="twitter:title" content={product.seo.title} />
                                     <meta name="twitter:description" content={product.seo.description} />
                                     <meta name="twitter:image" content={imageUrls[0]} />
-                                    
+
                                     <link rel="canonical" href={typeof window !== 'undefined' ? window.location.href : ''} />
                                 </Helmet>
 
@@ -247,7 +274,7 @@ class PortfolioDetails extends Component {
                                                         }}>
                                                             {product.name}
                                                         </h2>
-                                                        <p className="mb-4" style={{ 
+                                                        <p className="mb-4" style={{
                                                             color: '#444',
                                                             fontSize: '1.05rem',
                                                             lineHeight: '1.8',
@@ -268,7 +295,7 @@ class PortfolioDetails extends Component {
                                                     }}>
                                                         {product.features.map((feature, index) => (
                                                             <li key={index} className="mb-3 d-flex align-items-start">
-                                                                <span className="mr-2" style={{ 
+                                                                <span className="mr-2" style={{
                                                                     color: '#F22D4E',
                                                                     fontSize: '1.2rem'
                                                                 }}>✓</span>
@@ -302,7 +329,7 @@ class PortfolioDetails extends Component {
                                         </div>
                                     </div>
                                 </div>
-                                
+
                                 <div className="section-full content-inner bg-gray py-5">
                                     <div className="container">
                                         <div className="text-center mb-5">
