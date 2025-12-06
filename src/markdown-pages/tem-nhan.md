@@ -81,10 +81,10 @@ Chúng tôi cam kết tạo ra những sản phẩm tem nhãn giúp tăng giá t
 
 ### Liên hệ tư vấn
 
-Để bắt đầu tạo nên tem nhãn sản phẩm tùy chỉnh của riêng bạn, vui lòng liên hệ:
+Quý khách hàng cần tư vấn thêm về sản phẩm và dịch vụ, vui lòng liên hệ:
 
 - **Hotline**: +84 2993 612 772
 - **Email**: sales@baobiduynhat.com.vn
 - **Website**: https://www.baobiduynhat.com.vn
 
-Duy Nhật - Tăng thêm giá trị cho sản phẩm của bạn.
+Duy Nhật luôn đồng hành cùng doanh nghiệp, tăng thêm giá trị cho sản phẩm của bạn.

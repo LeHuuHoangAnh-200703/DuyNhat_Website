@@ -106,6 +106,40 @@ const PortfolioFlexible = props => {
   const filters = getFilterSections(images)
   const collumnCls = props.col ? props.col : "col-md-3";
 
+  // Styles cho equal height cards
+  const portfolioGridStyle = {
+    display: 'flex',
+    flexWrap: 'wrap'
+  };
+
+  const columnWrapperStyle = {
+    display: 'flex'
+  };
+
+  const dlabBoxStyle = {
+    display: 'flex',
+    flexDirection: 'column',
+    height: '100%',
+    width: '100%',
+    transition: 'transform 0.3s ease, box-shadow 0.3s ease'
+  };
+
+  const dlabBoxLinkStyle = {
+    textDecoration: 'none',
+    display: 'flex',
+    flexDirection: 'column',
+    height: '100%'
+  };
+
+  const cardBodyStyle = {
+    backgroundColor: 'white',
+    flexGrow: 1,
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'flex-start',
+    padding: '15px'
+  };
+
   return (
     <>
       <SEO
@@ -147,14 +181,13 @@ const PortfolioFlexible = props => {
             <div className="content-block">
               <div className="section-full content-inner-2 portfolio text-uppercase bg-gray" id="portfolio">
                 <div className="container">
-
                   {/* FILTERED PORTFOLIO LIST */}
                   <div className="portfolio_area">
-                    <div className="row portfolio-grid">
+                    <div className="row portfolio-grid" style={portfolioGridStyle}>
                       {filteredList.map(image => (
-                        <div key={image.id} className={collumnCls}>
-                          <div className="dlab-box dlab-gallery-box">
-                            <Link to={image.detailUrl || "#"} style={{ textDecoration: 'none' }}>
+                        <div key={image.id} className={collumnCls} style={columnWrapperStyle}>
+                          <div className="dlab-box dlab-gallery-box" style={dlabBoxStyle}>
+                            <Link to={image.detailUrl || "#"} style={dlabBoxLinkStyle}>
                               <div className="dlab-media">
                                 <Link to={image.detailUrl || "#"}>
                                   <Img
@@ -165,9 +198,7 @@ const PortfolioFlexible = props => {
                                 </Link>
                                 <div className="overlay-bx"></div>
                               </div>
-                              <div className="card-body" style={{
-                                backgroundColor: 'white'
-                              }}>
+                              <div className="card-body" style={cardBodyStyle}>
                                 <p className="text-uppercase mb-2" style={{
                                   fontSize: '0.75rem',
                                   color: '#999',

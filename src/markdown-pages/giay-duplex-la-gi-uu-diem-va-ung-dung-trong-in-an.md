@@ -57,10 +57,10 @@ Giấy Duplex có độ bóng mịn cao, cho ra màu sắc đẹp nên thường
 
 ### Liên hệ tư vấn
 
-Bạn muốn tìm hiểu thêm về giấy Duplex hoặc có nhu cầu thiết kế và sản xuất bao bì giấy?
+Quý khách hàng cần tư vấn thêm về sản phẩm và dịch vụ, vui lòng liên hệ:
 
 - **Hotline**: +84 2993 612 772
 - **Email**: sales@baobiduynhat.com.vn
-- **Website**: [Liên hệ chúng tôi](https://www.baobiduynhat.com.vn/lien-he)
+- **Website**: https://www.baobiduynhat.com.vn
 
-Bao Bì Duy Nhất sẵn sàng tư vấn và hỗ trợ bạn!
+Duy Nhật luôn đồng hành cùng doanh nghiệp, tăng thêm giá trị cho sản phẩm của bạn.

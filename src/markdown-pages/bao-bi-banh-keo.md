@@ -120,10 +120,10 @@ Bao Bì Duy Nhất với hơn 18 năm kinh nghiệm trong sản xuất bao bì t
 
 ### Liên hệ tư vấn
 
-Hãy gọi ngay cho chúng tôi để được tư vấn miễn phí về giải pháp bao bì bánh kẹo phù hợp nhất:
+Quý khách hàng cần tư vấn thêm về sản phẩm và dịch vụ, vui lòng liên hệ:
 
 - **Hotline**: +84 2993 612 772
 - **Email**: sales@baobiduynhat.com.vn
-- **Website**: [Liên hệ chúng tôi](https://www.baobiduynhat.com.vn/lien-he)
+- **Website**: https://www.baobiduynhat.com.vn
 
-Đội ngũ chuyên gia của Bao Bì Duy Nhất sẵn sàng hỗ trợ bạn 24/7!
+Duy Nhật luôn đồng hành cùng doanh nghiệp, tăng thêm giá trị cho sản phẩm của bạn.

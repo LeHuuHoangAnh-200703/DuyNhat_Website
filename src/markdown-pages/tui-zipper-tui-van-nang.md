@@ -93,10 +93,10 @@ Túi Zipper thực sự xứng đáng với danh hiệu "túi vạn năng" với
 
 ### Liên hệ tư vấn
 
-Bạn muốn tìm hiểu thêm về túi Zipper hoặc có nhu cầu sản xuất bao bì Zipper?
+Quý khách hàng cần tư vấn thêm về sản phẩm và dịch vụ, vui lòng liên hệ:
 
 - **Hotline**: +84 2993 612 772
 - **Email**: sales@baobiduynhat.com.vn
-- **Website**: [Liên hệ chúng tôi](https://www.baobiduynhat.com.vn/lien-he)
+- **Website**: https://www.baobiduynhat.com.vn
 
-Bao Bì Duy Nhất sẵn sàng tư vấn và cung cấp giải pháp bao bì Zipper phù hợp nhất cho sản phẩm của bạn!
+Duy Nhật luôn đồng hành cùng doanh nghiệp, tăng thêm giá trị cho sản phẩm của bạn.

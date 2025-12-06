@@ -67,10 +67,10 @@ Việc hiểu rõ các thuật ngữ và chứng nhận về sản phẩm phân 
 
 ### Liên hệ tư vấn
 
-Bạn muốn tìm hiểu thêm về các giải pháp bao bì thân thiện môi trường?
+Quý khách hàng cần tư vấn thêm về sản phẩm và dịch vụ, vui lòng liên hệ:
 
 - **Hotline**: +84 2993 612 772
 - **Email**: sales@baobiduynhat.com.vn
-- **Website**: [Liên hệ chúng tôi](https://www.baobiduynhat.com.vn/lien-he)
+- **Website**: https://www.baobiduynhat.com.vn
 
-Bao Bì Duy Nhất cam kết cung cấp các sản phẩm bao bì bền vững, thân thiện với môi trường!
+Duy Nhật luôn đồng hành cùng doanh nghiệp, tăng thêm giá trị cho sản phẩm của bạn.

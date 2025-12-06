@@ -91,3 +91,13 @@ Giá dao động từ 2.000 - 15.000đ/chiếc tùy theo kích thước, chất 
 ### Kết luận
 
 Túi giấy quảng cáo là công cụ marketing mạnh mẽ giúp nhà hàng tăng nhận diện thương hiệu, tạo ấn tượng tốt với khách hàng và tiết kiệm chi phí quảng cáo dài hạn. Đầu tư vào túi giấy chất lượng cao chính là đầu tư vào hình ảnh thương hiệu và sự thành công bền vững.
+
+### Liên hệ tư vấn
+
+Quý khách hàng cần tư vấn thêm về sản phẩm và dịch vụ, vui lòng liên hệ:
+
+- **Hotline**: +84 2993 612 772
+- **Email**: sales@baobiduynhat.com.vn
+- **Website**: https://www.baobiduynhat.com.vn
+
+Duy Nhật luôn đồng hành cùng doanh nghiệp, tăng thêm giá trị cho sản phẩm của bạn.

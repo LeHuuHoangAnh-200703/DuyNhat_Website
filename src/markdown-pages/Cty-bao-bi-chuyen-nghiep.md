@@ -88,10 +88,10 @@ Chúng tôi không chỉ sản xuất bao bì - chúng tôi tạo ra giải phá
 
 ### Liên hệ tư vấn
 
-Để nhận báo giá tốt nhất và tư vấn miễn phí về giải pháp bao bì, vui lòng liên hệ:
+Quý khách hàng cần tư vấn thêm về sản phẩm và dịch vụ, vui lòng liên hệ:
 
 - **Hotline**: +84 2993 612 772
 - **Email**: sales@baobiduynhat.com.vn
 - **Website**: https://www.baobiduynhat.com.vn
 
-Duy Nhật - Tăng thêm giá trị cho sản phẩm của bạn.
+Duy Nhật luôn đồng hành cùng doanh nghiệp, tăng thêm giá trị cho sản phẩm của bạn.

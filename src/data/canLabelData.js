@@ -34,7 +34,7 @@ export const canLabelData = {
         images: ['nhan-quan-21.jpg', 'nhan-quan-11.jpg', 'nhan-quan-31.jpg']
     },
     'sp-khac-3': {
-        name: 'Nhãn Lon Tôm Cao Cấp - Bộ Sưu Tập',
+        name: 'Nhãn Lon Tôm Cao Cấp',
         fullDescription: 'Bộ sưu tập nhãn dán chuyên nghiệp cho hộp thiếc/lon tròn đựng cocktail shrimp. Gồm cả nhãn dán thường và nhãn co nhiệt (shrink sleeve) với nhiều màu sắc: xanh navy, xanh lá. Thiết kế tối ưu cho sản xuất hàng loạt với chất lượng in ấn đồng nhất. Mỗi nhãn được thiết kế với kích thước chuẩn cho lon 12oz, 16oz. Đặc biệt có thể xem cả mặt trước và mặt sau với thông tin dinh dưỡng đầy đủ. Phù hợp cho xuất khẩu Mỹ, Canada, châu Âu.',
         features: [
             'Cả nhãn dán thường (pressure sensitive) và co nhiệt (shrink sleeve)',

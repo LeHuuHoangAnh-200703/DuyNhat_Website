@@ -288,7 +288,7 @@ class PortfolioDetails extends Component {
                                                     <hr className="mb-4" />
 
                                                     <h4 className="font-weight-bold mb-3" style={{ color: '#333' }}>
-                                                        Đặc điểm nổi bật
+                                                        Chi tiết sản phẩm
                                                     </h4>
                                                     <ul className="mb-4" style={{
                                                         listStyle: 'none',
@@ -299,7 +299,7 @@ class PortfolioDetails extends Component {
                                                                 <span className="mr-2" style={{
                                                                     color: '#F22D4E',
                                                                     fontSize: '1.2rem'
-                                                                }}>✓</span>
+                                                                }}>•</span>
                                                                 <span style={{ lineHeight: '1.6' }}>{feature}</span>
                                                             </li>
                                                         ))}

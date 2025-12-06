@@ -96,6 +96,6 @@ Quý khách hàng cần tư vấn thêm về sản phẩm và dịch vụ, vui l
 
 - **Hotline**: +84 2993 612 772
 - **Email**: sales@baobiduynhat.com.vn
-- **Website**: [Liên hệ chúng tôi](https://www.baobiduynhat.com.vn/lien-he)
+- **Website**: https://www.baobiduynhat.com.vn
 
-Đội ngũ nhân viên Bao Bì Duy Nhất sẵn sàng tư vấn và hỗ trợ bạn!
+Duy Nhật luôn đồng hành cùng doanh nghiệp, tăng thêm giá trị cho sản phẩm của bạn.

@@ -132,10 +132,10 @@ Với hơn 18 năm kinh nghiệm trong ngành in ấn và sản xuất bao bì, 
 
 ### Liên hệ tư vấn
 
-Bạn muốn tìm hiểu thêm về bao bì giấy hay có nhu cầu thiết kế và sản xuất bao bì giấy?
+Quý khách hàng cần tư vấn thêm về sản phẩm và dịch vụ, vui lòng liên hệ:
 
 - **Hotline**: +84 2993 612 772
 - **Email**: sales@baobiduynhat.com.vn
-- **Website**: [Liên hệ chúng tôi](https://www.baobiduynhat.com.vn/lien-he)
+- **Website**: https://www.baobiduynhat.com.vn
 
-Hãy để Bao Bì Duy Nhất đồng hành cùng bạn tạo nên bao bì hoàn hảo, nâng tầm giá trị sản phẩm!
+Duy Nhật luôn đồng hành cùng doanh nghiệp, tăng thêm giá trị cho sản phẩm của bạn.

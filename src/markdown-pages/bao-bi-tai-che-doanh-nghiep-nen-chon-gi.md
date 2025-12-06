@@ -94,10 +94,10 @@ Tuy nhiên, không thể phủ nhận rằng dù chọn bao bì tái chế từ 
 
 ### Liên hệ tư vấn
 
-Bạn muốn tìm hiểu thêm về bao bì tái chế hay có nhu cầu thiết kế và sản xuất bao bì tái chế?
+Quý khách hàng cần tư vấn thêm về sản phẩm và dịch vụ, vui lòng liên hệ:
 
 - **Hotline**: +84 2993 612 772
 - **Email**: sales@baobiduynhat.com.vn
-- **Website**: [Liên hệ chúng tôi](https://www.baobiduynhat.com.vn/lien-he)
+- **Website**: https://www.baobiduynhat.com.vn
 
-Bao Bì Duy Nhất sẵn sàng tư vấn giải pháp bao bì tái chế phù hợp nhất cho doanh nghiệp của bạn!
+Duy Nhật luôn đồng hành cùng doanh nghiệp, tăng thêm giá trị cho sản phẩm của bạn.

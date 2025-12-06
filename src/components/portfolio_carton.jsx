@@ -9,7 +9,7 @@ const images = [
     id: 1,
     name: "Thùng Carton",
     carton: true,
-    title: "Sản phẩm thùng carton",
+    title: "Thùng Carton Ebi Fry",
     subTitle: "Thùng Carton",
     imgUrl: require("../images/duynhat/products/Carton/CT1.jpg"),
     detailUrl: "/details_Products/thung-carton-1"
@@ -18,7 +18,7 @@ const images = [
     id: 2,
     name: "Thùng Carton",
     carton: true,
-    title: "Sản phẩm thùng carton",
+    title: "Thùng Carton Tôm Vannamei",
     subTitle: "Thùng Carton",
     imgUrl: require("../images/duynhat/products/Carton/CT2.jpg"),
     detailUrl: "/details_Products/thung-carton-2"
@@ -27,7 +27,7 @@ const images = [
     id: 3,
     name: "Thùng Carton",
     carton: true,
-    title: "Sản phẩm thùng carton",
+    title: "Thùng Carton Tempura",
     subTitle: "Thùng Carton",
     imgUrl: require("../images/duynhat/products/Carton/CT3.jpg"),
     detailUrl: "/details_Products/thung-carton-3"
@@ -36,7 +36,7 @@ const images = [
     id: 4,
     name: "Thùng Carton",
     carton: true,
-    title: "Sản phẩm thùng carton",
+    title: "Thùng Carton Sushi/Ebi",
     subTitle: "Thùng Carton",
     imgUrl: require("../images/duynhat/products/Carton/CT4.jpg"),
     detailUrl: "/details_Products/thung-carton-4"
@@ -79,6 +79,40 @@ const PortfolioCarton = props => {
   const filters = getFilterSections(images)
   const collumnCls = props.col ? props.col : "col-md-3";
 
+  // Styles cho equal height cards
+  const portfolioGridStyle = {
+    display: 'flex',
+    flexWrap: 'wrap'
+  };
+
+  const columnWrapperStyle = {
+    display: 'flex'
+  };
+
+  const dlabBoxStyle = {
+    display: 'flex',
+    flexDirection: 'column',
+    height: '100%',
+    width: '100%',
+    transition: 'transform 0.3s ease, box-shadow 0.3s ease'
+  };
+
+  const dlabBoxLinkStyle = {
+    textDecoration: 'none',
+    display: 'flex',
+    flexDirection: 'column',
+    height: '100%'
+  };
+
+  const cardBodyStyle = {
+    backgroundColor: 'white',
+    flexGrow: 1,
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'flex-start',
+    padding: '15px'
+  };
+
   return (
     <>
       <SEO
@@ -114,19 +148,17 @@ const PortfolioCarton = props => {
               }
             })
           }
-
           return (
             <div className="content-block">
               <div className="section-full content-inner-2 portfolio text-uppercase bg-gray" id="portfolio">
                 <div className="container">
-
                   {/* FILTERED PORTFOLIO LIST */}
                   <div className="portfolio_area">
-                    <div className="row portfolio-grid">
+                    <div className="row portfolio-grid" style={portfolioGridStyle}>
                       {filteredList.map(image => (
-                        <div key={image.id} className={collumnCls}>
-                          <div className="dlab-box dlab-gallery-box">
-                            <Link to={image.detailUrl || "#"} style={{ textDecoration: 'none' }}>
+                        <div key={image.id} className={collumnCls} style={columnWrapperStyle}>
+                          <div className="dlab-box dlab-gallery-box" style={dlabBoxStyle}>
+                            <Link to={image.detailUrl || "#"} style={dlabBoxLinkStyle}>
                               <div className="dlab-media">
                                 <Link to={image.detailUrl || "#"}>
                                   <Img
@@ -137,9 +169,7 @@ const PortfolioCarton = props => {
                                 </Link>
                                 <div className="overlay-bx"></div>
                               </div>
-                              <div className="card-body" style={{
-                                backgroundColor: 'white'
-                              }}>
+                              <div className="card-body" style={cardBodyStyle}>
                                 <p className="text-uppercase mb-2" style={{
                                   fontSize: '0.75rem',
                                   color: '#999',

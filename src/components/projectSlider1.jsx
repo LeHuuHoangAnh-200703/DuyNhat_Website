@@ -109,7 +109,7 @@ class ProjectSlider1 extends Component {
                                         {/* </Link> */}
                                     </div>
                                     <div class="dlab-info">
-                                        <h3 class="dlab-title"><Link to="/details_Products/tui-nhua-tg" tabindex="-1">Túi Nhựa Đựng Gạo</Link></h3>
+                                        <h3 class="dlab-title"><Link to="/details_Products/tui-nhua-tg" tabindex="-1">Túi Gạo</Link></h3>
                                     </div>
                                 </Link>
                             </div>
@@ -152,7 +152,7 @@ class ProjectSlider1 extends Component {
                                         {/* </Link> */}
                                     </div>
                                     <div class="dlab-info">
-                                        <h3 class="dlab-title"><Link to="/details_Products/hop-giay-4" tabindex="-1">Hộp Giấy</Link></h3>
+                                        <h3 class="dlab-title"><Link to="/details_Products/hop-giay-4" tabindex="-1">Hộp Giấy Mì Ăn Liền</Link></h3>
                                     </div>
                                 </Link>
                             </div>
@@ -166,7 +166,7 @@ class ProjectSlider1 extends Component {
                                         {/* </Link> */}
                                     </div>
                                     <div class="dlab-info">
-                                        <h3 class="dlab-title"><Link to="/details_Products/tem-nhan-6" tabindex="-1">Cuộn nhãn</Link></h3>
+                                        <h3 class="dlab-title"><Link to="/details_Products/tem-nhan-6" tabindex="-1">Cuộn Nhãn Decal Cua Ghẹ</Link></h3>
                                     </div>
                                 </Link>
                             </div>
@@ -180,7 +180,7 @@ class ProjectSlider1 extends Component {
                                         {/* </Link> */}
                                     </div>
                                     <div class="dlab-info">
-                                        <h3 class="dlab-title"><Link to="/details_Products/sp-khac-3" tabindex="-1">Nhãn quấn</Link></h3>
+                                        <h3 class="dlab-title"><Link to="/details_Products/sp-khac-3" tabindex="-1">Nhãn Lon Tôm Cao Cấp</Link></h3>
                                     </div>
                                 </Link>
                             </div>

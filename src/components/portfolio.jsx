@@ -73,7 +73,7 @@ const images = [
     id: 8,
     name: "Bao Bì Giấy",
     paper: true,
-    title: "Hộp giấy",
+    title: "Túi Xách Giấy Thương Hiệu",
     subTitle: "Bao Bì Giấy",
     imgUrl: require("../images/duynhat/products/Paper/HG1.jpg"),
     detailUrl: "/details_Products/hop-giay-1"
@@ -82,7 +82,7 @@ const images = [
     id: 9,
     name: "Bao Bì Giấy",
     paper: true,
-    title: "Hộp giấy",
+    title: "Túi Xách Giấy Quà Tặng",
     subTitle: "Bao Bì Giấy",
     imgUrl: require("../images/duynhat/products/Paper/HG2.jpg"),
     detailUrl: "/details_Products/hop-giay-2"
@@ -91,7 +91,7 @@ const images = [
     id: 10,
     name: "Bao Bì Giấy",
     paper: true,
-    title: "Hộp giấy",
+    title: "Hộp Giấy Thực Phẩm Đông Lạnh",
     subTitle: "Bao Bì Giấy",
     imgUrl: require("../images/duynhat/products/Paper/HG3.jpg"),
     detailUrl: "/details_Products/hop-giay-3"
@@ -100,7 +100,7 @@ const images = [
     id: 11,
     name: "Bao Bì Giấy",
     paper: true,
-    title: "Hộp giấy",
+    title: "Hộp Giấy Mì Ăn Liền",
     subTitle: "Bao Bì Giấy",
     imgUrl: require("../images/duynhat/products/Paper/HG4.jpg"),
     detailUrl: "/details_Products/hop-giay-4"
@@ -109,7 +109,7 @@ const images = [
     id: 12,
     name: "Bao Bì Giấy",
     paper: true,
-    title: "Hộp giấy",
+    title: "Hộp Tôm Tempura Cao Cấp - Luxury",
     subTitle: "Bao Bì Giấy",
     imgUrl: require("../images/duynhat/products/Paper/HG5.jpg"),
     detailUrl: "/details_Products/hop-giay-5"
@@ -118,7 +118,7 @@ const images = [
     id: 13,
     name: "Bao Bì Giấy",
     paper: true,
-    title: "Hộp giấy",
+    title: "Hộp Trái Cây Tươi - La Cubana",
     subTitle: "Bao Bì Giấy",
     imgUrl: require("../images/duynhat/products/Paper/HG6.jpg"),
     detailUrl: "/details_Products/hop-giay-6"
@@ -127,7 +127,7 @@ const images = [
     id: 14,
     name: "Bao Bì Giấy",
     paper: true,
-    title: "Hộp giấy",
+    title: "Hộp Tôm Tempura - Professional",
     subTitle: "Bao Bì Giấy",
     imgUrl: require("../images/duynhat/products/Paper/HG7.jpg"),
     detailUrl: "/details_Products/hop-giay-7"
@@ -136,7 +136,7 @@ const images = [
     id: 15,
     name: "Tem, nhãn, và decal",
     label: true,
-    title: "Tem & nhãn",
+    title: "Nhãn Decal Thực Phẩm Đông Lạnh",
     subTitle: "Tem, nhãn, và decal",
     imgUrl: require("../images/duynhat/products/Label/IMG_0052.jpg"),
     detailUrl: "/details_Products/tem-nhan-1"
@@ -145,7 +145,7 @@ const images = [
     id: 16,
     name: "Tem, nhãn, và decal",
     label: true,
-    title: "Nhãn",
+    title: "Nhãn Decal Tôm Hải Sản",
     subTitle: "Tem, nhãn, và decal",
     imgUrl: require("../images/duynhat/products/Label/IMG_0059.jpg"),
     detailUrl: "/details_Products/tem-nhan-2"
@@ -154,7 +154,7 @@ const images = [
     id: 17,
     name: "Tem, nhãn, và decal",
     label: true,
-    title: "Nhãn",
+    title: "Băng Keo Decal Cuộn",
     subTitle: "Tem, nhãn, và decal",
     imgUrl: require("../images/duynhat/products/Label/IMG_0066.jpg"),
     detailUrl: "/details_Products/tem-nhan-3"
@@ -163,7 +163,7 @@ const images = [
     id: 18,
     name: "Tem, nhãn, và decal",
     label: true,
-    title: "Nhãn dán",
+    title: "Nhãn Decal Cá MSC",
     subTitle: "Tem, nhãn, và decal",
     imgUrl: require("../images/duynhat/products/Label/IMG_0070.jpg"),
     detailUrl: "/details_Products/tem-nhan-4"
@@ -172,7 +172,7 @@ const images = [
     id: 19,
     name: "Tem, nhãn, và decal",
     label: true,
-    title: "Tem & nhãn",
+    title: "Cuộn Nhãn Decal Tôm Ring 51-60",
     subTitle: "Tem, nhãn, và decal",
     imgUrl: require("../images/duynhat/products/Label/IMG_0084.jpg"),
     detailUrl: "/details_Products/tem-nhan-5"
@@ -181,7 +181,7 @@ const images = [
     id: 20,
     name: "Tem, nhãn, và decal",
     label: true,
-    title: "Cuộn nhãn",
+    title: "Cuộn Nhãn Decal Cua Ghẹ",
     subTitle: "Tem, nhãn, và decal",
     imgUrl: require("../images/duynhat/products/Label/IMG_0085-scaled.jpg"),
     detailUrl: "/details_Products/tem-nhan-6"
@@ -190,7 +190,7 @@ const images = [
     id: 21,
     name: "Tem, nhãn, và decal",
     label: true,
-    title: "Cuộn nhãn",
+    title: "Cuộn Nhãn Decal Xanh Dương",
     subTitle: "Tem, nhãn, và decal",
     imgUrl: require("../images/duynhat/products/Label/IMG_0089.jpg"),
     detailUrl: "/details_Products/tem-nhan-7"
@@ -199,7 +199,7 @@ const images = [
     id: 22,
     name: "Tem, nhãn, và decal",
     label: true,
-    title: "Tem & nhãn",
+    title: "Cuộn Nhãn Decal Hải Sản ASC - Seafood",
     subTitle: "Tem, nhãn, và decal",
     imgUrl: require("../images/duynhat/products/Label/IMG_0094.jpg"),
     detailUrl: "/details_Products/tem-nhan-8"
@@ -208,7 +208,7 @@ const images = [
     id: 23,
     name: "Thùng Carton",
     carton: true,
-    title: "Sản phẩm thùng carton",
+    title: "Thùng Carton Ebi Fry",
     subTitle: "Thùng Carton",
     imgUrl: require("../images/duynhat/products/Carton/CT1.jpg"),
     detailUrl: "/details_Products/thung-carton-1"
@@ -217,7 +217,7 @@ const images = [
     id: 24,
     name: "Thùng Carton",
     carton: true,
-    title: "Sản phẩm thùng carton",
+    title: "Thùng Carton Tôm Vannamei",
     subTitle: "Thùng Carton",
     imgUrl: require("../images/duynhat/products/Carton/CT2.jpg"),
     detailUrl: "/details_Products/thung-carton-2"
@@ -226,7 +226,7 @@ const images = [
     id: 25,
     name: "Thùng Carton",
     carton: true,
-    title: "Sản phẩm thùng carton",
+    title: "Thùng Carton Tempura",
     subTitle: "Thùng Carton",
     imgUrl: require("../images/duynhat/products/Carton/CT3.jpg"),
     detailUrl: "/details_Products/thung-carton-3"
@@ -235,7 +235,7 @@ const images = [
     id: 26,
     name: "Thùng Carton",
     carton: true,
-    title: "Sản phẩm thùng carton",
+    title: "Thùng Carton Sushi/Ebi",
     subTitle: "Thùng Carton",
     imgUrl: require("../images/duynhat/products/Carton/CT4.jpg"),
     detailUrl: "/details_Products/thung-carton-4"
@@ -244,7 +244,7 @@ const images = [
     id: 27,
     name: "Sản phẩm khác",
     other: true,
-    title: "Nhãn quấn",
+    title: "Nhãn Lon Tôm - Xanh Dương",
     subTitle: "Sản phẩm khác",
     imgUrl: require("../images/duynhat/products/nhan_quan_21.jpg"),
     detailUrl: "/details_Products/sp-khac-2"
@@ -253,7 +253,7 @@ const images = [
     id: 28,
     name: "Sản phẩm khác",
     other: true,
-    title: "Nhãn quấn",
+    title: "Nhãn Lon Tôm Cao Cấp",
     subTitle: "Sản phẩm khác",
     imgUrl: require("../images/duynhat/products/nhan_quan_31.jpg"),
     detailUrl: "/details_Products/sp-khac-3"
@@ -313,6 +313,40 @@ const Portfolio = props => {
     return `Xem các sản phẩm ${filterKey} chất lượng cao từ Duy Nhất. Đa dạng mẫu mã, giá cạnh tranh.`;
   };
 
+  // Styles cho equal height cards
+  const portfolioGridStyle = {
+    display: 'flex',
+    flexWrap: 'wrap'
+  };
+
+  const columnWrapperStyle = {
+    display: 'flex'
+  };
+
+  const dlabBoxStyle = {
+    display: 'flex',
+    flexDirection: 'column',
+    height: '100%',
+    width: '100%',
+    transition: 'transform 0.3s ease, box-shadow 0.3s ease'
+  };
+
+  const dlabBoxLinkStyle = {
+    textDecoration: 'none',
+    display: 'flex',
+    flexDirection: 'column',
+    height: '100%'
+  };
+
+  const cardBodyStyle = {
+    backgroundColor: 'white',
+    flexGrow: 1,
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'flex-start',
+    padding: '15px'
+  };
+
   return (
     <>
       <SEO
@@ -369,11 +403,11 @@ const Portfolio = props => {
 
                   {/* FILTERED PORTFOLIO LIST */}
                   <div className="portfolio_area">
-                    <div className="row portfolio-grid">
+                    <div className="row portfolio-grid" style={portfolioGridStyle}>
                       {filteredList.map(image => (
-                        <div key={image.id} className={collumnCls}>
-                          <div className="dlab-box dlab-gallery-box">
-                            <Link to={image.detailUrl || "#"} style={{ textDecoration: 'none' }}>
+                        <div key={image.id} className={collumnCls} style={columnWrapperStyle}>
+                          <div className="dlab-box dlab-gallery-box" style={dlabBoxStyle}>
+                            <Link to={image.detailUrl || "#"} style={dlabBoxLinkStyle}>
                               <div className="dlab-media">
                                 <Link to={image.detailUrl || "#"}>
                                   <Img
@@ -384,9 +418,7 @@ const Portfolio = props => {
                                 </Link>
                                 <div className="overlay-bx"></div>
                               </div>
-                              <div className="card-body" style={{
-                                backgroundColor: 'white'
-                              }}>
+                              <div className="card-body" style={cardBodyStyle}>
                                 <p className="text-uppercase mb-2" style={{
                                   fontSize: '0.75rem',
                                   color: '#999',

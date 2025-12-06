@@ -124,10 +124,10 @@ Giấy Ivory là lựa chọn hoàn hảo cho các doanh nghiệp muốn tạo r
 
 ### Liên hệ tư vấn
 
-Bạn muốn tìm hiểu thêm về giấy Ivory hoặc có nhu cầu thiết kế và sản xuất bao bì giấy cao cấp?
+Quý khách hàng cần tư vấn thêm về sản phẩm và dịch vụ, vui lòng liên hệ:
 
 - **Hotline**: +84 2993 612 772
 - **Email**: sales@baobiduynhat.com.vn
-- **Website**: [Liên hệ chúng tôi](https://www.baobiduynhat.com.vn/lien-he)
+- **Website**: https://www.baobiduynhat.com.vn
 
-Đội ngũ chuyên gia của Bao Bì Duy Nhất sẵn sàng tư vấn giải pháp bao bì phù hợp nhất cho sản phẩm của bạn!
+Duy Nhật luôn đồng hành cùng doanh nghiệp, tăng thêm giá trị cho sản phẩm của bạn.

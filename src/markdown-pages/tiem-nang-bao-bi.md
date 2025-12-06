@@ -101,12 +101,12 @@ Ngành bao bì Việt Nam đang đứng trước cơ hội vàng với tốc đ�
 
 Với nền tảng vững chắc, công nghệ hiện đại và cam kết chất lượng, Bao Bì Duy Nhất sẵn sàng đồng hành cùng doanh nghiệp trong hành trình chinh phục thị trường trong và ngoài nước.
 
-### Liên Hệ Tư Vấn
+### Liên hệ tư vấn
 
-Bạn muốn tìm hiểu thêm về ngành bao bì hoặc thảo luận cơ hội hợp tác?
+Quý khách hàng cần tư vấn thêm về sản phẩm và dịch vụ, vui lòng liên hệ:
 
 - **Hotline**: +84 2993 612 772
 - **Email**: sales@baobiduynhat.com.vn
-- **Website**: [Liên hệ chúng tôi](https://www.baobiduynhat.com.vn/lien-he)
+- **Website**: https://www.baobiduynhat.com.vn
 
-Duy Nhật - Đối tác tin cậy cho sự phát triển bền vững của doanh nghiệp.
+Duy Nhật luôn đồng hành cùng doanh nghiệp, tăng thêm giá trị cho sản phẩm của bạn.

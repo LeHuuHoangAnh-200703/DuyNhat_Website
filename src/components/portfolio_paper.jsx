@@ -9,7 +9,7 @@ const images = [
     id: 1,
     name: "Bao Bì Giấy",
     paper: true,
-    title: "Hộp giấy",
+    title: "Túi Xách Giấy Thương Hiệu",
     subTitle: "Bao Bì Giấy",
     imgUrl: require("../images/duynhat/products/Paper/HG1.jpg"),
     detailUrl: "/details_Products/hop-giay-1"
@@ -18,7 +18,7 @@ const images = [
     id: 2,
     name: "Bao Bì Giấy",
     paper: true,
-    title: "Hộp giấy",
+    title: "Túi Xách Giấy Quà Tặng",
     subTitle: "Bao Bì Giấy",
     imgUrl: require("../images/duynhat/products/Paper/HG2.jpg"),
     detailUrl: "/details_Products/hop-giay-2"
@@ -27,7 +27,7 @@ const images = [
     id: 3,
     name: "Bao Bì Giấy",
     paper: true,
-    title: "Hộp giấy",
+    title: "Hộp Giấy Thực Phẩm Đông Lạnh",
     subTitle: "Bao Bì Giấy",
     imgUrl: require("../images/duynhat/products/Paper/HG3.jpg"),
     detailUrl: "/details_Products/hop-giay-3"
@@ -36,7 +36,7 @@ const images = [
     id: 4,
     name: "Bao Bì Giấy",
     paper: true,
-    title: "Hộp giấy",
+    title: "Hộp Giấy Mì Ăn Liền",
     subTitle: "Bao Bì Giấy",
     imgUrl: require("../images/duynhat/products/Paper/HG4.jpg"),
     detailUrl: "/details_Products/hop-giay-4"
@@ -45,7 +45,7 @@ const images = [
     id: 5,
     name: "Bao Bì Giấy",
     paper: true,
-    title: "Hộp giấy",
+    title: "Hộp Tôm Tempura Cao Cấp - Luxury",
     subTitle: "Bao Bì Giấy",
     imgUrl: require("../images/duynhat/products/Paper/HG5.jpg"),
     detailUrl: "/details_Products/hop-giay-5"
@@ -54,7 +54,7 @@ const images = [
     id: 6,
     name: "Bao Bì Giấy",
     paper: true,
-    title: "Hộp giấy",
+    title: "Hộp Trái Cây Tươi - La Cubana",
     subTitle: "Bao Bì Giấy",
     imgUrl: require("../images/duynhat/products/Paper/HG6.jpg"),
     detailUrl: "/details_Products/hop-giay-6"
@@ -63,7 +63,7 @@ const images = [
     id: 7,
     name: "Bao Bì Giấy",
     paper: true,
-    title: "Hộp giấy",
+    title: "Hộp Tôm Tempura - Professional",
     subTitle: "Bao Bì Giấy",
     imgUrl: require("../images/duynhat/products/Paper/HG7.jpg"),
     detailUrl: "/details_Products/hop-giay-7"
@@ -111,6 +111,40 @@ const PortfolioPaper = props => {
   const filters = getFilterSections(images)
   const collumnCls = props.col ? props.col : "col-md-3";
 
+  // Styles cho equal height cards
+  const portfolioGridStyle = {
+    display: 'flex',
+    flexWrap: 'wrap'
+  };
+
+  const columnWrapperStyle = {
+    display: 'flex'
+  };
+
+  const dlabBoxStyle = {
+    display: 'flex',
+    flexDirection: 'column',
+    height: '100%',
+    width: '100%',
+    transition: 'transform 0.3s ease, box-shadow 0.3s ease'
+  };
+
+  const dlabBoxLinkStyle = {
+    textDecoration: 'none',
+    display: 'flex',
+    flexDirection: 'column',
+    height: '100%'
+  };
+
+  const cardBodyStyle = {
+    backgroundColor: 'white',
+    flexGrow: 1,
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'flex-start',
+    padding: '15px'
+  };
+
   return (
     <>
       <SEO
@@ -147,18 +181,17 @@ const PortfolioPaper = props => {
               }
             })
           }
-
           return (
             <div className="content-block">
               <div className="section-full content-inner-2 portfolio text-uppercase bg-gray" id="portfolio">
                 <div className="container">
                   {/* FILTERED PORTFOLIO LIST */}
                   <div className="portfolio_area">
-                    <div className="row portfolio-grid">
+                    <div className="row portfolio-grid" style={portfolioGridStyle}>
                       {filteredList.map(image => (
-                        <div key={image.id} className={collumnCls}>
-                          <div className="dlab-box dlab-gallery-box">
-                            <Link to={image.detailUrl || "#"} style={{ textDecoration: 'none' }}>
+                        <div key={image.id} className={collumnCls} style={columnWrapperStyle}>
+                          <div className="dlab-box dlab-gallery-box" style={dlabBoxStyle}>
+                            <Link to={image.detailUrl || "#"} style={dlabBoxLinkStyle}>
                               <div className="dlab-media">
                                 <Link to={image.detailUrl || "#"}>
                                   <Img
@@ -169,9 +202,7 @@ const PortfolioPaper = props => {
                                 </Link>
                                 <div className="overlay-bx"></div>
                               </div>
-                              <div className="card-body" style={{
-                                backgroundColor: 'white'
-                              }}>
+                              <div className="card-body" style={cardBodyStyle}>
                                 <p className="text-uppercase mb-2" style={{
                                   fontSize: '0.75rem',
                                   color: '#999',

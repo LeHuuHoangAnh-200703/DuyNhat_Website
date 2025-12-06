@@ -72,10 +72,10 @@ Chúng tôi kết hợp sự chú ý đến từng chi tiết với hiệu quả
 
 ### Liên hệ tư vấn
 
-Để được tư vấn miễn phí về thiết kế dieline và sản xuất bao bì, vui lòng liên hệ:
+Quý khách hàng cần tư vấn thêm về sản phẩm và dịch vụ, vui lòng liên hệ:
 
 - **Hotline**: +84 2993 612 772
 - **Email**: sales@baobiduynhat.com.vn
 - **Website**: https://www.baobiduynhat.com.vn
 
-Duy Nhật - Tạo nên sự khác biệt cho sản phẩm của bạn.
+Duy Nhật luôn đồng hành cùng doanh nghiệp, tăng thêm giá trị cho sản phẩm của bạn.

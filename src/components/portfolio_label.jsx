@@ -10,7 +10,7 @@ const images = [
     id: 1,
     name: "Tem, nhãn, và decal",
     label: true,
-    title: "Tem & nhãn",
+    title: "Nhãn Decal Thực Phẩm Đông Lạnh",
     subTitle: "Tem, nhãn, và decal",
     imgUrl: require("../images/duynhat/products/Label/IMG_0052.jpg"),
     detailUrl: "/details_Products/tem-nhan-1"
@@ -19,7 +19,7 @@ const images = [
     id: 2,
     name: "Tem, nhãn, và decal",
     label: true,
-    title: "Nhãn",
+    title: "Nhãn Decal Tôm Hải Sản",
     subTitle: "Tem, nhãn, và decal",
     imgUrl: require("../images/duynhat/products/Label/IMG_0059.jpg"),
     detailUrl: "/details_Products/tem-nhan-2"
@@ -28,7 +28,7 @@ const images = [
     id: 3,
     name: "Tem, nhãn, và decal",
     label: true,
-    title: "Nhãn",
+    title: "Băng Keo Decal Cuộn",
     subTitle: "Tem, nhãn, và decal",
     imgUrl: require("../images/duynhat/products/Label/IMG_0066.jpg"),
     detailUrl: "/details_Products/tem-nhan-3"
@@ -37,7 +37,7 @@ const images = [
     id: 4,
     name: "Tem, nhãn, và decal",
     label: true,
-    title: "Nhãn dán",
+    title: "Nhãn Decal Cá MSC",
     subTitle: "Tem, nhãn, và decal",
     imgUrl: require("../images/duynhat/products/Label/IMG_0070.jpg"),
     detailUrl: "/details_Products/tem-nhan-4"
@@ -46,7 +46,7 @@ const images = [
     id: 5,
     name: "Tem, nhãn, và decal",
     label: true,
-    title: "Tem & nhãn",
+    title: "Cuộn Nhãn Decal Tôm Ring 51-60",
     subTitle: "Tem, nhãn, và decal",
     imgUrl: require("../images/duynhat/products/Label/IMG_0084.jpg"),
     detailUrl: "/details_Products/tem-nhan-5"
@@ -55,7 +55,7 @@ const images = [
     id: 6,
     name: "Tem, nhãn, và decal",
     label: true,
-    title: "Cuộn nhãn",
+    title: "Cuộn Nhãn Decal Cua Ghẹ",
     subTitle: "Tem, nhãn, và decal",
     imgUrl: require("../images/duynhat/products/Label/IMG_0085-scaled.jpg"),
     detailUrl: "/details_Products/tem-nhan-6"
@@ -64,7 +64,7 @@ const images = [
     id: 7,
     name: "Tem, nhãn, và decal",
     label: true,
-    title: "Cuộn nhãn",
+    title: "Cuộn Nhãn Decal Xanh Dương",
     subTitle: "Tem, nhãn, và decal",
     imgUrl: require("../images/duynhat/products/Label/IMG_0089.jpg"),
     detailUrl: "/details_Products/tem-nhan-7"
@@ -73,16 +73,16 @@ const images = [
     id: 8,
     name: "Tem, nhãn, và decal",
     label: true,
-    title: "Tem & nhãn",
+    title: "Cuộn Nhãn Decal Hải Sản ASC - Seafood",
     subTitle: "Tem, nhãn, và decal",
     imgUrl: require("../images/duynhat/products/Label/IMG_0094.jpg"),
     detailUrl: "/details_Products/tem-nhan-8"
-  },,
+  },
   {
     id: 9,
     name: "Sản phẩm khác",
     other: true,
-    title: "Nhãn quấn",
+    title: "Nhãn Lon Tôm - Xanh Dương",
     subTitle: "Sản phẩm khác",
     imgUrl: require("../images/duynhat/products/nhan_quan_21.jpg"),
     detailUrl: "/details_Products/sp-khac-2"
@@ -91,7 +91,7 @@ const images = [
     id: 10,
     name: "Sản phẩm khác",
     other: true,
-    title: "Nhãn quấn",
+    title: "Nhãn Lon Tôm Cao Cấp",
     subTitle: "Sản phẩm khác",
     imgUrl: require("../images/duynhat/products/nhan_quan_31.jpg"),
     detailUrl: "/details_Products/sp-khac-3"
@@ -100,7 +100,7 @@ const images = [
     id: 11,
     name: "Sản phẩm khác",
     other: true,
-    title: "Nhãn quấn",
+    title: "Nhãn Lon Tôm - Xanh Lá Cây",
     subTitle: "Sản phẩm khác",
     imgUrl: require("../images/duynhat/products/nhan_quan_11.jpg"),
     detailUrl: "/details_Products/sp-khac-1"
@@ -148,6 +148,40 @@ const PortfolioTem = props => {
   const filters = getFilterSections(images)
   const collumnCls = props.col ? props.col : "col-md-3";
 
+  // Styles cho equal height cards
+  const portfolioGridStyle = {
+    display: 'flex',
+    flexWrap: 'wrap'
+  };
+
+  const columnWrapperStyle = {
+    display: 'flex'
+  };
+
+  const dlabBoxStyle = {
+    display: 'flex',
+    flexDirection: 'column',
+    height: '100%',
+    width: '100%',
+    transition: 'transform 0.3s ease, box-shadow 0.3s ease'
+  };
+
+  const dlabBoxLinkStyle = {
+    textDecoration: 'none',
+    display: 'flex',
+    flexDirection: 'column',
+    height: '100%'
+  };
+
+  const cardBodyStyle = {
+    backgroundColor: 'white',
+    flexGrow: 1,
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'flex-start',
+    padding: '15px'
+  };
+
   return (
     <>
       <SEO
@@ -184,19 +218,17 @@ const PortfolioTem = props => {
               }
             })
           }
-
           return (
             <div className="content-block">
               <div className="section-full content-inner-2 portfolio text-uppercase bg-gray" id="portfolio">
                 <div className="container">
-
                   {/* FILTERED PORTFOLIO LIST */}
                   <div className="portfolio_area">
-                    <div className="row portfolio-grid">
+                    <div className="row portfolio-grid" style={portfolioGridStyle}>
                       {filteredList.map(image => (
-                        <div key={image.id} className={collumnCls}>
-                          <div className="dlab-box dlab-gallery-box">
-                            <Link to={image.detailUrl || "#"} style={{ textDecoration: 'none' }}>
+                        <div key={image.id} className={collumnCls} style={columnWrapperStyle}>
+                          <div className="dlab-box dlab-gallery-box" style={dlabBoxStyle}>
+                            <Link to={image.detailUrl || "#"} style={dlabBoxLinkStyle}>
                               <div className="dlab-media">
                                 <Link to={image.detailUrl || "#"}>
                                   <Img
@@ -207,9 +239,7 @@ const PortfolioTem = props => {
                                 </Link>
                                 <div className="overlay-bx"></div>
                               </div>
-                              <div className="card-body" style={{
-                                backgroundColor: 'white'
-                              }}>
+                              <div className="card-body" style={cardBodyStyle}>
                                 <p className="text-uppercase mb-2" style={{
                                   fontSize: '0.75rem',
                                   color: '#999',

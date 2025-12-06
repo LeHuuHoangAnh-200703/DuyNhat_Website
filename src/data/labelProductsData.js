@@ -17,7 +17,7 @@ export const labelProductsData = {
         images: ['IMG_0052.jpg', 'IMG_0059.jpg', 'IMG_0066.jpg', 'IMG_0070.jpg', 'IMG_0084.jpg']
     },
     'tem-nhan-2': {
-        name: 'Nhãn Decal Tôm Hải Sản ',
+        name: 'Nhãn Decal Tôm Hải Sản',
         fullDescription: 'Bộ nhãn decal cao cấp cho sản phẩm tôm và hải sản với thiết kế đa dạng. Nhãn tròn màu đen sang trọng "Private Selection" với thông tin dinh dưỡng (Nutrition Facts) đầy đủ theo chuẩn Mỹ. Nhãn "Cocktail Shrimp" phong cách AquaStar hiện đại với màu xanh-đỏ-đen bắt mắt. Nhãn "Cook & Serve" tiện lợi. Chất liệu decal cao cấp chống dầu mỡ, chịu nhiệt tốt, phù hợp cho bao bì xuất khẩu châu Âu - Bắc Mỹ.',
         features: [
             'Decal PET/PP chống dầu mỡ, chịu nhiệt 60-80°C',
@@ -68,7 +68,7 @@ export const labelProductsData = {
         images: ['IMG_0070.jpg', 'IMG_0059.jpg', 'IMG_0066.jpg', 'IMG_0070.jpg', 'IMG_0084.jpg']
     },
     'tem-nhan-5': {
-        name: 'Cuộn Nhãn Decal Tôm Ring 51-60 ',
+        name: 'Cuộn Nhãn Decal Tôm Ring 51-60',
         fullDescription: 'Cuộn nhãn decal cao cấp cho sản phẩm Shrimp Ring 51-60 (tôm tẩm bột chiên giòn). Thiết kế sang trọng với gam màu đen-vàng-đỏ, logo "33" nổi bật. Nhãn hình oval/tròn với thông tin "Coated Tail-On, Thaw & Serve" đầy đủ. Nutrition Facts theo chuẩn FDA, barcode EAN-13 chính xác. Cuộn in liên tục bằng công nghệ rotogravure chất lượng cao, màu sắc sống động. Phù hợp cho dây chuyền đóng gói tự động, tốc độ cao.',
         features: [
             'Cuộn decal BOPP/PET 50-80mic chống ẩm tuyệt đối',
