@@ -238,13 +238,13 @@ class PortfolioDetails extends Component {
                                                             color: '#666',
                                                             fontSize: '0.875rem',
                                                             letterSpacing: '1px',
-                                                            borderLeft: '3px solid #dc3545',
+                                                            borderLeft: '3px solid #E31E24',
                                                             paddingLeft: '12px'
                                                         }}>
                                                             Thông tin chung
                                                         </p>
                                                         <h2 className="font-weight-bold mb-3" style={{
-                                                            color: '#F22D4E',
+                                                            color: '#E31E24',
                                                             fontSize: '2rem'
                                                         }}>
                                                             {product.name}
@@ -271,7 +271,7 @@ class PortfolioDetails extends Component {
                                                         {product.features.map((feature, index) => (
                                                             <li key={index} className="mb-3 d-flex align-items-start">
                                                                 <span className="mr-2" style={{
-                                                                    color: '#F22D4E',
+                                                                    color: '#E31E24',
                                                                     fontSize: '1.2rem'
                                                                 }}>•</span>
                                                                 <span style={{ lineHeight: '1.6' }}>{feature}</span>
@@ -283,7 +283,7 @@ class PortfolioDetails extends Component {
                                                             to="/lien-he"
                                                             className="btn btn-lg text-white d-flex align-items-center justify-content-center"
                                                             style={{
-                                                                backgroundColor: '#F22D4E',
+                                                                backgroundColor: '#E31E24',
                                                                 borderRadius: '10px',
                                                                 padding: '15px 40px',
                                                                 fontSize: '1rem',
@@ -292,7 +292,7 @@ class PortfolioDetails extends Component {
                                                                 transition: 'all 0.3s ease'
                                                             }}
                                                             onMouseOver={(e) => e.currentTarget.style.backgroundColor = '#ca1332ff'}
-                                                            onMouseOut={(e) => e.currentTarget.style.backgroundColor = '#F22D4E'}
+                                                            onMouseOut={(e) => e.currentTarget.style.backgroundColor = '#E31E24'}
                                                         >
                                                             Liên hệ chúng tôi ngay
                                                             <span className="ml-2">→</span>
@@ -307,7 +307,7 @@ class PortfolioDetails extends Component {
                                 <div className="section-full content-inner bg-gray py-5">
                                     <div className="container">
                                         <div className="text-center mb-5">
-                                            <h3 className="font-weight-bold" style={{ color: '#F22D4E' }}>
+                                            <h3 className="font-weight-bold" style={{ color: '#E31E24' }}>
                                                 Sản phẩm liên quan
                                             </h3>
                                             <div style={{
@@ -354,18 +354,18 @@ class PortfolioDetails extends Component {
                                                 style={{
                                                     borderRadius: '10px',
                                                     padding: '12px 40px',
-                                                    borderColor: '#F22D4E',
-                                                    color: '#F22D4E',
+                                                    borderColor: '#E31E24',
+                                                    color: '#E31E24',
                                                     fontWeight: '600',
                                                     transition: 'all 0.3s ease'
                                                 }}
                                                 onMouseOver={(e) => {
-                                                    e.currentTarget.style.backgroundColor = '#F22D4E';
+                                                    e.currentTarget.style.backgroundColor = '#E31E24';
                                                     e.currentTarget.style.color = 'white';
                                                 }}
                                                 onMouseOut={(e) => {
                                                     e.currentTarget.style.backgroundColor = 'transparent';
-                                                    e.currentTarget.style.color = '#F22D4E';
+                                                    e.currentTarget.style.color = '#E31E24';
                                                 }}
                                             >
                                                 Xem tất cả sản phẩm

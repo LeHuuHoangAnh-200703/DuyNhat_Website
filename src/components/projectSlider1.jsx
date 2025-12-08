@@ -109,7 +109,7 @@ class ProjectSlider1 extends Component {
                                         {/* </Link> */}
                                     </div>
                                     <div class="dlab-info">
-                                        <h3 class="dlab-title"><Link to="/details_Products/tui-nhua-tg" tabindex="-1">Túi Gạo</Link></h3>
+                                        <h3 class="dlab-title"><Link to="/details_Products/tui-nhua-tg" tabindex="-1">Túi Ống</Link></h3>
                                     </div>
                                 </Link>
                             </div>

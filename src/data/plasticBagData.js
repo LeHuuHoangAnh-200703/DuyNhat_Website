@@ -1,13 +1,13 @@
 export const plasticBagData = {
     'tui-nhua-tc': {
         name: 'Túi có khả năng tái chế',
-        fullDescription: 'Túi nhựa tái chế là giải pháp bao bì xanh tiên tiến, được sản xuất từ nguyên liệu nhựa có khả năng tái chế hoàn toàn. Sản phẩm đáp ứng xu hướng bảo vệ môi trường toàn cầu, giúp doanh nghiệp thể hiện trách nhiệm xã hội và nâng cao hình ảnh thương hiệu. Túi có độ bền cao, thiết kế đa dạng, phù hợp với nhiều ngành hàng từ thực phẩm, thời trang đến công nghiệp.',
+        fullDescription: 'Túi nhựa tái chế là giải pháp bao bì xanh tiên tiến, được sản xuất từ nguyên liệu nhựa có khả năng tái chế hoàn toàn. Sản phẩm đáp ứng xu hướng bảo vệ môi trường toàn cầu, giúp doanh nghiệp thể hiện trách nhiệm xã hội và nâng cao hình ảnh thương hiệu.',
         features: [
-            'Chất liệu nhựa PE/PP tái chế 100%, thân thiện môi trường',
-            'Có thể tái chế nhiều lần, giảm thiểu chất thải nhựa',
-            'In flexo đa màu sắc, hình ảnh sắc nét, bắt mắt',
-            'Độ bền cao, chịu được trọng lượng lớn (5-25kg tùy loại)',
-            'Đạt chứng nhận môi trường quốc tế (có thể cung cấp theo yêu cầu)'
+            'Cấu trúc màng ghép 3-4 lớp (PET/NY/PE hoặc PET/AL/PE) chống ẩm, chống oxy',
+            'Khóa kéo zip chất lượng cao, đóng mở dễ dàng, tái sử dụng nhiều lần',
+            'In flexo/rotogravure đa màu sắc, hình ảnh sắc nét, bắt mắt',
+            'Chịu nhiệt độ thấp (-18°C đến -25°C), phù hợp thực phẩm đông lạnh',
+            'Dung tích đa dạng từ 250g đến 2kg'
         ],
         seo: {
             title: 'Túi Nhựa Tái Chế Thân Thiện Môi Trường | Recyclable Bag | Duy Nhật',
@@ -18,13 +18,13 @@ export const plasticBagData = {
     },
     'tui-nhua-8b': {
         name: 'Túi 8 Biên',
-        fullDescription: 'Túi 8 biên hay còn gọi là túi hộp, có thiết kế đặc biệt với 8 mép hàn tạo hình khối vuông vắn. Cấu trúc này giúp túi đứng vững trên kệ, tối đa hóa diện tích trưng bày và dung tích chứa. Đây là lựa chọn hoàn hảo cho các sản phẩm cao cấp cần bao bì nổi bật, sang trọng như cà phê hạt, trà cao cấp, snack, thực phẩm chức năng.',
+        fullDescription: 'Túi 8 biên hay còn gọi là túi hộp, có thiết kế đặc biệt với 8 mép hàn tạo hình khối vuông vắn. Cấu trúc này giúp túi đứng vững trên kệ, tối đa hóa diện tích trưng bày và dung tích chứa.',
         features: [
-            'Thiết kế 8 mép hàn tạo hình khối vuông, đứng vững',
-            'Dung tích lớn từ 250g - 2kg, tối ưu không gian',
-            'Có đáy phẳng rộng, dễ dàng trưng bày trên kệ',
-            'Trang bị khóa zipper hoặc van 1 chiều (cho cà phê)',
-            'In flexo/rotogravure chất lượng cao, hiệu ứng metallic'
+            'Đáy bằng phẳng giúp túi đứng vững, không bị đổ',
+            'Cấu trúc màng ghép 3-4 lớp (PET/AL/PE hoặc PET/NY/PE) chống ẩm tuyệt đối',
+            'In offset/rotogravure 8-10 màu, hình ảnh sắc nét, chân thực',
+            'Van thông khí một chiều (degassing valve) cho sản phẩm cà phê',
+            'Dung tích từ 500g đến 10kg'
         ],
         seo: {
             title: 'Túi 8 Biên Cao Cấp | Eight Side Sealed Bag | Duy Nhật',
@@ -35,13 +35,13 @@ export const plasticBagData = {
     },
     'tui-nhua-dt': {
         name: 'Túi đứng đáy tròn',
-        fullDescription: 'Túi đứng đáy tròn là mẫu túi đứng thế hệ mới với thiết kế đáy hình tròn độc đáo, tạo điểm nhấn khác biệt so với túi đứng truyền thống. Hình dáng mềm mại, hiện đại giúp sản phẩm nổi bật trên kệ hàng, thu hút sự chú ý của người tiêu dùng. Cấu trúc đáy tròn giúp túi đứng vững hơn, chứa được nhiều sản phẩm hơn với cùng kích thước.',
+        fullDescription: 'Túi đứng đáy tròn là mẫu túi đứng thế hệ mới với thiết kế đáy hình tròn độc đáo, tạo điểm nhấn khác biệt so với túi đứng truyền thống. Hình dáng mềm mại, hiện đại giúp sản phẩm nổi bật trên kệ hàng, thu hút sự chú ý của người tiêu dùng.',
         features: [
-            'Thiết kế đáy tròn độc đáo, hiện đại, khác biệt',
-            'Đứng vững tốt hơn túi đứng thông thường',
-            'Có khóa zipper tiện lợi, sử dụng nhiều lần',
-            'In flexo/rotogravure màu sắc rực rỡ, bắt mắt',
-            'Có thể trang bị van 1 chiều, lỗ treo'
+            'Cấu trúc màng ghép 3 lớp (PET/NY/PE) chống ẩm, chống oxy',
+            'Chịu nhiệt độ thấp (-18°C), phù hợp thực phẩm đông lạnh',
+            'In flexo/rotogravure 6-8 màu, hình ảnh sống động, bắt mắt',
+            'An toàn thực phẩm, đạt chuẩn FDA, BRC',
+            'Dung tích linh hoạt từ 100g đến 5kg'
         ],
         seo: {
             title: 'Túi Đứng Đáy Tròn | Round Bottom Doypack | Thiết Kế Độc Đáo | Duy Nhật',
@@ -52,13 +52,13 @@ export const plasticBagData = {
     },
     'tui-nhua-3b': {
         name: 'Túi 3 Biên',
-        fullDescription: 'Túi 3 biên là loại túi nhựa phổ biến và kinh tế nhất, được hàn kín 3 cạnh với 1 cạnh còn lại để đổ sản phẩm vào. Cấu trúc đơn giản nhưng hiệu quả, phù hợp với nhiều loại sản phẩm từ thực phẩm, công nghiệp đến y tế. Túi 3 biên có chi phí sản xuất thấp nhưng vẫn đảm bảo chất lượng bảo quản tốt.',
+        fullDescription: 'Túi 3 biên là loại túi nhựa phổ biến và kinh tế nhất, được hàn kín 3 cạnh với 1 cạnh còn lại để đổ sản phẩm vào. Cấu trúc đơn giản nhưng hiệu quả, phù hợp với nhiều loại sản phẩm từ thực phẩm, công nghiệp đến y tế.',
         features: [
-            'Cấu trúc đơn giản: 3 mép hàn chắc chắn, kín khí',
-            'Chi phí sản xuất tối ưu, phù hợp sản xuất hàng loạt',
-            'Đa dạng kích thước từ nhỏ (50g) đến lớn (5kg)',
-            'In flexo 1-8 màu, chất lượng tốt với giá hợp lý',
-            'Có thể thêm khía cắt dễ xé (tear notch)'
+            'Cấu trúc màng ghép 2-3 lớp (NY/PE hoặc PET/PE) chống ẩm tốt',
+            'Chịu nhiệt độ đông lạnh (-18°C đến -25°C) ổn định',
+            'In flexo 4-6 màu, hình ảnh rõ nét, chi phí hợp lý',
+            'An toàn thực phẩm, đạt tiêu chuẩn FDA, EU',
+            'Dung tích linh hoạt từ 100g đến 1kg'
         ],
         seo: {
             title: 'Túi 3 Biên Giá Rẻ | Three Side Sealed Bag | Chi Phí Tối Ưu | Duy Nhất',
@@ -68,31 +68,31 @@ export const plasticBagData = {
         images: ['3B.jpg', 'TG.JPG.jpg', 'DT.JPG.jpg', '8B.JPG.jpg', 'TC1.JPG.jpg']
     },
     'tui-nhua-tg': {
-        name: 'Túi Gạo',
-        fullDescription: 'Túi gạo được thiết kế đặc biệt để bảo quản gạo và các loại nông sản dạng hạt. Cấu trúc nhiều lớp với khả năng chống ẩm vượt trội, giữ cho gạo luôn khô ráo, thơm ngon. Túi có độ bền cao, chịu được trọng lượng lớn từ 2-50kg. In ấn chất lượng cao giúp thương hiệu gạo của bạn nổi bật trên thị trường.',
+        name: 'Túi Ống',
+        fullDescription: 'Túi Ống là dạng bao bì truyền thống với thiết kế hình chữ nhật được hàn kín cả bốn cạnh, tạo hình dạng phồng giống chiếc gối. Đây là giải pháp bao bì kinh tế và hiệu quả cho các sản phẩm như phân bón, thức ăn chăn nuôi, gạo, bột, hóa chất nông nghiệp và các sản phẩm công nghiệp.',
         features: [
-            'Cấu trúc 2-3 lớp chống ẩm, chống thấm tuyệt đối',
-            'Độ bền cao, chịu lực tốt cho gạo 2-50kg',
-            'Có khóa kéo zipper hoặc hàn nhiệt chắc chắn',
-            'In rotogravure/flexo 6-8 màu, hình ảnh sống động',
-            'Có thể trang bị lỗ treo, van thoát khí'
+            'Chất liệu PP dệt phủ PE hoặc màng ghép BOPP/PE chống ẩm, chống thấm',
+            'Độ bền cơ học cao, chịu được trọng lượng 10-50kg',
+            'In flexo 1-4 màu, có thể in offset cho chất lượng cao hơn',
+            'Chống tia UV, bảo vệ sản phẩm khi vận chuyển và lưu kho',
+            'Dung tích từ 5kg đến 50kg'
         ],
         seo: {
-            title: 'Túi Gạo | Rice Bag | Chống Ẩm Tốt | Duy Nhật',
-            description: 'Túi gạo chống ẩm, độ bền cao 2-50kg. In rotogravure sắc nét, có zipper. Đạt chuẩn ATTP, giữ gạo thơm ngon lâu dài. MOQ 5000 túi.',
-            keywords: 'túi gạo, túi đựng gạo, bao bì gạo, rice bag, túi chống ẩm, bao bì nông sản'
+            title: 'Túi Gối Đựng Phân Bón, Thức Ăn Chăn Nuôi | Pillow Bag | PP Woven | Duy Nhật',
+            description: 'Túi Ống (pillow bag) cho phân bón, thức ăn chăn nuôi, gạo. PP dệt phủ PE chống ẩm. Chịu tải 10-50kg. In flexo/offset 1-4 màu. Chi phí tối ưu. MOQ 10000 túi.',
+            keywords: 'túi ống, pillow bag, túi phân bón, túi thức ăn chăn nuôi, PP woven bag, túi bột, túi gạo, bao bì nông nghiệp, túi công nghiệp'
         },
         images: ['TG.JPG.jpg', '3B.jpg', '8B.JPG.jpg', 'DT.JPG.jpg', 'TC1.JPG.jpg']
     },
     'tui-nhua-gv': {
         name: 'Túi Gắn Vòi',
-        fullDescription: 'Túi gắn vòi là giải pháp bao bì hiện đại cho sản phẩm dạng lỏng và sệt như nước giặt, nước rửa chén, nước trái cây, sữa chua uống, mật ong, sốt gia vị. Thiết kế vòi rót tiện lợi giúp người dùng dễ dàng rót, gấp gọn khi không sử dụng. Túi nhẹ hơn chai nhựa truyền thống 80%, tiết kiệm chi phí vận chuyển và thân thiện môi trường.',
+        fullDescription: 'Túi gắn vòi là giải pháp bao bì hiện đại cho sản phẩm dạng lỏng và sệt như nước giặt, nước rửa chén, nước trái cây, sữa chua uống, mật ong, sốt gia vị. Túi nhẹ hơn chai nhựa truyền thống 80%, tiết kiệm chi phí vận chuyển và thân thiện môi trường.',
         features: [
-            'Vòi rót tiện lợi, có nắp đậy chống tràn đổ',
-            'Cấu trúc 2-3 lớp chống thấm tuyệt đối cho sản phẩm lỏng',
-            'Nhẹ hơn 80% so với chai nhựa, tiết kiệm vận chuyển',
-            'In flexo/rotogravure 6-8 màu, diện tích in lớn',
-            'Có đáy phẳng hoặc đáy gấp, đứng vững trên kệ'
+            'Đáy gusset đứng vững, tối ưu không gian trưng bày và lưu kho',
+            'Cấu trúc màng ghép 3-4 lớp (PET/NY/PE) chống thấm tuyệt đối',
+            'Chịu được áp suất chất lỏng, không rò rỉ',
+            'Giảm 70-80% trọng lượng so với chai nhựa cứng',
+            'Dung tích từ 500ml đến 5L'
         ],
         seo: {
             title: 'Túi Gắn Vòi | Spout Pouch | Đựng Nước Giặt, Nước Trái Cây | Duy Nhật',
@@ -103,13 +103,13 @@ export const plasticBagData = {
     },
     'tui-nhua-db': {
         name: 'Túi Nhựa Đựng Bánh',
-        fullDescription: 'Túi nhựa đựng bánh được thiết kế chuyên biệt để bảo quản các loại bánh kẹo, bánh quy, snack giòn. Cấu trúc nhiều lớp với khả năng chống ẩm, chống oxy vượt trội giúp giữ được độ giòn, thơm ngon của sản phẩm lâu dài. In ấn sắc nét với màu sắc bắt mắt, thu hút người tiêu dùng. Đạt chuẩn an toàn vệ sinh thực phẩm, phù hợp đóng gói bánh công nghiệp và thủ công.',
+        fullDescription: 'Túi nhựa đựng bánh được thiết kế chuyên biệt để bảo quản các loại bánh kẹo, bánh quy, snack giòn. Cấu trúc nhiều lớp với khả năng chống ẩm, chống oxy vượt trội giúp giữ được độ giòn, thơm ngon của sản phẩm lâu dài.',
         features: [
-            'Cấu trúc 2-3 lớp chống ẩm, giữ độ giòn cho bánh',
-            'Màng chống oxy OPP/BOPP, kéo dài thời gian bảo quản',
-            'In flexo/rotogravure đa màu sắc, hình ảnh sống động',
-            'Có khía cắt dễ xé hoặc khóa zipper tái sử dụng',
-            'Đạt chuẩn FDA/ATTP cho thực phẩm trực tiếp'
+            'Gấp viền hai bên tạo dung tích lớn, tiết kiệm vật liệu',
+            'Cấu trúc màng ghép 2-3 lớp (BOPP/CPP hoặc PET/PE) chống ẩm tốt',
+            'In flexo/rotogravure 6-8 màu, hình ảnh sắc nét, màu sắc rực rỡ',
+            'Tearnotch (rãnh xé) dễ mở, tiện lợi cho người dùng',
+            'Dung tích từ 100g đến 1kg'
         ],
         seo: {
             title: 'Túi Nhựa Đựng Bánh | Bao Bì Bánh Kẹo | Chống Ẩm Tốt | Duy Nhật',
@@ -117,5 +117,22 @@ export const plasticBagData = {
             keywords: 'túi đựng bánh, bao bì bánh kẹo, túi đựng bánh quy, túi snack, bao bì thực phẩm, túi chống ẩm bánh'
         },
         images: ['1_1.jpg', '3B.jpg', 'TC1.JPG.jpg', '8B.JPG.jpg', 'DT.JPG.jpg']
+    },
+    'tui-nhua-gao': {
+        name: 'Túi gấp viền hai bên',
+        fullDescription: 'Túi gấp viền hai bên là giải pháp bao bì chuyên nghiệp cho gạo, bột, đường, muối và các sản phẩm thực phẩm hạt. Thiết kế gấp viền ở cả hai cạnh bên tạo không gian chứa tối ưu, giúp túi đứng vững và hình dạng chữ nhật đẹp mắt khi đựng sản phẩm.',
+        features: [
+            'Gấp viền hai bên tạo dung tích lớn, hình dạng vuông vức',
+            'Cấu trúc màng ghép BOPP/PP/PE chống ẩm, chống thấm hiệu quả',
+            'In flexo/rotogravure 6-10 màu, hình ảnh sắc nét, màu sắc bắt mắt',
+            'An toàn thực phẩm, đạt chuẩn HACCP, ISO',
+            'Dung tích từ 1kg đến 50kg'
+        ],
+        seo: {
+            title: 'Túi Gấp Viền Hai Bên Đựng Gạo | Side Gusset Rice Bag | Duy Nhật',
+            description: 'Túi gấp viền hai bên cho gạo, bột, đường. Màng ghép BOPP/PP/PE chống ẩm tuyệt đối. In 6-10 màu sắc nét. Có cửa sổ trong suốt. Đứng vững, đẹp mắt. MOQ 10000 túi.',
+            keywords: 'túi gạo, side gusset bag, túi gấp viền, túi đựng gạo, bao bì gạo, túi bột, túi đường, rice packaging bag, quad seal bag'
+        },
+        images: ['2.jpg', '3B.jpg', 'TC1.JPG.jpg', '8B.JPG.jpg', 'DT.JPG.jpg']
     }
 };
