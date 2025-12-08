@@ -17,45 +17,69 @@ class Product extends Component {
                 <StaticQuery
                     query={graphql`
                     query {
-                        desktop: file(relativePath: { eq: "duynhat/factory/DSC_3583.jpg" }) {
-                        childImageSharp {
-                            fluid(quality: 100) {
-                            ...GatsbyImageSharpFluid_withWebp
-                            }
-                        }
-                        }
-                        flex: file(relativePath: { eq: "duynhat/factory/DSC_9237.jpg" }) {
+                        desktop: file(relativePath: { eq: "duynhat/factory/ANT MEDIA-80.jpg" }) {
                             childImageSharp {
-                                fluid(quality: 100) {
-                                ...GatsbyImageSharpFluid_withWebp
+                                fluid(
+                                    quality: 90,
+                                    maxWidth: 2400,
+                                    srcSetBreakpoints: [750, 1080, 1366, 1920, 2400]
+                                ) {
+                                    ...GatsbyImageSharpFluid_withWebp
                                 }
                             }
                         }
-                        paper: file(relativePath: { eq: "duynhat/factory/DSC_3879.jpg" }) {
+                        flex: file(relativePath: { eq: "duynhat/factory/ANT MEDIA-207.jpg" }) {
                             childImageSharp {
-                                fluid(quality: 100) {
-                                ...GatsbyImageSharpFluid_withWebp
+                                fluid(
+                                    quality: 90,
+                                    maxWidth: 800,
+                                    srcSetBreakpoints: [400, 600, 800]
+                                ) {
+                                    ...GatsbyImageSharpFluid_withWebp
                                 }
                             }
                         }
-                        label: file(relativePath: { eq: "duynhat/factory/DSC_9257.jpg" }) {
+                        paper: file(relativePath: { eq: "duynhat/factory/ANT MEDIA-89.jpg" }) {
                             childImageSharp {
-                                fluid(quality: 100) {
-                                ...GatsbyImageSharpFluid_withWebp
+                                fluid(
+                                    quality: 90,
+                                    maxWidth: 800,
+                                    srcSetBreakpoints: [400, 600, 800]
+                                ) {
+                                    ...GatsbyImageSharpFluid_withWebp
                                 }
                             }
                         }
-                        carton: file(relativePath: { eq: "duynhat/DSC_7898.jpg" }) {
+                        label: file(relativePath: { eq: "duynhat/factory/ANT MEDIA-13.jpg" }) {
                             childImageSharp {
-                                fluid(quality: 100) {
-                                ...GatsbyImageSharpFluid_withWebp
+                                fluid(
+                                    quality: 90,
+                                    maxWidth: 800,
+                                    srcSetBreakpoints: [400, 600, 800]
+                                ) {
+                                    ...GatsbyImageSharpFluid_withWebp
+                                }
+                            }
+                        }
+                        carton: file(relativePath: { eq: "duynhat/factory/ANT MEDIA-20.jpg" }) {
+                            childImageSharp {
+                                fluid(
+                                    quality: 90,
+                                    maxWidth: 800,
+                                    srcSetBreakpoints: [400, 600, 800]
+                                ) {
+                                    ...GatsbyImageSharpFluid_withWebp
                                 }
                             }
                         }
                         poly: file(relativePath: { eq: "duynhat/factory/DSC_7885.jpg" }) {
                             childImageSharp {
-                                fluid(quality: 100) {
-                                ...GatsbyImageSharpFluid_withWebp
+                                fluid(
+                                    quality: 90,
+                                    maxWidth: 800,
+                                    srcSetBreakpoints: [400, 600, 800]
+                                ) {
+                                    ...GatsbyImageSharpFluid_withWebp
                                 }
                             }
                         }

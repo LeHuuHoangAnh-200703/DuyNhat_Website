@@ -4,22 +4,7 @@ import Slider from "react-slick";
 
 import Img from "gatsby-image";
 import { graphql, StaticQuery } from "gatsby"
-// import "slick-carousel/slick/slick.css";
-// import "slick-carousel/slick/slick-theme.css";
-// const content = [];
-// function importAll(r) {
-//     return r.keys().map(r);
-//   }
 
-// const images = importAll(require.context("../images/duynhat/customers", false, /\.(png|jpe?g|svg)$/));
-// images.map(
-//     (image, index) => {
-//         content.push({
-//           logo:image
-//       })
-
-//     }
-// );
 class ClientSlider1 extends Component {
 
   render() {
@@ -27,10 +12,10 @@ class ClientSlider1 extends Component {
     const settings = {
       dots: false,
       infinite: true,
-      // speed: 500,
       slidesToShow: 4,
       slidesToScroll: 1,
-      autoplay: 5000,
+      autoplay: true,
+      autoplaySpeed: 5000,
       responsive: [
         {
           breakpoint: 1200,
@@ -60,33 +45,54 @@ class ClientSlider1 extends Component {
       <StaticQuery
         query={graphql`
                 query {
-                    allFile(filter: {extension: {regex: "/(jpg)|(jpeg)|(png)/"}, dir: {regex:"duynhat/customers/"}}) {
-                    edges {
-                      node {
-                        id
-                        childImageSharp {
-                          fluid(quality:100,fit:INSIDE,maxHeight:150) {
-                            originalName
-                            ...GatsbyImageSharpFluid_tracedSVG
+                    allFile(
+                      filter: {
+                        extension: {regex: "/(jpg)|(jpeg)|(png)/"}, 
+                        dir: {regex:"duynhat/customers/"}
+                      }
+                    ) {
+                      edges {
+                        node {
+                          id
+                          childImageSharp {
+                            fluid(
+                              quality: 95,
+                              maxWidth: 800,
+                              maxHeight: 400,
+                              fit: CONTAIN,
+                              background: "transparent",
+                              srcSetBreakpoints: [300, 600, 800]
+                            ) {
+                              originalName
+                              ...GatsbyImageSharpFluid_withWebp_noBase64
+                            }
                           }
                         }
                       }
                     }
-                  }
                 }`
         }
 
         render={data => (
 
           <Slider {...settings} className="client-logo-carousel btn-style-1 icon-2">
-            {/* {content.map((item, id) => ( */}
             {data.allFile.edges.map(edge => (
-              <div class="item" >
-                <div class={`ow-client-logo ${padding}`}>
-                  <div class={`client-logo ${Border}`} style={{ height: "208px" }}>
-                    {/* <Link to="#"><img src={item.logo} alt=""/></Link> */}
-                    {/* {console.log(data)} */}
-                    <Img fluid={edge.node.childImageSharp.fluid} />
+              <div className="item" key={edge.node.id}>
+                <div className={`ow-client-logo ${padding}`}>
+                  <div className={`client-logo ${Border}`} style={{ height: "280px", padding: "20px" }}>
+                    <Img 
+                      fluid={edge.node.childImageSharp.fluid}
+                      imgStyle={{ 
+                        objectFit: 'contain',
+                        imageRendering: '-webkit-optimize-contrast'
+                      }}
+                      style={{
+                        height: '100%',
+                        width: '100%',
+                        maxWidth: '100%'
+                      }}
+                      alt={edge.node.childImageSharp.fluid.originalName}
+                    />
                   </div>
                 </div>
               </div>

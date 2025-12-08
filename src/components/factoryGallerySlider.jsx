@@ -44,7 +44,7 @@ class FactoryGallerySlider extends Component {
             <StaticQuery
             query={graphql`
             query {
-                flexRice:file(relativePath: { eq: "duynhat/factory/DSC_3325.jpg" }){
+                flexRice:file(relativePath: { eq: "duynhat/factory/ANT MEDIA-16.jpg" }){
                     childImageSharp {
                       fluid(quality:100,fit:INSIDE){
                         originalName
@@ -53,7 +53,7 @@ class FactoryGallerySlider extends Component {
                     }
                     id
                   }
-                flexFlat:file(relativePath: { eq: "duynhat/factory/DSC_7874.jpg" }){
+                flexFlat:file(relativePath: { eq: "duynhat/factory/ANT MEDIA-82.jpg" }){
                     childImageSharp {
                         fluid(quality:100,fit:INSIDE){
                             originalName
@@ -62,7 +62,7 @@ class FactoryGallerySlider extends Component {
                     }
                     id
                 }
-                flexRound:file(relativePath: { eq: "duynhat/factory/DSC_9249.jpg" }){
+                flexRound:file(relativePath: { eq: "duynhat/factory/ANT MEDIA-151.jpg" }){
                     childImageSharp {
                         fluid(quality:100,fit:INSIDE){
                             originalName
@@ -71,7 +71,7 @@ class FactoryGallerySlider extends Component {
                     }
                     id
                 }
-                paperBox:file(relativePath: { eq: "duynhat/factory/DSC_9222.jpg" }){
+                paperBox:file(relativePath: { eq: "duynhat/factory/ANT MEDIA-197.jpg" }){
                     childImageSharp {
                         fluid(quality:100,fit:INSIDE){
                             originalName
@@ -79,7 +79,7 @@ class FactoryGallerySlider extends Component {
                         }
                     }
                 }
-                sticker:file(relativePath: { eq: "duynhat/factory/DSC_9234.jpg" }){
+                sticker:file(relativePath: { eq: "duynhat/factory/ANT MEDIA-52.jpg" }){
                     childImageSharp {
                         fluid(quality:100,fit:INSIDE){
                             originalName
@@ -88,7 +88,7 @@ class FactoryGallerySlider extends Component {
                     }
                     id
                 }
-                roll:file(relativePath: { eq: "duynhat/factory/DSC_9237.jpg" }){
+                roll:file(relativePath: { eq: "duynhat/factory/ANT MEDIA-39.jpg" }){
                     childImageSharp {
                         fluid(quality:100,fit:INSIDE){
                             originalName

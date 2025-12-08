@@ -17,20 +17,28 @@ class About2 extends Component {
                 <StaticQuery
                     query={graphql`
                     query {
-                        desktop: file(relativePath: { eq: "duynhat/company/DJI_0150-copy.jpg" }) {
-                        childImageSharp {
-                            fluid(quality: 100, maxWidth: 1920) {
-                            ...GatsbyImageSharpFluid_withWebp
+                        desktop: file(relativePath: { eq: "duynhat/company/ANT MEDIA-3.jpg" }) {
+                            childImageSharp {
+                                fluid(
+                                    quality: 90, 
+                                    maxWidth: 2400,
+                                    srcSetBreakpoints: [750, 1080, 1366, 1920, 2400]
+                                ) {
+                                    ...GatsbyImageSharpFluid_withWebp
+                                }
                             }
-                        }
                         }
                         truck: file(relativePath: { eq: "duynhat/factory/DSC_7915.jpg" }) {
                             childImageSharp {
-                                fluid(jpegQuality: 100,maxWidth:1024) {
-                                ...GatsbyImageSharpFluid_withWebp
+                                fluid(
+                                    quality: 90,
+                                    maxWidth: 1920,
+                                    srcSetBreakpoints: [600, 960, 1366, 1920]
+                                ) {
+                                    ...GatsbyImageSharpFluid_withWebp
                                 }
                             }
-                            }
+                        }
                     }
                     `}
                     render={data => {
@@ -63,11 +71,8 @@ class About2 extends Component {
                                             <div class="service-box style2">
                                                 <div>
                                                     <h2 class="title">Hành Trình của<br /><span> Bao Bì Duy Nhật. </span> </h2>
-                                                    <VText style={{ marginBottom: 0, textAlign: 'center' }}>Công ty TNHH SX &amp; TM Duy Nhật được thành lập vào năm 2004 (<a href="https://www.dnpack.com.vn" style={{ color: "white", textDecorationLine: "underline" }}>Bao Bì Duy Nhật - Duy Nhat Pack - DN Pack</a>).
-                                                        Bao Bì Duy Nhật chuyên sản xuất in ấn và cung cấp các loại bao bì giấy, bao bì màng ghép phức hợp cao cấp cho nông – lâm nghiệp, thủy – hải sản, phục vụ sản xuất kinh doanh hàng hóa ở nhiều ngành,
-                                                        nhiều lĩnh vực. Từ đầu năm 2020, Bao Bì Duy Nhật đã dời khuôn viên sản xuất về Khu Công Nghiệp An Nghiệp, nhầm mở rộng quy mô sản xuất và
-                                                        nâng cao chất lượng sản phẩm. Với đội ngũ quản lý nhiều năm kinh nghiệm, công nghệ tân tiến, hiện đại và đội ngũ nhân viên chuyên nghiệp với tay
-                                                        nghề cao, chúng tôi luôn phấn đấu hoàn thiện hơn nữa các sản phẩm của mình để mang tới cho quý khách hàng sự an tâm và hài lòng khi hợp tác. </VText>
+                                                    <VText style={{ marginBottom: 0, textAlign: 'center' }}>Công ty TNHH SX & TM Duy Nhật được thành lập năm 2004 (<a href="https://www.dnpack.com.vn" style={{ color: "white", textDecorationLine: "underline" }}>Bao Bì Duy Nhật - Duy Nhat Pack - DN Pack</a>), chuyên sản xuất và cung cấp bao bì giấy, bao bì màng ghép phức hợp cao cấp cho các ngành nông – lâm nghiệp, thủy – hải sản cùng nhiều lĩnh vực sản xuất kinh doanh khác.
+                                                        Năm 2020 đánh dấu bước phát triển quan trọng khi Bao Bì Duy Nhật chuyển nhà máy về Khu Công Nghiệp An Nghiệp nhằm mở rộng quy mô và nâng cao chất lượng sản phẩm. Với đội ngũ quản lý giàu kinh nghiệm, công nghệ hiện đại và đội ngũ nhân viên chuyên nghiệp, chúng tôi không ngừng hoàn thiện sản phẩm, mang đến sự an tâm và hài lòng tối đa cho khách hàng.</VText>
                                                 </div>
                                             </div>
                                         </div>
@@ -89,19 +94,11 @@ class About2 extends Component {
                                         {/* <div class="col-lg-6 col-md-12 m-b30 align-self-center video-infobx"> */}
                                         <div class="content-bx1">
                                             {/* <h2 class="title">Thriving to <br/> deliver<br/><span class="text-primary">since 2004</span></h2> */}
-                                            <VText style={{ textAlign: 'center' }}> Từ khi được thành lập vào năm 2004, Bao Bì Duy Nhật chuyên sản xuất và in ấn bao bì từ giấy và
-                                                nhựa cho ngành thủy - hải sản, và nông - lâm nghiệp cũng như các mặt hàng hóa tiêu dùng. Đối với mặt hàng bao bì giấy,
-                                                Bao Bì Duy Nhật chuyên sản xuất nhiều loại hộp giấy, thùng giấy, và các tem nhãn nhiều kiểu dáng phục vụ nhiều nhu cầu khác nhau.
-                                                Ngoài ra, chúng tôi còn chuyên sản xuất nhiều loại túi nhựa, bào bì màng ghép phức hợp cao cấp trên các chất liệu: BOPP,
-                                                PET, MCPP, MPET, PA, PE, AL, M-OPP, LLDPE…</VText>
-                                            <VText style={{ textAlign: 'center' }}> Đến nay, Bao Bì Duy Nhật rất tự hào vì đã và đang cung cấp sản phẩm bao bì cho rất nhiều công ty có tên tuổi trên
-                                                thị trường trong và ngoài nước như: Walmart, Costco, Safeway, Woolworths…</VText>
-                                            <VText style={{ textAlign: 'center' }}>Để đảm bảo chất lượng sản phẩm đến với khách hàng, chúng tôi không ngừng nâng cao trình độ công nghệ để đáp ứng
-                                                các chuẩn mực chất lượng quốc tế. Công ty đang áp dụng hệ thống quản lý chất lượng:  ISO 9001:2005 và BRC cho bao bì thực phẩm.
-                                                Bên cạnh đó, chúng tôi luôn không ngừng cải tiến công nghệ sản xuất và làm việc với những nhà cung cấp nhựa hàng đầu nhằm hướng tới bảo vệ môi trường, làm
-                                                cho sản phẩm của Bao Bì Duy Nhật luôn thân thiện với môi trường, dễ dàng tái chế, giảm thiểu lượng rác thải cho môi trường.</VText>
-                                            <VText style={{ textAlign: 'center' }}>Với slogan “Nhanh chóng – Chính xác – Chuyên nghiệp”,  chúng tôi luôn phấn đấu hoàn thiện hơn nữa các
-                                                sản phẩm của mình để mang tới cho quý khách hàng sự an tâm và hài lòng khi hợp tác.</VText>
+                                            <VText style={{ textAlign: 'center' }}> Từ khi thành lập năm 2004, Bao Bì Duy Nhật chuyên sản xuất và in ấn bao bì giấy, bao bì nhựa phục vụ các ngành thủy - hải sản, nông - lâm nghiệp và hàng tiêu dùng. Sản phẩm bao bì giấy của chúng tôi bao gồm: hộp giấy, thùng carton và tem nhãn đa dạng kiểu dáng, đáp ứng mọi nhu cầu đóng gói. Bên cạnh đó, Bao Bì Duy Nhật còn chuyên sản xuất túi nhựa và bao bì màng ghép phức hợp cao cấp trên các chất liệu: BOPP, PET, MCPP, MPET, PA, PE, AL, M-OPP, LLDPE.</VText>
+                                            <VText style={{ textAlign: 'center' }}> Đến nay, Bao Bì Duy Nhật tự hào là đối tác tin cậy của nhiều doanh nghiệp hàng đầu trong và ngoài nước, với sản phẩm có mặt tại các chuỗi bán lẻ lớn như: Walmart, Costco, Safeway, Woolworths.</VText>
+                                            <VText style={{ textAlign: 'center' }}>Cam kết mang đến sản phẩm chất lượng cao, Bao Bì Duy Nhật không ngừng đầu tư nâng cấp công nghệ, đáp ứng các tiêu chuẩn quốc tế với hệ thống quản lý chất lượng ISO 9001:2015 và chứng nhận BRC dành cho bao bì thực phẩm.
+                                                Song song với chất lượng, chúng tôi đặt bảo vệ môi trường lên hàng đầu thông qua việc hợp tác với các nhà cung cấp nguyên liệu uy tín, ứng dụng công nghệ xanh để tạo ra sản phẩm thân thiện môi trường, dễ dàng tái chế và giảm thiểu tác động đến thiên nhiên.</VText>
+                                            <VText style={{ textAlign: 'center' }}>Với phương châm "Nhanh chóng – Chính xác – Chuyên nghiệp", Bao Bì Duy Nhật không ngừng hoàn thiện chất lượng sản phẩm và dịch vụ, mang đến sự an tâm và hài lòng trọn vẹn cho mỗi khách hàng.</VText>
                                             <h4 class="m-b0" align="right">Bùi Đức Xứng</h4>
                                             <span class="font-14" style={{ float: 'right', marginBottom: 15 }}>Giám Đốc</span>
                                         </div>
@@ -129,7 +126,7 @@ class About2 extends Component {
                                                         <p>
                                                             <ul class="list-check secondry">
                                                                 <li>
-                                                                    Các công đoạn sản xuất sẽ được triển khai hiệu quả, nhanh chóng theo tiến độ, và sản phẩm giao đến khách hàng trong thời gian ngắn nhất.
+                                                                    Mỗi công đoạn sản xuất được triển khai nhanh chóng, chính xác, giúp sản phẩm đến tay khách hàng trong thời gian ngắn nhất mà không ảnh hưởng đến chất lượng.
                                                                 </li>
                                                             </ul>
                                                         </p>
@@ -145,7 +142,7 @@ class About2 extends Component {
                                                         <h4 class="dlab-tilte">Chính Xác</h4>
                                                         <p>
                                                             <ul class="list-check secondry">
-                                                                <li style={{ fontFamily: 'Merriweather' }}>Công ty đã trang bị hệ thống kiểm soát chất lượng in bằng hệ thống camera tự động đảm bảo chất lượng in chính xác.</li>
+                                                                <li style={{ fontFamily: 'Merriweather' }}>Với hệ thống kiểm tra chất lượng in tự động bằng camera, mỗi sản phẩm đều được giám sát chặt chẽ, đảm bảo màu sắc và độ nét hoàn hảo.</li>
                                                             </ul>
                                                         </p>
                                                     </div>
@@ -161,7 +158,7 @@ class About2 extends Component {
                                                         <p>
                                                             <ul class="list-check secondry">
                                                                 <li style={{ fontFamily: 'Merriweather' }}>
-                                                                    Đội ngũ cán bộ công nhân viên chuyên nghiệp, lành nghề với quy trình sản xuất hiện đại, khép kín từ thiết kế tạo khuôn mẫu, xuất phim, in ấn, gia công thành phẩm.
+                                                                    Đội ngũ nhân viên chuyên nghiệp, tay nghề cao cùng quy trình sản xuất hiện đại, khép kín từ thiết kế khuôn mẫu, xuất phim, in ấn đến gia công thành phẩm.
                                                                 </li>
                                                             </ul>
                                                         </p>

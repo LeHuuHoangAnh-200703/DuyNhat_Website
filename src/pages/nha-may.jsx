@@ -16,38 +16,58 @@ class PortfolioDetails extends Component {
                 <StaticQuery
                     query={graphql`
                     query {
-                        desktop: file(relativePath: { eq: "duynhat/factory/DSC_3762.jpg" }) {
-                        childImageSharp {
-                            fluid(quality: 100, maxWidth: 1920) {
-                            ...GatsbyImageSharpFluid_withWebp
-                            }
-                        }
-                        }
-                        top: file(relativePath: { eq: "duynhat/company/DJI_0163-copy.jpg" }) {
+                        desktop: file(relativePath: { eq: "duynhat/factory/ANT MEDIA-101.jpg" }) {
                             childImageSharp {
-                                fluid(quality: 100) {
-                                ...GatsbyImageSharpFluid_withWebp
+                                fluid(
+                                    quality: 90, 
+                                    maxWidth: 2400,
+                                    srcSetBreakpoints: [750, 1080, 1366, 1920, 2400]
+                                ) {
+                                    ...GatsbyImageSharpFluid_withWebp
                                 }
                             }
                         }
-                        boxes: file(relativePath: { eq: "duynhat/DSC_7898.jpg" }) {
+                        top: file(relativePath: { eq: "duynhat/company/ANT MEDIA-8.jpg" }) {
                             childImageSharp {
-                                fluid(quality: 100) {
-                                ...GatsbyImageSharpFluid_withWebp
+                                fluid(
+                                    quality: 90,
+                                    maxWidth: 1920,
+                                    srcSetBreakpoints: [600, 960, 1366, 1920]
+                                ) {
+                                    ...GatsbyImageSharpFluid_withWebp
                                 }
                             }
                         }
-                        emp: file(relativePath: { eq: "duynhat/factory/DSC_3553.jpg" }) {
+                        boxes: file(relativePath: { eq: "duynhat/factory/ANT MEDIA-40.jpg" }) {
                             childImageSharp {
-                                fluid(quality: 100) {
-                                ...GatsbyImageSharpFluid_withWebp
+                                fluid(
+                                    quality: 90,
+                                    maxWidth: 1200,
+                                    srcSetBreakpoints: [400, 600, 800, 1200]
+                                ) {
+                                    ...GatsbyImageSharpFluid_withWebp
+                                }
+                            }
+                        }
+                        emp: file(relativePath: { eq: "duynhat/factory/ANT MEDIA-186.jpg" }) {
+                            childImageSharp {
+                                fluid(
+                                    quality: 90,
+                                    maxWidth: 1200,
+                                    srcSetBreakpoints: [400, 600, 800, 1200]
+                                ) {
+                                    ...GatsbyImageSharpFluid_withWebp
                                 }
                             }
                         }
                         poly: file(relativePath: { eq: "duynhat/factory/DSC_7885.jpg" }) {
                             childImageSharp {
-                                fluid(quality: 100) {
-                                ...GatsbyImageSharpFluid_withWebp
+                                fluid(
+                                    quality: 90,
+                                    maxWidth: 1920,
+                                    srcSetBreakpoints: [600, 960, 1366, 1920]
+                                ) {
+                                    ...GatsbyImageSharpFluid_withWebp
                                 }
                             }
                         }

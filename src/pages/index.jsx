@@ -49,7 +49,7 @@ class Index4 extends Component {
                                     <div class="service-box style2">
                                         <div>
                                             <h2 class="title text-black"><span>Nhanh chóng</span> <br />Chính xác<br /><span> Chuyên nghiệp</span>  </h2>
-                                            <VText>Được thành lập vào năm  2004, Bao Bì Duy Nhật luôn phấn đấu hoàn thiện hơn nữa các sản phẩm của mình để mang tới cho quý khách hàng sự an tâm và hài lòng khi hợp tác slogan: “Nhanh chóng – Chính xác – Chuyên nghiệp”</VText>
+                                            <VText>Với hành trình hơn 20 năm phát triển từ năm 2004, Bao Bì Duy Nhật cam kết không ngừng hoàn thiện từng sản phẩm, đồng hành cùng khách hàng bằng tinh thần: "Nhanh chóng – Chính xác – Chuyên nghiệp".</VText>
                                             <Link to="/gioi-thieu" class="site-button outline outline-2 btnhover11" style={{ fontFamily: 'Merriweather' }}>Thông Tin Công Ty</Link>
                                         </div>
                                     </div>
@@ -63,8 +63,8 @@ class Index4 extends Component {
                                 <div class="col-lg-4 bg-primary text-white" >
                                     <div class="service-box style2">
                                         <div>
-                                            <h2 class="title text-black">Bao Bì<br /><span> Giấy</span> </h2>
-                                            <VText>Tùy vào nhu cầu sử dụng, Duy Nhật có thể cung cấp nhiều mẫu bao bì giấy từ các cộng nghệ khác nhau như in flexo, in offset, và in ống đồng.</VText>
+                                            <h2 class="title text-black">Bao Bì<span> Giấy</span> </h2>
+                                            <VText>Đáp ứng đa dạng nhu cầu của khách hàng, Duy Nhật cung cấp đa dạng mẫu mã bao bì giấy với các công nghệ in tiên tiến: in flexo, in offset và in ống đồng.</VText>
                                             <Link to="/bao-bi-giay" class="site-button outline white outline-2 btnhover11">Tìm Hiểu Thêm</Link>
                                         </div>
                                     </div>
@@ -77,8 +77,8 @@ class Index4 extends Component {
                                 <div class="col-lg-4 bg-primary text-white" >
                                     <div class="service-box style2">
                                         <div>
-                                            <h2 class="title text-black">Bao Bì<br /><span> Nhựa </span> </h2>
-                                            <VText>Với nhiều năm kinh nghiệm trong lĩnh vực, sản phẩm bao bì nhựa của Duy Nhật sẽ luôn đảm bảo độ bền cao,  chịu nhiệt tốt, đảm bảo độ bảo quản cao và an toàn cho thực phẩm.</VText>
+                                            <h2 class="title text-black">Bao Bì<span> Nhựa </span> </h2>
+                                            <VText>Được sản xuất từ quy trình chuyên nghiệp với nhiều năm kinh nghiệm, bao bì nhựa Duy Nhật sở hữu ưu điểm vượt trội: độ bền cao, chịu nhiệt tốt, bảo quản lâu dài và đạt chuẩn an toàn thực phẩm.</VText>
                                             <Link to="/bao-bi-nhua" class="site-button outline white outline-2 btnhover11">Tìm Hiểu Thêm</Link>
                                         </div>
                                     </div>
@@ -94,7 +94,7 @@ class Index4 extends Component {
                                     <div class="service-box style2">
                                         <div>
                                             <h2 class="title text-black"><span>Tem</span> &amp; Nhãn Dán<br /> </h2>
-                                            <VText>Duy Nhật chuyên cung cấp những mẫu tem và nhãn dán được thiết kế và sản xuất theo thiết kế và nhu cầu cụ thể của khách hàng.</VText>
+                                            <VText>Chuyên cung cấp tem và nhãn dán với dịch vụ thiết kế và sản xuất tùy chỉnh, Duy Nhật đáp ứng mọi yêu cầu đặc thù của khách hàng.</VText>
                                             <Link to="/tem-nhan" class="site-button outline white outline-2 btnhover11">Tìm Hiểu Thêm</Link>
                                         </div>
                                     </div>
@@ -125,9 +125,7 @@ class Index4 extends Component {
                             <div class="container">
                                 <div class="section-head text-white text-center">
                                     <h2 class="title text-white"><VNText to="/san-pham" style={{ color: "white" }}>Sản Phẩm</VNText> </h2>
-                                    <VText>Với đội ngũ nhân viên năng động và chuyên nghiệp, trang thiết bị hiện đại, và trên 15 năm kinh nghiệm, Bao Bì Duy Nhật chuyên cung cấp nhiều loại
-                                        bao bì từ nhiều loại mẫu mã phu hợp với các nhu cầu khác nhau của khách hàng như hộp giấy có cán màng bóng, dập nổi, ép kim, túi nhựa PE,
-                                        PP, PA, cũng như nhiều mẫu tem, nhãn dán decal, rider.
+                                    <VText>Với hơn 15 năm kinh nghiệm, đội ngũ nhân viên chuyên nghiệp và hệ thống thiết bị hiện đại, Bao Bì Duy Nhật cung cấp đa dạng giải pháp bao bì: hộp giấy cán màng, dập nổi, ép kim; túi nhựa PE, PP, PA; cùng các loại tem, nhãn decal và rider - đáp ứng mọi nhu cầu đặc thù của khách hàng.
                                     </VText>
                                     <Link to="/san-pham" class="site-button outline white outline-2 btnhover11">Tìm Hiểu Thêm Về Sản Phẩm</Link>
                                 </div>
@@ -142,9 +140,7 @@ class Index4 extends Component {
                             <div class="container">
                                 <div class="section-head text-black text-center">
                                     <h2 class="title text-capitalize">Khách Hàng của Bao Bì Duy Nhật</h2>
-                                    <VText>Đến nay, Bao Bì Duy Nhật đã và đang cung cấp sản phẩm bao bì cho rất nhiều công ty xuất khẩu hải sản và hàng tiêu dùng trong
-                                        và ngoài nước. Nhiều sản phẩm bao bì của Bao Bì Duy Nhật có thể được tìm thấy ở các địa lý bán lẻ và siêu thị lớn như:
-                                        Walmart, Costco, Safeway, Woolworths, Coles.
+                                    <VText>Đến nay, Bao Bì Duy Nhật đã trở thành đối tác tin cậy của nhiều doanh nghiệp xuất khẩu hải sản và hàng tiêu dùng trong và ngoài nước. Sản phẩm của chúng tôi có mặt tại các hệ thống bán lẻ và siêu thị lớn trên thế giới như: Walmart, Costco, Safeway, Woolworths, Coles.
                                     </VText>
                                     {/* <h2 class="title text-capitalize">We work with our customers to provide the highest quality products,<br/><span class="text-primary">Join with our satisfied customers.</span></h2> */}
                                 </div>
@@ -156,9 +152,8 @@ class Index4 extends Component {
                                 <div class="col-lg-4 bg-gray " data-wow-duration="2s" data-wow-delay="0.2s">
                                     <div class="service-box style2">
                                         <div>
-                                            <h2 class="title text-black"><span>Our  </span> <br />Facility</h2>
-                                            <p>Vào đầu năm 2020, Bao Bì Duy Nhật đã khai trương nhà máy mới với khuôn viên 80,000m<sup>2</sup> tại Khu Công Nghiệp An Nghiệp, Sóc
-                                                Trăng. Hiện tại, nhà máy đã chính thức được đưa vào hoạt động với toàn bộ năng suất.</p>
+                                            <h2 class="title text-black"><span>Về  </span> <br />Cơ sở vật chất</h2>
+                                            <p>Đầu năm 2020, Bao Bì Duy Nhật chính thức khai trương nhà máy mới với quy mô 80.000m² tại Khu Công Nghiệp An Nghiệp, Sóc Trăng. Hiện nay, nhà máy đã đi vào hoạt động với công suất tối đa, sẵn sàng đáp ứng nhu cầu ngày càng tăng của khách hàng.</p>
                                             <Link to="/nha-may" class="site-button outline outline-2 btnhover11" style={{ fontFamily: 'Merriweather' }}>Tìm Hiểu Về Nhà Máy của Bao Bì Duy Nhật</Link>
                                         </div>
                                     </div>
@@ -240,63 +235,68 @@ query MyQuery {
 				summary
 				featuredImage {
 					childImageSharp {
-					  fluid(quality: 100) {
-						...GatsbyImageSharpFluid
+					  fluid(maxWidth: 800, quality: 90) {
+						...GatsbyImageSharpFluid_withWebp
 					  }
 					}
 				  }
 				}
-				
 		  }
 	  }
-      
     }
-    truck:file(relativePath: { eq: "duynhat/factory/DSC_7915.jpg" }){
+    
+    truck:file(relativePath: { eq: "duynhat/factory/ANT MEDIA-29.jpg" }){
       childImageSharp {
-        fluid(jpegQuality: 95){
-            ...GatsbyImageSharpFluid_withWebp_tracedSVG
+        fluid(maxWidth: 2400, quality: 90, srcSetBreakpoints: [750, 1080, 1366, 1920, 2400]){
+            ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
-    factory:file(relativePath: { eq: "duynhat/company/DJI_0150-copy.jpg" }){
+    
+    factory:file(relativePath: { eq: "duynhat/company/ANT MEDIA-223.jpg" }){
         childImageSharp {
-          fluid(jpegQuality: 100){
-              ...GatsbyImageSharpFluid_withWebp_tracedSVG
+          fluid(maxWidth: 2400, quality: 90, srcSetBreakpoints: [750, 1080, 1366, 1920, 2400]){
+              ...GatsbyImageSharpFluid_withWebp
           }
         }
     }
-    flexible:file(relativePath: { eq: "duynhat/factory/DSC_36020.jpg" }){
+    
+    flexible:file(relativePath: { eq: "duynhat/factory/ANT MEDIA-12.jpg" }){
         childImageSharp {
-          fluid(quality: 100,maxWidth:550){
-              ...GatsbyImageSharpFluid_withWebp_tracedSVG
+          fluid(maxWidth: 1200, quality: 90, srcSetBreakpoints: [400, 800, 1200]){
+              ...GatsbyImageSharpFluid_withWebp
           }
         }
     }
-    paper:file(relativePath: { eq: "duynhat/factory/DSC_3879.jpg" }){
+
+    paper:file(relativePath: { eq: "duynhat/factory/ANT MEDIA-52.jpg" }){
         childImageSharp {
-          fluid(quality: 100,maxWidth:550){
-              ...GatsbyImageSharpFluid_withWebp_tracedSVG
+          fluid(maxWidth: 1200, quality: 90, srcSetBreakpoints: [400, 800, 1200]){
+              ...GatsbyImageSharpFluid_withWebp
           }
         }
     }
-    label:file(relativePath: { eq: "duynhat/factory/DSC_9222.jpg" }){
+
+    label:file(relativePath: { eq: "duynhat/factory/ANT MEDIA-217.jpg" }){
         childImageSharp {
-          fluid(quality: 100,maxWidth:550){
-              ...GatsbyImageSharpFluid_withWebp_tracedSVG
+          fluid(maxWidth: 1200, quality: 90, srcSetBreakpoints: [400, 800, 1200]){
+              ...GatsbyImageSharpFluid_withWebp
           }
         }
     }
-    carton1:file(relativePath: { eq: "duynhat/DSC_7898.jpg" }){
+
+    carton1:file(relativePath: { eq: "duynhat/factory/ANT MEDIA-207.jpg" }){
         childImageSharp {
-          fluid(quality: 100, maxWidth:550){
-              ...GatsbyImageSharpFluid_withWebp_tracedSVG
+          fluid(maxWidth: 1200, quality: 90, srcSetBreakpoints: [400, 800, 1200]){
+              ...GatsbyImageSharpFluid_withWebp
           }
         }
     }
-    carton2:file(relativePath: { eq: "duynhat/factory/DSC_9237.jpg" }){
+
+    carton2:file(relativePath: { eq: "duynhat/factory/ANT MEDIA-20.jpg" }){
         childImageSharp {
-          fluid(quality: 100, maxWidth:550){
-              ...GatsbyImageSharpFluid_withWebp_tracedSVG
+          fluid(maxWidth: 1200, quality: 90, srcSetBreakpoints: [400, 800, 1200]){
+              ...GatsbyImageSharpFluid_withWebp
           }
         }
     }

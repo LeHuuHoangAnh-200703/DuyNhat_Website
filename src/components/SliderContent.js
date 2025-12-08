@@ -18,19 +18,19 @@ export const ExibitionContent1 = [
 
 export const homeSliderContent4 = [
     {
-        image: require("../images/duynhat/factory/DSC_9257.jpg"),
+        image: require("../images/duynhat/factory/ANT MEDIA-208.jpg"),
         title:"Sản phẩm bao bì nhựa, bao bì giấy, tem và nhãn",
-        description:"Với nhiều năm kinh nghiệm, Bao Bì Duy Nhật chuyên cung cấp các loại bao bì nhựa và bao bì giấy cho nông – lâm nghiệp, thủy – hải sản, phục vụ sản xuất kinh doanh hàng hóa ở nhiều ngành, nhiều lĩnh vực."
+        description:"Với nhiều năm kinh nghiệm trong ngành, Bao Bì Duy Nhật tự hào là đơn vị chuyên cung cấp giải pháp bao bì nhựa và bao bì giấy chất lượng cao cho đa dạng lĩnh vực: nông – lâm nghiệp, thủy – hải sản cùng nhiều ngành hàng sản xuất kinh doanh khác."
     },
     {
-        image: require("../images/duynhat/factory/DSC_7895.jpg"),
+        image: require("../images/duynhat/factory/ANT MEDIA-205.jpg"),
         title:"Trang thiết bị hiện đại và công nghệ sản xuất tối tân",
-        description:"Nhà máy của chúng tôi được trang bị những trang thiết bị hiện đại và tối tân nhất từ cắt khuôn, rập nổi, đến gấp túi, dán túi để phục vụ các nhu cầu sản phẩm khác nhau của khách hàng."
+        description:"Nhà máy của chúng tôi được đầu tư hệ thống máy móc thiết bị hiện đại, đồng bộ từ công đoạn cắt khuôn, rập nổi, đến gấp túi và dán túi, đáp ứng đa dạng nhu cầu sản phẩm của khách hàng."
     },
     {
-        image: require("../images/duynhat/factory/DSC_3325.jpg"),
+        image: require("../images/duynhat/factory/ANT MEDIA-163.jpg"),
         title:"Hệ thống quản lý và đảm bảo chất lượng",
-        description:"Bên cạnh hệ thống quản lý chất lượng sản phẩm chặt chẽ, Bao Bì Duy Nhật không ngừng nâng cao trình độ công nghệ để đáp ứng các chuẩn mực chất lượng quốc tế. Công ty đang áp dụng hệ thống quản lý chất lượng ISO 9001:2005 và BRC cho thực phẩm nhầm giảm thiểu lỗi và rủi ro cho sản phẩm khi đến tay khách hàng."
+        description:"Bên cạnh hệ thống quản lý chất lượng chặt chẽ, Bao Bì Duy Nhật không ngừng đầu tư nâng cấp công nghệ để đáp ứng các tiêu chuẩn chất lượng quốc tế. Công ty đã triển khai hệ thống quản lý chất lượng ISO 9001:2015 và chứng nhận BRC cho ngành thực phẩm, cam kết mang đến sản phẩm hoàn hảo, an toàn cho khách hàng."
     }
 ]
 export const homeSliderContent5 = [
