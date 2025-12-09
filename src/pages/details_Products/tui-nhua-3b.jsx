@@ -112,7 +112,7 @@ class PortfolioDetails extends Component {
                 <StaticQuery
                     query={graphql`
                     query {
-                        desktop: file(relativePath: { eq: "duynhat/factory/DSC_3762.jpg" }) {
+                        desktop: file(relativePath: { eq: "duynhat/factory/ANT MEDIA-204.jpg" }) {
                             childImageSharp {
                                 fluid(quality: 100, maxWidth: 1920) {
                                     ...GatsbyImageSharpFluid_withWebp
@@ -168,14 +168,7 @@ class PortfolioDetails extends Component {
                                 }
                             }
                         }
-                        product7: file(relativePath: { eq: "duynhat/products/flexible/2.jpg" }) {
-                            childImageSharp {
-                                fluid(quality: 100) {
-                                    ...GatsbyImageSharpFluid_withWebp
-                                    }
-                                }
-                            }
-                        }
+                    }
                     `}
                     render={data => {
                         const allImages = {
@@ -185,8 +178,7 @@ class PortfolioDetails extends Component {
                             'DT.JPG.jpg': data.product3.childImageSharp.fluid,
                             'GV.jpg': data.product4.childImageSharp.fluid,
                             'TC1.JPG.jpg': data.product5.childImageSharp.fluid,
-                            'TG.JPG.jpg': data.product6.childImageSharp.fluid,
-                            '2.jpg': data.product7.childImageSharp.fluid
+                            'TG.JPG.jpg': data.product6.childImageSharp.fluid
                         };
 
                         const productImages = product.images.map(imgName => allImages[imgName]);

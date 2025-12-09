@@ -16,7 +16,7 @@ class Flexible extends Component {
                 <StaticQuery
                     query={graphql`
                     query {
-                        desktop: file(relativePath: { eq: "duynhat/DSC_7898.jpg" }) {
+                        desktop: file(relativePath: { eq: "duynhat/factory/ANT MEDIA-107.jpg" }) {
                         childImageSharp {
                             fluid(quality: 100, maxWidth: 1920) {
                             ...GatsbyImageSharpFluid_withWebp

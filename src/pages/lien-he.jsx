@@ -15,7 +15,7 @@ class Contact3 extends Component {
                 <StaticQuery
                     query={graphql`
                     query {
-                        desktop: file(relativePath: { eq: "duynhat/factory/DSC_7885.jpg" }) {
+                        desktop: file(relativePath: { eq: "duynhat/factory/ANT MEDIA-54.jpg" }) {
                         childImageSharp {
                             fluid(quality: 100, maxWidth: 1920) {
                             ...GatsbyImageSharpFluid_withWebp

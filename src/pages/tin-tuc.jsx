@@ -174,7 +174,7 @@ const Blog = ()=>{
 					}
 					
 					}
-					desktop: file(relativePath: { eq: "duynhat/company/topview.jpg" }) {
+					desktop: file(relativePath: { eq: "duynhat/company/ANT MEDIA-224.jpg" }) {
 						childImageSharp {
 							fluid(quality: 100, maxWidth: 1920) {
 							...GatsbyImageSharpFluid_withWebp

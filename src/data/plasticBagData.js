@@ -117,22 +117,5 @@ export const plasticBagData = {
             keywords: 'túi đựng bánh, bao bì bánh kẹo, túi đựng bánh quy, túi snack, bao bì thực phẩm, túi chống ẩm bánh'
         },
         images: ['1_1.jpg', '3B.jpg', 'TC1.JPG.jpg', '8B.JPG.jpg', 'DT.JPG.jpg']
-    },
-    'tui-nhua-gao': {
-        name: 'Túi gấp viền hai bên',
-        fullDescription: 'Túi gấp viền hai bên là giải pháp bao bì chuyên nghiệp cho gạo, bột, đường, muối và các sản phẩm thực phẩm hạt. Thiết kế gấp viền ở cả hai cạnh bên tạo không gian chứa tối ưu, giúp túi đứng vững và hình dạng chữ nhật đẹp mắt khi đựng sản phẩm.',
-        features: [
-            'Gấp viền hai bên tạo dung tích lớn, hình dạng vuông vức',
-            'Cấu trúc màng ghép BOPP/PP/PE chống ẩm, chống thấm hiệu quả',
-            'In flexo/rotogravure 6-10 màu, hình ảnh sắc nét, màu sắc bắt mắt',
-            'An toàn thực phẩm, đạt chuẩn HACCP, ISO',
-            'Dung tích từ 1kg đến 50kg'
-        ],
-        seo: {
-            title: 'Túi Gấp Viền Hai Bên Đựng Gạo | Side Gusset Rice Bag | Duy Nhật',
-            description: 'Túi gấp viền hai bên cho gạo, bột, đường. Màng ghép BOPP/PP/PE chống ẩm tuyệt đối. In 6-10 màu sắc nét. Có cửa sổ trong suốt. Đứng vững, đẹp mắt. MOQ 10000 túi.',
-            keywords: 'túi gạo, side gusset bag, túi gấp viền, túi đựng gạo, bao bì gạo, túi bột, túi đường, rice packaging bag, quad seal bag'
-        },
-        images: ['2.jpg', '3B.jpg', 'TC1.JPG.jpg', '8B.JPG.jpg', 'DT.JPG.jpg']
     }
 };
