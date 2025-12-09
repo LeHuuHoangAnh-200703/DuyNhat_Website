@@ -13,7 +13,7 @@ class PortfolioDetails extends Component {
     constructor(props) {
         super(props);
 
-        const productSlug = 'thung-carton-2';
+        const productSlug = 'thung-carton-7';
         const product = cartonBoxData[productSlug];
 
         this.state = {
@@ -34,12 +34,12 @@ class PortfolioDetails extends Component {
 
     componentDidMount() {
         const pathSegments = window.location.pathname.split('/');
-        const slug = pathSegments[pathSegments.length - 1] || 'thung-carton-2';
+        const slug = pathSegments[pathSegments.length - 1] || 'thung-carton-7';
 
         if (slug !== this.state.productSlug) {
             this.setState({
                 productSlug: slug,
-                product: cartonBoxData[slug] || cartonBoxData['thung-carton-2'],
+                product: cartonBoxData[slug] || cartonBoxData['thung-carton-7'],
                 selectedImage: 0
             });
         }

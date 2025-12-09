@@ -67,5 +67,56 @@ export const cartonBoxData = {
             keywords: 'thùng ebi fry, carton tôm chiên, breaded shrimp box, thùng tôm panko, bao bì thủy sản'
         },
         images: ['CT1.jpg', 'CT2.jpg', 'CT3.jpg', 'CT4.jpg']
+    },
+    'thung-carton-5': {
+        name: 'Thùng carton 5 lớp - Heavy duty box',
+        fullDescription: 'Thùng carton 5 lớp (5-ply heavy duty box) là giải pháp đóng gói siêu bền cho hàng hóa nặng, thiết bị công nghiệp, hàng xuất khẩu và vận chuyển đường dài. Với cấu trúc sóng kép BC hoặc EB flute, thùng chịu được trọng lượng từ 30-80kg và bảo vệ tối đa hàng hóa khỏi va đập, ẩm ướt và biến dạng.',
+        features: [
+            'Cấu trúc 5 lớp: BC flute hoặc EB flute siêu cứng',
+            'Chịu được trọng lượng 30-80kg tùy kích thước',
+            'Kháng nén (BCT) cao, xếp chồng được 8-12 tầng',
+            'Chống ẩm tốt, không bị nát khi vận chuyển xa',
+            'Thiết kế với tay cầm die-cut tiện lợi'
+        ],
+        seo: {
+            title: 'Thùng Carton 5 Lớp Siêu Bền | Heavy Duty Box | Xuất Khẩu | Duy Nhật',
+            description: 'Thùng carton 5 lớp (BC/EB flute) siêu bền chịu tải 30-80kg. Kháng nén cao, chống ẩm. In flexo 1-4 màu. Phù hợp xuất khẩu, vận chuyển xa. Kích thước tùy chỉnh. MOQ 300 thùng.',
+            keywords: 'thùng carton 5 lớp, heavy duty box, thùng carton siêu bền, 5-ply carton, thùng xuất khẩu, BC flute box, EB flute, thùng công nghiệp, corrugated box'
+        },
+        images: ['CT5.jpg', 'CT2.jpg', 'CT3.jpg', 'CT4.jpg']
+    },
+    'thung-carton-6': {
+        name: 'Thùng carton đựng thực phẩm đông lạnh',
+        fullDescription: 'Thùng carton đựng thực phẩm đông lạnh là giải pháp bao bì chuyên dụng được thiết kế để chịu được môi trường lạnh âm, độ ẩm cao từ sương giá và quá trình rã đông. Cấu trúc carton đặc biệt với khả năng chống thấm nước, không bị nát hay mất hình dạng trong tủ đông.',
+        features: [
+            'Chất liệu carton B/C flute phủ màng PE/PP chống ẩm đặc biệt',
+            'Chịu nhiệt độ -18°C đến -25°C, không bị nát trong tủ đông',
+            'Kháng nước từ sương giá và quá trình tan rã đông',
+            'Có thể xếp chồng 6-10 tầng trong kho lạnh',
+            'Kích thước tùy chỉnh theo sản phẩm (5kg-20kg)'
+        ],
+        seo: {
+            title: 'Thùng Carton Đựng Thực Phẩm Đông Lạnh | Frozen Food Box | Duy Nhật',
+            description: 'Thùng carton chuyên dụng cho thực phẩm đông lạnh. Carton phủ PE/PP chống ẩm. Chịu lạnh -25°C. In flexo 1-4 màu. Biểu tượng Keep Frozen. Phù hợp hải sản, trái cây đông lạnh. MOQ 500 thùng.',
+            keywords: 'thùng carton đông lạnh, frozen food box, thùng hải sản đông lạnh, thùng chống ẩm, cold storage box, thùng thực phẩm lạnh, carton chống nước, wax coated box'
+        },
+        images: ['CT6.jpg', 'CT2.jpg', 'CT3.jpg', 'CT4.jpg']
+    },
+    'thung-carton-7': {
+        name: 'Thùng carton in offset full color',
+        fullDescription: 'Thùng carton in offset full color là giải pháp bao bì cao cấp với khả năng tái hiện màu sắc và hình ảnh chân thực, sắc nét như in trên hộp giấy. Công nghệ in offset cho phép in 4-6 màu (CMYK + Pantone) với độ chi tiết cao, phù hợp cho các sản phẩm cần trưng bày đẹp mắt tại siêu thị, cửa hàng cao cấp và xuất khẩu.',
+        features: [
+            'In offset 4-6 màu (CMYK + Pantone), màu sắc chính xác 95-98%',
+            'Chất liệu carton C/B flute trắng, bề mặt phẳng mịn',
+            'Có thể cán màng bóng/mờ, UV spot varnish tăng giá trị',
+            'Chống ẩm, phù hợp cho thực phẩm đông lạnh (-18°C)',
+            'Kích thước tùy chỉnh, thiết kế 3D trước sản xuất'
+        ],
+        seo: {
+            title: 'Thùng Carton In Offset Full Color | Premium Box | Hải Sản Cao Cấp | Duy Nhật',
+            description: 'Thùng carton in offset full color 4-6 màu sắc nét. Hình ảnh chân thực thu hút. Carton trắng C/B flute. Cán màng, UV spot. Cho hải sản, thực phẩm cao cấp. MOQ 500 thùng.',
+            keywords: 'thùng carton in offset, full color box, thùng in màu, premium carton box, thùng hải sản cao cấp, offset printing box, CMYK carton, thùng xuất khẩu'
+        },
+        images: ['CT7.jpg', 'CT2.jpg', 'CT3.jpg', 'CT4.jpg']
     }
 };

@@ -242,6 +242,33 @@ const images = [
   },
   {
     id: 27,
+    name: "Thùng Carton",
+    carton: true,
+    title: "Thùng carton 5 lớp - Heavy duty box",
+    subTitle: "Thùng Carton",
+    imgUrl: require("../images/duynhat/products/Carton/CT5.jpg"),
+    detailUrl: "/details_Products/thung-carton-5"
+  },
+  {
+    id: 28,
+    name: "Thùng Carton",
+    carton: true,
+    title: "Thùng carton đựng thực phẩm đông lạnh",
+    subTitle: "Thùng Carton",
+    imgUrl: require("../images/duynhat/products/Carton/CT6.jpg"),
+    detailUrl: "/details_Products/thung-carton-6"
+  },
+  {
+    id: 29,
+    name: "Thùng Carton",
+    carton: true,
+    title: "Thùng carton in offset full color",
+    subTitle: "Thùng Carton",
+    imgUrl: require("../images/duynhat/products/Carton/CT7.jpg"),
+    detailUrl: "/details_Products/thung-carton-7"
+  },
+  {
+    id: 30,
     name: "Sản phẩm khác",
     other: true,
     title: "Nhãn Lon Tôm - Xanh Dương",
@@ -250,13 +277,22 @@ const images = [
     detailUrl: "/details_Products/sp-khac-2"
   },
   {
-    id: 28,
+    id: 31,
     name: "Sản phẩm khác",
     other: true,
     title: "Nhãn Lon Tôm Cao Cấp",
     subTitle: "Sản phẩm khác",
     imgUrl: require("../images/duynhat/products/nhan_quan_31.jpg"),
     detailUrl: "/details_Products/sp-khac-3"
+  },
+  {
+    id: 32,
+    name: "Sản phẩm khác",
+    other: true,
+    title: "Nhãn Lon Tôm - Xanh Lá Cây",
+    subTitle: "Sản phẩm khác",
+    imgUrl: require("../images/duynhat/products/nhan_quan_11.jpg"),
+    detailUrl: "/details_Products/sp-khac-1"
   },
 ];
 

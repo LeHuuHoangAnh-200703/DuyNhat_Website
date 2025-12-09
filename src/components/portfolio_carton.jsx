@@ -40,6 +40,33 @@ const images = [
     subTitle: "Thùng Carton",
     imgUrl: require("../images/duynhat/products/Carton/CT4.jpg"),
     detailUrl: "/details_Products/thung-carton-4"
+  },
+  {
+    id: 5,
+    name: "Thùng Carton",
+    carton: true,
+    title: "Thùng carton 5 lớp - Heavy duty box",
+    subTitle: "Thùng Carton",
+    imgUrl: require("../images/duynhat/products/Carton/CT5.jpg"),
+    detailUrl: "/details_Products/thung-carton-5"
+  },
+  {
+    id: 6,
+    name: "Thùng Carton",
+    carton: true,
+    title: "Thùng carton đựng thực phẩm đông lạnh",
+    subTitle: "Thùng Carton",
+    imgUrl: require("../images/duynhat/products/Carton/CT6.jpg"),
+    detailUrl: "/details_Products/thung-carton-6"
+  },
+  {
+    id: 7,
+    name: "Thùng Carton",
+    carton: true,
+    title: "Thùng carton in offset full color",
+    subTitle: "Thùng Carton",
+    imgUrl: require("../images/duynhat/products/Carton/CT7.jpg"),
+    detailUrl: "/details_Products/thung-carton-7"
   }
 ];
 

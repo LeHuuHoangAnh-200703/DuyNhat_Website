@@ -76,7 +76,7 @@ class ProjectSlider1 extends Component {
                             }
                         }
                     }
-                    sticker:file(relativePath: { eq: "duynhat/products/IMG_0085.jpg" }){
+                    sticker:file(relativePath: { eq: "duynhat/products/IMG_0066.jpg" }){
                         childImageSharp {
                             fluid(quality:100,fit:INSIDE){
                                 originalName
@@ -166,7 +166,7 @@ class ProjectSlider1 extends Component {
                                         {/* </Link> */}
                                     </div>
                                     <div class="dlab-info">
-                                        <h3 class="dlab-title"><Link to="/details_Products/tem-nhan-6" tabindex="-1">Cuộn Nhãn Decal Cua Ghẹ</Link></h3>
+                                        <h3 class="dlab-title"><Link to="/details_Products/tem-nhan-6" tabindex="-1">Băng Keo Decal Cuộn</Link></h3>
                                     </div>
                                 </Link>
                             </div>

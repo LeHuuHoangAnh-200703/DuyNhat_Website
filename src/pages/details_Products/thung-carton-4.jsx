@@ -146,6 +146,27 @@ class PortfolioDetails extends Component {
                                 }
                             }
                         }
+                        product4: file(relativePath: { eq: "duynhat/products/Carton/CT5.jpg" }) {
+                            childImageSharp {
+                                fluid(quality: 100) {
+                                    ...GatsbyImageSharpFluid_withWebp
+                                }
+                            }
+                        }
+                        product5: file(relativePath: { eq: "duynhat/products/Carton/CT6.jpg" }) {
+                            childImageSharp {
+                                fluid(quality: 100) {
+                                    ...GatsbyImageSharpFluid_withWebp
+                                }
+                            }
+                        }
+                        product6: file(relativePath: { eq: "duynhat/products/Carton/CT7.jpg" }) {
+                            childImageSharp {
+                                fluid(quality: 100) {
+                                    ...GatsbyImageSharpFluid_withWebp
+                                }
+                            }
+                        }
                     }
                     `}
                     render={data => {
@@ -153,7 +174,10 @@ class PortfolioDetails extends Component {
                             'CT1.jpg': data.product.childImageSharp.fluid,
                             'CT2.jpg': data.product1.childImageSharp.fluid,
                             'CT3.jpg': data.product2.childImageSharp.fluid,
-                            'CT4.jpg': data.product3.childImageSharp.fluid
+                            'CT4.jpg': data.product3.childImageSharp.fluid,
+                            'CT5.jpg': data.product4.childImageSharp.fluid,
+                            'CT6.jpg': data.product5.childImageSharp.fluid,
+                            'CT7.jpg': data.product6.childImageSharp.fluid
                         };
 
                         const productImages = product.images.map(imgName => allImages[imgName]);
@@ -319,7 +343,7 @@ class PortfolioDetails extends Component {
                                         </div>
                                         <div className="row">
                                             {relatedProducts.map((relProduct, index) => (
-                                                <div className="col-lg-4 col-md-6 mb-4" key={index}>
+                                                <div className="col-lg-3 col-md-6 mb-4" key={index}>
                                                     <div className="card border-0 shadow-sm h-100" style={{ borderRadius: '10px', overflow: 'hidden' }}>
                                                         <Link to={relProduct.link} style={{ textDecoration: 'none' }}>
                                                             <div style={{ backgroundColor: '#e8e8e8', height: '250px' }}>
